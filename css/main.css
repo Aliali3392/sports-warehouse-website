@@ -1,0 +1,437 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    color: #cde2e8;
+}
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+.lightblue{
+    color: #3ec0f1;
+}
+.midblue {
+    color: #2f859f;
+}
+.darkblue {
+    color: #536f77;
+}
+.grey {
+    color: #7d7d7d;
+}
+.orange {
+    color: #ff9e61;
+}
+.white {
+    color: #fff;
+}
+.slideshow {
+    display: none;
+}
+.one-second.column {
+    width: 45.3125%;
+}
+.offset-by-one-third.column {
+    margin-left: 3.125%;
+}
+.wrapper {
+    width: 100%;
+}
+/*top nav*/
+.topnav {
+    height: 40px;
+    background-color: #3ec0f1;
+}
+.topnav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-bars {
+    margin-top: 10px;
+    margin-left: 3.125%;
+}
+.nav-right {
+    position: absolute;
+    top: 5px;
+    right: 3.125%; 
+}
+.nav-right ul li {
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-left: 10px;
+}
+.nav-right ul li:last-child {
+    width: 80px;
+    height: 30px;
+    background-color: #2f859f;
+    border-radius: 15px;
+}
+.nav-right ul li p {
+    line-height: 30px;
+    text-align: center;
+}
+/*top nav expanded*/
+.menubar {
+    position: relative;
+    padding: 40px 10px 0 10px;
+    width: 100%;
+    height: 330px;
+    background-color: #3ec0f1;
+    display: none;
+}
+.nav-left {
+    display: block;
+    float: left;
+    width: 100%;
+    line-height: 40px;
+}
+.nav-left ul {
+    color: #fff;
+    list-style: none;
+    margin-top: 50px;
+}
+.nav-left ul li {
+    width: 100%;
+    height: 40px;
+    border-bottom: solid 1px #fff;
+    font-size: 1.4rem;
+    padding-left: 20px; 
+}
+.nav-left ul li::before {
+    content: "○";
+    display: inline-block;
+    font-size: 2rem;
+    margin-right: 1rem;
+    line-height: 40px;
+}
+.login {
+    position: absolute;
+    padding-top: 10px;
+    left: 10px;
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    line-height: 40px;
+    font-size: 1.4rem;
+    border-bottom: solid 1px #fff;
+}
+.login i {
+    float: left;
+    margin-top: 13px;
+    margin-left: 20px;
+}
+.login p {
+    float: left;
+    padding-left: 10px;
+}
+.login p a {
+    text-decoration: none;
+    color: #fff;
+}
+/*logo*/
+.logo {
+    width: 100%;
+    height: 40px;
+    float: left;
+    margin-left: 4.6875%;
+    margin-top: 15px;
+}
+/*search bar*/
+.search {
+    margin-top: 15px;
+    height: 40px;
+    width: 100%;
+    float: left;
+}
+.search input {
+    float: left;
+    margin-left: 7.8125%;
+    width: 68.75%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    padding-left: 15px;
+    letter-spacing: -.075rem;
+}
+.search input:focus {
+    outline:none;
+}
+.search .button {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-color: #536f77;
+    border-radius: 50%;
+    line-height: 48px;
+    text-align: center;
+    margin-left: 10px;
+}
+/*category nav*/
+.categorynav {
+    float: left;
+    margin-top: 15px;
+    width: 100%;
+    height: 210px;
+    font-size: 1.6rem;
+    background-color: #536f77;
+}
+.categorynav ul {
+    overflow: hidden;
+}
+.categorynav ul a {
+    float: left;
+    height: 40px;
+    width: 45.3125%;
+    border-radius: 5px;
+    border:solid 1px #3ec0f1;
+    margin-left: 3.125%;
+    margin-top: 10px;
+    list-style: none;
+    line-height: 40px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.fa-angle-right {
+    float: right;
+    margin-right: 10px;
+    line-height: 40px;
+    color: #3ec0f1;
+}
+.categorynav ul a:hover {
+    background-color: #3ec0f1;
+    color: #fff;
+}
+/*products*/
+.products {
+    float: left;
+}
+.products h2 {
+    float: left;
+    margin-top: 27px;
+    margin-left: 3.125%;
+    background-color: #ff9e61;
+    height: 46px;
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+    line-height: 46px;
+    padding-left: 30px;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.products a {
+    float: left;
+    width: 45.3125%;
+    height: 0;
+    margin-top: 22px;
+    margin-left: 3.125%;
+    padding-bottom: 76.5625%;
+    text-align: center;
+    text-decoration: none;
+}
+.items {
+    margin: 5px 5px 0 5px;
+    position: relative;
+}
+.items figcaption {
+    /*margin-top: 10%;*/
+    position: absolute;
+    /*bottom: 10px;*/
+    font-size: 1.5rem;
+    color: #2f859f;
+}
+.items figcaption .original {
+    font-size: 2.2rem;
+    color: #ff9e61;
+}
+.items figcaption .price {
+    font-size: 2.2rem;
+    color: #7d7d7d;
+}
+.items figcaption span {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #7d7d7d;
+}
+.items figcaption b {
+    font-weight: normal;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    color: #7d7d7d;
+}
+.items figcaption p {
+    margin-top: 6%;
+}
+/*brands logo*/
+.brandslogo {
+    float: left;
+}
+.brandslogo h2 {
+    float: left;
+    margin-top: 18px;
+    margin-left: 3.125%;
+    background-color: #ff9e61;
+    height: 46px;
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+    line-height: 46px;
+    padding-left: 30px;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.brandslogo p {
+    float: left;
+    margin-top: 20px;
+    margin-left: 3.125%;
+    font-size: 1.6rem;
+    color: #7d7d7d;
+}
+.brandslogo a {
+    text-decoration: none;
+    color: #3ec0f1;
+}
+.brandslogo a:hover {
+    color: #536f77;
+}
+.partnerships {
+    margin-top: 15px;
+    float: left;
+    width: 100%;
+    background-color: #536f77;
+    padding: 0 3.125% 3.125% 3.125%;
+}
+.partnerships img {
+    display: inline-block;
+    text-align: center;
+    margin-left: 6.25%;
+    margin-top: 4.6875%;
+}
+/*footer*/
+footer {
+    width: 100%;
+    background-color: #3ec0f1;
+    color: #fff;
+    margin-top: 20px;
+    float: left;
+}
+.footer-nav h2 {
+    margin-top: 20px;
+    margin-left: 3.125%;
+    font-family: 'Open Sans Light', sans-serif;
+    font-size: 2.2rem;
+    font-weight: normal;
+}
+.footer-nav ul {
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+.footer-nav ul li {
+    margin-left: 3.125%;
+    margin-top: 5px;
+    list-style: none;
+}
+.footer-nav ul li::before {
+    content: url(../images/Rectangle.png);
+    display: inline-block;
+    margin-right: 1rem;
+}
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+} 
+.footer-cat {
+    display: none;
+}
+.footer-contact {
+    position: relative;
+}
+.footer-contact h2 {
+    margin-top: 25px;
+    margin-left: 3.125%;
+    font-family: 'Open Sans Light', sans-serif;
+    font-size: 2.2rem; 
+    font-weight: normal;   
+}
+.footer-contact a {
+    float: left;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: solid 1px #fff;
+    text-align: center;
+    margin: 25px 0 65px 3.125%;
+    padding-top: 13px;
+    text-decoration: none;
+    color: #fff;
+}
+.footer-contact .twitter {
+    position: absolute;
+    left: 50%;
+    margin-left: -32.5px;
+}
+.footer-contact .other {
+    float: right;
+    margin-right: 3.125%; 
+}
+.footer-contact a p {
+    margin-top: 25px;
+}
+/*other menu*/
+.footer-contact .othermenu {
+    display: block;
+    float: right;
+    width: 100%;
+    line-height: 40px;
+    color: #fff;
+    list-style: none;
+    margin-top: -40px;
+    /*display: none;*/
+}
+.footer-contact .othermenu a {
+    width: 100%;
+    height: 40px;
+    border-radius: 0;
+    border: transparent;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+}
+.footer-contact .othermenu li {
+    width: 100%;
+    height: 40px;
+    border-bottom: solid 1px #fff;
+    font-size: 1.4rem;
+}
+.footer-contact .othermenu li:last-child {
+    margin-bottom: 65px;
+}
+/*copyright*/
+.copyright {
+    float: left;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #7d7d7d;
+    text-align: center;
+}
+.copyright p {
+    margin: 20px auto;
+    display: inline-block;
+}
+/*======================================/
+*----------------Desktop----------------
+*======================================*/
+@media screen and (min-width:550px) {
+    
+}
