@@ -242,10 +242,15 @@ html {
     margin: 5px 5px 0 5px;
     position: relative;
 }
+.items img {
+    /*padding-bottom: 90px; */
+}
 .items figcaption {
+    text-align: center;
+    width: 100%;
     /*margin-top: 10%;*/
     position: absolute;
-    /*bottom: 10px;*/
+    /*bottom: 0;*/
     font-size: 1.5rem;
     color: #2f859f;
 }
@@ -394,7 +399,7 @@ footer {
     color: #fff;
     list-style: none;
     margin-top: -40px;
-    /*display: none;*/
+    display: none;
 }
 .footer-contact .othermenu a {
     width: 100%;
@@ -433,5 +438,122 @@ footer {
 *----------------Desktop----------------
 *======================================*/
 @media screen and (min-width:550px) {
-    
+    .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    /*topnav*/
+    .fa-bars {
+        display: none;
+    }
+    .topnav {
+        width: 100%;
+        height: 50px;
+    }
+    .menubar {
+        display: inline-block;
+        padding: 0;
+        background-color: transparent;
+        width: auto;
+        height: 50px;
+    }
+    .nav-left ul {
+        margin-top: 5px;
+    }
+    .nav-left ul li {
+        display: inline-block;
+        float: left;
+        border: none;
+        padding: 0;
+        height: 50px;
+        margin: 0;
+        width: auto; 
+        /*padding-left: 50px;*/
+        margin-left: 15px; 
+    }
+    .nav-left ul li:first-child {
+        margin-left: 50px;
+    }
+    .nav-left ul li::before {
+        content: "";
+    }
+    .login {
+        padding-top: 5px;
+        margin-left: 820px;
+        border: none;
+    }
+    .nav-right {
+        padding-top: 10px;
+        top: 0;
+        position: static;
+        float: right;
+        margin-right: 50px;
+    }
+    /*logo*/
+    .logo {
+        margin-top: 24px;
+        margin-left: 100px;
+        height: 82px;
+        background-image: url(../images/sports-warehouse-logo-desktop.png);
+        background-repeat: no-repeat;
+        width: 610px;
+    }
+    .logo img {
+        display: none;
+        visibility: hidden;
+    }
+    /*search bar*/
+    .search {
+        width: 295px;
+        display: inline-block;
+        margin-top: 45px;
+        float: right;
+        margin-right: 50px;
+    }
+    .search input {
+        width: 220px;
+    }
+    /*category nav*/
+    .categorynav {
+        margin-top: 24px;
+        margin-left: 100px;
+        width: 1000px;
+        height: 60px;
+        border-radius: 30px 0 0 30px;
+    }
+    .categorynav ul li {
+        display: inline-block;
+        float: left;
+
+    }
+    .categorynav ul a {
+        width: auto;
+        margin-left: 30px;
+        padding: 0 15px;
+        border-radius: 20px 0 0 20px;
+        border: none;
+    }
+    .fa-angle-right {
+        display: none;
+    }
+    /*slideshow*/
+    .slideshow {
+        float: left;
+        display: block;
+        margin-top: 20px;
+        margin-left: 100px;
+        width: 1000px;
+        height: 300px;
+    }
+    #slide2 {
+        display: none;
+    }
+    #slide3 {
+        display: none;
+    }
+    .description {
+        width: 300px;
+        height: 300px;
+        background-color: #3ec0f1;
+    }
 }
