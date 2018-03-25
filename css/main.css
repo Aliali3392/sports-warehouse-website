@@ -390,6 +390,7 @@ footer {
 }
 .footer-contact a p {
     margin-top: 25px;
+    font-size: 1.5rem;
 }
 /*other menu*/
 .footer-contact .othermenu {
@@ -434,6 +435,9 @@ footer {
 .copyright p {
     margin: 20px auto;
     display: inline-block;
+}
+.copyright span {
+    display: block;
 }
 /*======================================/
 *----------------Desktop----------------
@@ -643,10 +647,92 @@ footer {
         margin-right: 100px;
     }
     .partnerships img {
-        margin-top: 20px;
-        margin-left: 20px;
+        margin-top: 15px;
+        margin-left: 25px;
     }
     .partnerships img:first-child {
         margin-left: 55px;
+    }
+    /*footer*/
+    footer {
+        margin-top: 50px;
+        height: 300px;
+        background-color: #fff;
+    }
+    .footer-nav {
+        width: 420px;
+        height: 300px;
+        background-color: #3ec0f1;
+        float: left;
+
+    }
+    .footer-nav h2 {
+        margin-left: 120px;
+        margin-bottom: 20px;
+    }
+    .footer-nav ul {
+        margin-left: 110px;
+        margin-top: 10px;
+    }
+    .footer-cat {
+        width: 360px;
+        height: 300px;
+        display: block;
+        float: left;
+        background-color: #ff9e61;
+    }
+    .footer-cat h2 {
+        margin-top: 20px;
+        margin-left: 20px;
+        font-weight: 300;
+        font-size: 2.2rem;
+        font-weight: normal;
+    }
+    .footer-cat ul {
+        margin-top: 20px;
+        font-size: 1.4rem;
+    }
+    .footer-cat ul li {
+        margin-left: 20px;
+        margin-top: 5px;
+        list-style: none;
+    }
+    .footer-cat ul li::before {
+        content: url(../images/Rectangle.png);
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    .footer-cat ul li a {
+        text-decoration: none;
+        color: #fff;
+    } 
+    .footer-contact {
+        width: 420px;
+        height: 300px;
+        background-color: #3ec0f1;
+        float: right;
+    }
+    .footer-contact h2 {
+        margin-left: 20px;
+    }
+    .footer-contact a {
+        margin: 20px;
+    }
+    .footer-contact .twitter {
+        position: static;
+        margin-left: 20px; 
+    }
+    .footer-contact .other {
+        margin: 0;
+        float: left;
+    }
+    /*other menu*/
+
+    /*copyright*/
+    .copyright p {
+        margin-left: 0;
+    }
+    .copyright span {
+        display: inline;
     }
 }
