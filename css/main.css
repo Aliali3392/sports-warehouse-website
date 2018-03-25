@@ -222,7 +222,7 @@ html {
     background-color: #ff9e61;
     height: 46px;
     width: 100%;
-    border-radius: 20px 0 0 20px;
+    border-radius: 23px 0 0 23px;
     line-height: 46px;
     padding-left: 30px;
     color: #fff;
@@ -287,13 +287,14 @@ html {
     background-color: #ff9e61;
     height: 46px;
     width: 100%;
-    border-radius: 20px 0 0 20px;
+    border-radius: 23px 0 0 23px;
     line-height: 46px;
     padding-left: 30px;
     color: #fff;
     font-size: 1.8rem;
 }
 .brandslogo p {
+    font-weight: 300;
     float: left;
     margin-top: 20px;
     margin-left: 3.125%;
@@ -331,7 +332,7 @@ footer {
 .footer-nav h2 {
     margin-top: 20px;
     margin-left: 3.125%;
-    font-family: 'Open Sans Light', sans-serif;
+    font-weight: 300;
     font-size: 2.2rem;
     font-weight: normal;
 }
@@ -362,7 +363,7 @@ footer {
 .footer-contact h2 {
     margin-top: 25px;
     margin-left: 3.125%;
-    font-family: 'Open Sans Light', sans-serif;
+    font-weight: 300;
     font-size: 2.2rem; 
     font-weight: normal;   
 }
@@ -545,15 +546,107 @@ footer {
         width: 1000px;
         height: 300px;
     }
-    #slide2 {
+    .slideshow figure {
+        position: relative;
+    }
+    #slide1 {
         display: none;
+    }
+    #slide2 {
+        /*display: none;*/
     }
     #slide3 {
         display: none;
     }
-    .description {
+    .indication {
+        font-weight: 300;
         width: 300px;
-        height: 300px;
+        height: 303px;
         background-color: #3ec0f1;
+        border-radius: 150px 0 0 150px;
+        border: solid 3px #fff;
+        position: absolute;
+        top: -3px;
+        right: -3px;
+    }
+    .indication p:nth-child(1) {
+        font-size: 1.8rem;
+        margin-top: 40px;
+        margin-left: 80px;
+        text-align: center;
+    }
+    .indication p:nth-child(2) {
+        margin-top: 10px;
+        margin-left: 80px;
+        font-size: 4rem;
+        text-align: center;
+    }
+    .indication a {
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+    }
+    .indication a p:first-child {
+        background-color: #2f859f;
+        margin-top: 20px;
+        width: 130px;
+        height: 36px;
+        line-height: 36px;
+        margin-left: 120px;
+        border-radius: 5px;
+    }
+    /*products*/
+    .products h2 {
+        margin-top: 24px;
+        margin-left: 100px;
+        width: 1000px;
+    }
+    .products a {
+        width: 180px;
+        height: 290px;
+        padding: 0;
+        margin: 22px 0 0 20px;
+        border-radius: 5px;
+        border: solid 1px #fffaf7;
+    }
+    .products a:hover {
+        box-shadow: 1px 1px 4px #ff9e61;
+    }
+    .products #firsta {
+        margin-left: 110px;
+    }
+    .items {
+        margin-top: 10px;
+    }
+    .items figcaption {
+        top: 190px;
+    }
+    /*brand logo*/
+    .brandslogo h2 {
+        margin-top: 42px;
+        margin-left: 100px;
+        width: 1000px;
+    }
+    .brandslogo p {
+        margin-top: 52px;
+        margin-left: 140px;
+        width: 210px;
+    }
+    .partnerships {
+        margin: 0;
+        padding: 0;
+        height: 100px;
+        width: 710px;
+        border-radius: 50px 0 0 50px;
+        margin-top: 22px;
+        float: right;
+        margin-right: 100px;
+    }
+    .partnerships img {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .partnerships img:first-child {
+        margin-left: 55px;
     }
 }
