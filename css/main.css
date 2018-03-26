@@ -90,8 +90,6 @@ html {
     height: 30px;
     background-color: #2f859f;
     border-radius: 15px;
-}
-.nav-right ul li p {
     line-height: 30px;
     text-align: center;
 }
@@ -108,7 +106,7 @@ html {
     background-color: #3ec0f1;
     overflow: hidden;
     z-index: 5;
-    /*display: none;*/
+    display: none;
 }
 .fa-lock {
     font-size: 1.4rem;
@@ -255,32 +253,35 @@ html {
     color: #fff;
     font-size: 1.8rem;
 }
+/*=========================*/
 .products a {
     float: left;
     width: 45.3125%;
-    height: 0;
+    height: 250px;
     margin-top: 22px;
     margin-left: 3.125%;
-    padding-bottom: 76.5625%;
     text-align: center;
     text-decoration: none;
 }
 .items {
-    margin: 5px 5px 0 5px;
-    position: relative;
+    height: 150px;
 }
 .items img {
-    /*padding-bottom: 90px; */
+    width: auto;  
+    height: auto;  
+    max-width: 100%;  
+    max-height: 100%;
 }
 .items figcaption {
     text-align: center;
     width: 100%;
-    /*margin-top: 10%;*/
-    position: absolute;
-    /*bottom: 0;*/
     font-size: 1.5rem;
     color: #2f859f;
+    height: 100px;
+    display:table-cell;
+    vertical-align: bottom;
 }
+/*==============================*/
 .items figcaption .original {
     font-size: 2.2rem;
     color: #ff9e61;
@@ -344,12 +345,14 @@ html {
     width: 100%;
     background-color: #536f77;
     padding: 0 3.125% 3.125% 3.125%;
+    display: table-cell;
 }
 .partnerships img {
     display: inline-block;
     text-align: center;
     margin-left: 6.25%;
     margin-top: 4.6875%;
+    vertical-align: middle;
 }
 /*footer*/
 footer {
@@ -514,7 +517,6 @@ footer {
         height: 50px;
         margin: 0;
         width: auto; 
-        /*padding-left: 50px;*/
         margin-left: 15px; 
     }
     .nav-left ul li:first-child {
@@ -670,10 +672,18 @@ footer {
         margin-left: 110px;
     }
     .items {
+        height: auto;
         margin-top: 10px;
+        position: relative;
+    }
+    .items img {
+        width: auto;
+        height: auto;
     }
     .items figcaption {
         top: 190px;
+        height: auto;
+        position: absolute;
     }
     .items .wrap {
     display: inline;
@@ -700,8 +710,8 @@ footer {
         margin-right: 100px;
     }
     .partnerships img {
-        margin-top: 15px;
         margin-left: 25px;
+        margin-top: 25px;
     }
     .partnerships img:first-child {
         margin-left: 55px;
