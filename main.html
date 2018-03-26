@@ -2,45 +2,53 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sports Warehouse</title>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link href="css/fontawesome-all.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<div class="wrapper">
+	<div class="wrapper clearfix">
 	<!-- This is the top navigation -->		
 			<nav class="topnav">
-				<div class="nav-left">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About SW</a></li>
-					<li><a href="#">Contact Us</a></li>
-					<li><a href="#">View Products</a></li>
-				</ul>
+				<a href="#" id="menu"><i class="fas fa-bars white"></i><p>Menu</p></a>
+				<div class="menubar">
+					<div class="nav-left">
+						<ul>
+							<li><i class="far fa-circle"></i><a href="#">Home</a></li>
+							<li><i class="far fa-circle"></i><a href="#">About SW</a></li>
+							<li><i class="far fa-circle"></i><a href="#">Contact Us</a></li>
+							<li><i class="far fa-circle"></i><a href="#">View Products</a></li>
+						</ul>
+					</div>
+					<div class="login">
+						<i class="fas fa-lock white"></i>
+						<p><a href="#">Login</a></p>
+					</div>
 				</div>
 				<div class="nav-right">
 					<ul>
-						<i class="fas fa-lock"></i>
-						<li><a href="#">Login</a></li>
-						<i class="fas fa-shopping-cart"></i>
+						<i class="fas fa-shopping-cart white"></i>
 						<li><a href="#">View Cart</a></li>
 						<li><p>0 items</p></li>
 					</ul>
 				</div>
 			</nav>
 	<!-- This is the header -->				
-		<div class="content-wrapper">
+		<div class="content-wrapper clearfix">
 			<header>
-				<div class="logo">
-					<p><a href="#">SW</a><span> Sports <b>Warehouse</b></span></p>
+				<div class="clearfix">
+					<div class="logo">
+						<a href="#"><img src="images/sports-warehouse-logo-600.png" alt="sports warehouse logo"></a>
+					</div>
+					<div class="search">
+						<input type="search" name="" placeholder="Search products">
+						<a class="button" href="#"><i class="fas fa-search white"></i></a>
+					</div>
 				</div>
-
-				<div class="search">
-					<input type="search" name="" placeholder="Search products">
-					<div class="search-button"><i class="fas fa-search"></i></div>
-				</div>
-
 				<div class="categorynav">
-					<ul>
+					<ul class="clearfix">
 						<a href="#"><li>Shoes<i class="fas fa-angle-right"></i></li></a>
 						<a href="#"><li>Helmets<i class="fas fa-angle-right"></i></li></a>
 						<a href="#"><li>Pants<i class="fas fa-angle-right"></i></li></a>
@@ -53,68 +61,66 @@
 			</header>
 		<!-- This is the slideshow -->
 			<div class="slideshow">
-			<figure id="slide1">
-				<img src="images/sports-balls.png" alt="Sports balls">
-				<figcaption>
-					<p>View our brand new range of</p>
-					<p>Sports balls</p>
-					<a href="#"><p>Shop now</p></a>
-				</figcaption>
-			</figure>
-		
-			<figure id="slide2">
-				<img src="images/protective-helmets.png" alt="Protective helmets">
-				<figcaption>
-					<p>Get protected with the new range of</p>
-					<p>Protective helmets</p>
-					<a href="#"><p>Shop now</p></a>
-				</figcaption>
-			</figure>
-
-			<figure id="slide3">
-				<img src="images/training-gear.png" alt="Train gear">
-				<figcaption>
-					<p>Get ready to race with our professional</p>
-					<p>Training gear</p>
-					<a href="#"><p>Shop now</p></a>
-				</figcaption>
-			</figure>
+				<figure id="slide1">
+					<img src="images/sports-balls.png" alt="Sports balls">
+					<figcaption  class="indication">
+						<p>View our brand <br>new range of</p>
+						<p>Sports <br>balls</p>
+						<a href="#"><p>Shop now</p></a>
+					</figcaption>
+				</figure>
+				<figure id="slide2">
+					<img src="images/protective-helmets.png" alt="Protective helmets">
+					<figcaption class="indication">
+						<p>Get protected with <br>the new range of</p>
+						<p>Protective <br>helmets</p>
+						<a href="#"><p>Shop now</p></a>
+					</figcaption>
+				</figure>
+				<figure id="slide3">
+					<img src="images/training-gear.png" alt="Train gear">
+					<figcaption class="indication">
+						<p>Get ready to race <br>with our professional</p>
+						<p>Training <br>gear</p>
+						<a href="#"><p>Shop now</p></a>
+					</figcaption>
+				</figure>
 			</div>
 		<!-- This is the content -->
-			<section>
-				<h2>Feature products</h2>
-				<a href="#">
-					<figure class="">
+			<section class="products">
+				<h2>Feature products</h2>				
+				<a href="#" id="firsta">
+					<figure class="items">					
 						<img src="images/products/soccer-ball.png" alt="soccer ball">
-						<figcaption><span class="original">&#36;34.95</span><span> was <b class="current">&#36;46.00</b></span><br>adidas Euro16 Top Soccer Ball</figcaption>
+						<figcaption><span class="original">&#36;34.95 </span><span class="wrap">was <b class="current">&#36;46.00</b></span><p>adidas Euro16 Top Soccer Ball</p></figcaption>					
 					</figure>
-				</a>
-				<a href="#">
-					<figure class="">
+				</a>	
+				<a href="#">			
+					<figure class="items">					
 						<img src="images/products/skate-helmet.png" alt="skate helmet">
-						<figcaption><span class="original">&#36;70.00</span><br>Pro-tec Classic Skate Helmet</figcaption>
+						<figcaption><span class="price">&#36;70.00</span><p>Pro-tec Classic Skate Helmet</p></figcaption>					
 					</figure>
 				</a>
 				<a href="#">
-					<figure class="">
+					<figure class="items">					
 						<img src="images/products/water-bottle.png" alt="water bottle">
-						<figcaption><span class="original">&#36;15.00</span><span> was <b class="current">&#36;17.50</b></span><br>Nike Sport 600ml Water Bottle</figcaption>
+						<figcaption><span class="original">&#36;15.00 </span><span class="wrap">was <b class="current">&#36;17.50</b></span><p>Nike Sport 600ml Water Bottle</p></figcaption>					
 					</figure>
 				</a>
 				<a href="#">
-					<figure class="">
+					<figure class="items">
 						<img src="images/products/boxing-gloves.png" alt="boxing gloves">
-						<figcaption><span class="original">&#36;79.95</span><br>Sting ArmaPlus Boxing Gloves</figcaption>
+						<figcaption><span class="price">&#36;79.95</span><p>Sting ArmaPlus Boxing Gloves</p></figcaption>
 					</figure>
 				</a>
 				<a href="#">
-				<figure class="">
-					<img src="images/products/football-boots.png" alt="football boots">
-					<figcaption><span class="original">&#36;160.00</span><br>Asics Gel Letjal Tigreor 8 IT Men's FG Boots</figcaption>
-				</figure>
+					<figure class="items">
+						<img src="images/products/football-boots.png" alt="football boots">
+						<figcaption><span class="price">&#36;160.00</span><p>Asics Gel Lethal Tigreor 8 IT Men's FG Boots</p></figcaption>
+					</figure>
 				</a>
 			</section>
-			<section>
+			<section class="brandslogo">
 				<h2>Our brands and partnerships</h2>
 				<p>These are some of our top brands and partnerships.<br><a href="#">The best of the best is here.</a></p>
 				<div class="partnerships">
@@ -130,45 +136,47 @@
 		<!-- This is the footer -->
 		<footer>
 			<div class="footer-nav">
-				<p>Site navigation</p>
+				<h2>Site navigation</h2>
 				<ul>
-					<li>Home</li>
-					<li>About SW</li>
-					<li>Contact Us</li>
-					<li>View Products</li>
-					<li>Privacy Policy</li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About SW</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">View Products</a></li>
+					<li><a href="#">Privacy Policy</a></li>
 				</ul>
 			</div>
 			<div class="footer-cat">
-				<p>Product categories</p>
+				<h2>Product categories</h2>
 				<ul>
-					<li>Shoes</li>
-					<li>Helmets</li>
-					<li>Pants</li>
-					<li>Tops</li>
-					<li>Balls</li>
-					<li>Equipment</li>
-					<li>Training Gear</li>
+					<li><a href="#">Shoes</a></li>
+					<li><a href="#">Helmets</a></li>
+					<li><a href="#">Pants</a></li>
+					<li><a href="#">Tops</a></li>
+					<li><a href="#">Balls</a></li>
+					<li><a href="#">Equipment</a></li>
+					<li><a href="#">Training Gear</a></li>
 				</ul>
 			</div>
 			<div class="footer-contact">
-				<p>Contact Sports Warehouse</p>
-				<ul>
-					<li><i class="fab fa-facebook-f"></i>Facebook</li>
-					<li><i class="fab fa-twitter"></i>Twitter</li>
-					<li><i class="fab fa-telegram-plane"></i>Other
-						<ul>
-							<li>Oline form</li>
-							<li>Email</li>
-							<li>Phone</li>
-							<li>Address</li>
-						</ul>
-					</li>
-				</ul>
+				<h2>Contact Sports Warehouse</h2>
+				<a class="facebook" href=""><i class="fab fa-facebook-f fa-4x"></i><p>Facebook</p></a>
+				<a class="twitter" href=""><i class="fab fa-twitter fa-4x"></i><p>Twitter</p></a>
+				<div class="other">
+					<a href=""><i class="fab fa-telegram-plane fa-4x"></i><p>Other</p></a>
+					<ul class="othermenu">
+						<li><a href="#">Online form</a></li>
+						<li><a href="#">Email</a></li>
+						<li><a href="#">Phone</a></li>
+						<li><a href="#">Address</a></li>
+					</ul>
+				</div>
 			</div>
-			<p>&#169;Copyright 2020 Sports Warehouse. All rights reserved. Website made by Awesomesauce Design.</p>
 		</footer>
+		<div class="copyright">
+			<p>&#169;Copyright 2020 Sports Warehouse. <span>All rights reserved. </span><span>Website made by Awesomesauce Design.</span></p>
+		</div>
 		</div>
 	</div>
+    <script src="js/jquery-3.3.1.min.js"></script>
 </body>
 </html>
