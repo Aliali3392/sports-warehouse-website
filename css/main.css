@@ -253,7 +253,6 @@ html {
     color: #fff;
     font-size: 1.8rem;
 }
-/*=========================*/
 .products a {
     float: left;
     width: 45.3125%;
@@ -281,7 +280,6 @@ html {
     display:table-cell;
     vertical-align: bottom;
 }
-/*==============================*/
 .items figcaption .original {
     font-size: 2.2rem;
     color: #ff9e61;
@@ -472,9 +470,9 @@ footer {
 .copyright span {
     display: block;
 }
-/*======================================/
-*----------------Desktop----------------
-*======================================*/
+/*========================================*/
+/*----------------Desktop----------------*/
+/*======================================*/
 @media screen and (min-width:550px) {
     .wrapper {
         width: 1200px;
@@ -679,6 +677,9 @@ footer {
     .items img {
         width: auto;
         height: auto;
+    }
+    #boots {
+        margin-top: 40px;
     }
     .items figcaption {
         top: 190px;
