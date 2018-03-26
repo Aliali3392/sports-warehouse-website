@@ -45,23 +45,30 @@ html {
 }
 .wrapper {
     width: 100%;
+<<<<<<< HEAD
     overflow: hidden;
+=======
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
 }
 /*top nav*/
 .topnav {
     height: 40px;
     background-color: #3ec0f1;
 }
+<<<<<<< HEAD
 .topnav a:first-child {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4rem;
     text-decoration: none;
     color: #fff;
 }
+=======
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
 .topnav ul li a {
     color: #fff;
     text-decoration: none;
 }
+<<<<<<< HEAD
 .topnav #menu i {
     float: left;
 }
@@ -74,6 +81,11 @@ html {
     margin-left: 3.125%;
     font-size: 1.9rem;
     margin-right: 10px;
+=======
+.fa-bars {
+    margin-top: 10px;
+    margin-left: 3.125%;
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
 }
 .nav-right {
     position: absolute;
@@ -95,6 +107,7 @@ html {
     line-height: 30px;
     text-align: center;
 }
+<<<<<<< HEAD
 .fa-shopping-cart {
     font-size: 1.4rem;
 }
@@ -112,6 +125,16 @@ html {
 }
 .fa-lock {
     font-size: 1.4rem;
+=======
+/*top nav expanded*/
+.menubar {
+    position: relative;
+    padding: 40px 10px 0 10px;
+    width: 100%;
+    height: 330px;
+    background-color: #3ec0f1;
+    display: none;
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
 }
 .nav-left {
     display: block;
@@ -131,9 +154,18 @@ html {
     font-size: 1.4rem;
     padding-left: 20px; 
 }
+<<<<<<< HEAD
 .fa-circle {
     margin-right: 10px;
     font-size: 1.2rem;
+=======
+.nav-left ul li::before {
+    content: "○";
+    display: inline-block;
+    font-size: 2rem;
+    margin-right: 1rem;
+    line-height: 40px;
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
 }
 .login {
     position: absolute;
@@ -188,7 +220,10 @@ html {
     outline:none;
 }
 .search .button {
+<<<<<<< HEAD
     position: relative;
+=======
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
     float: left;
     width: 40px;
     height: 40px;
@@ -198,12 +233,15 @@ html {
     text-align: center;
     margin-left: 10px;
 }
+<<<<<<< HEAD
 .fa-search {
     position: absolute;
     font-size: 1.6rem;
     top:12px;
     left: 12px;
 }
+=======
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
 /*category nav*/
 .categorynav {
     float: left;
@@ -305,9 +343,12 @@ html {
 .items figcaption p {
     margin-top: 6%;
 }
+<<<<<<< HEAD
 .items .wrap {
     display: block;
 }
+=======
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
 /*brands logo*/
 .brandslogo {
     float: left;
@@ -401,13 +442,22 @@ footer {
 }
 .footer-contact a {
     float: left;
+<<<<<<< HEAD
     width: 80px;
     height: 80px;
+=======
+    width: 65px;
+    height: 65px;
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
     border-radius: 50%;
     border: solid 1px #fff;
     text-align: center;
     margin: 25px 0 65px 3.125%;
+<<<<<<< HEAD
     padding-top: 20px;
+=======
+    padding-top: 13px;
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
     text-decoration: none;
     color: #fff;
 }
@@ -487,9 +537,12 @@ footer {
         width: 100%;
         height: 50px;
     }
+<<<<<<< HEAD
     #menu {
         display: none;
     }
+=======
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
     .menubar {
         display: inline-block;
         padding: 0;
@@ -497,6 +550,7 @@ footer {
         width: auto;
         height: 50px;
     }
+<<<<<<< HEAD
     .fa-circle {
         display: none;
     }
@@ -505,6 +559,8 @@ footer {
          margin-left: 50px;
          width: auto;
     }
+=======
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
     .nav-left ul {
         margin-top: 5px;
     }
@@ -526,6 +582,7 @@ footer {
         content: "";
     }
     .login {
+<<<<<<< HEAD
         position: static;
         float: left;
         padding-top: 5px;
@@ -539,6 +596,18 @@ footer {
         position: static;
         float: right;
         margin-right: 100px;
+=======
+        padding-top: 5px;
+        margin-left: 820px;
+        border: none;
+    }
+    .nav-right {
+        padding-top: 10px;
+        top: 0;
+        position: static;
+        float: right;
+        margin-right: 50px;
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
     }
     /*logo*/
     .logo {
@@ -559,7 +628,11 @@ footer {
         display: inline-block;
         margin-top: 45px;
         float: right;
+<<<<<<< HEAD
         margin-right: 100px;
+=======
+        margin-right: 50px;
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
     }
     .search input {
         width: 220px;
@@ -595,12 +668,16 @@ footer {
         margin-left: 100px;
         width: 1000px;
         height: 300px;
+<<<<<<< HEAD
         position: relative;
+=======
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
     }
     .slideshow figure {
         position: relative;
     }
     #slide1 {
+<<<<<<< HEAD
         position: absolute;
         display: none;
     }
@@ -610,6 +687,14 @@ footer {
     }
     #slide3 {
         position: absolute;
+=======
+        display: none;
+    }
+    #slide2 {
+        /*display: none;*/
+    }
+    #slide3 {
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
         display: none;
     }
     .indication {
@@ -621,21 +706,31 @@ footer {
         border: solid 3px #fff;
         position: absolute;
         top: -3px;
+<<<<<<< HEAD
         right: -152px;
+=======
+        right: -3px;
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
     }
     .indication p:nth-child(1) {
         font-size: 1.8rem;
         margin-top: 40px;
         margin-left: 80px;
         text-align: center;
+<<<<<<< HEAD
         color: #fff;
+=======
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
     }
     .indication p:nth-child(2) {
         margin-top: 10px;
         margin-left: 80px;
         font-size: 4rem;
         text-align: center;
+<<<<<<< HEAD
         color: #fff;
+=======
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
     }
     .indication a {
         text-decoration: none;
@@ -677,9 +772,12 @@ footer {
     .items figcaption {
         top: 190px;
     }
+<<<<<<< HEAD
     .items .wrap {
     display: inline;
     }
+=======
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
     /*brand logo*/
     .brandslogo h2 {
         margin-top: 42px;
@@ -713,7 +811,10 @@ footer {
         margin-top: 50px;
         height: 300px;
         background-color: #fff;
+<<<<<<< HEAD
         margin-bottom: 10px;
+=======
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
     }
     .footer-nav {
         width: 420px;
@@ -786,7 +887,11 @@ footer {
 
     /*copyright*/
     .copyright p {
+<<<<<<< HEAD
         margin: 0;
+=======
+        margin-left: 0;
+>>>>>>> 70a9ff7dad1b36d51e0d76bd4cb09512c56915f0
     }
     .copyright span {
         display: inline;
