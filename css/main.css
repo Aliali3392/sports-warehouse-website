@@ -17,30 +17,30 @@ html {
     line-height: 0;
 }
 .lightblue{
-    color: #3ec0f1;
+    color: #00aced;
 }
 .midblue {
-    color: #2f859f;
+    color: #059dd7;
 }
 .darkblue {
-    color: #536f77;
+    color: #002936;
 }
 .grey {
-    color: #7d7d7d;
+    color: #646464;
 }
 .orange {
-    color: #ff9e61;
+    color: #ff690c;
 }
 .white {
     color: #fff;
 }
-.slideshow {
+#slideshow {
     display: none;
 }
 .one-second.column {
     width: 45.3125%;
 }
-.offset-by-one-third.column {
+.gap.column {
     margin-left: 3.125%;
 }
 .wrapper {
@@ -50,7 +50,7 @@ html {
 /*top nav*/
 .topnav {
     height: 40px;
-    background-color: #3ec0f1;
+    background-color: #00aced;
 }
 .topnav a:first-child {
     font-family: 'Open Sans', sans-serif;
@@ -88,7 +88,7 @@ html {
 .nav-right ul li:last-child {
     width: 80px;
     height: 30px;
-    background-color: #2f859f;
+    background-color: #059dd7;
     border-radius: 15px;
     line-height: 30px;
     text-align: center;
@@ -103,7 +103,7 @@ html {
     padding: 20px 10px 0 10px;
     width: 100%;
     height: 290px;
-    background-color: #3ec0f1;
+    background-color: #00aced;
     overflow: hidden;
     z-index: 5;
     display: none;
@@ -188,7 +188,7 @@ html {
     float: left;
     width: 40px;
     height: 40px;
-    background-color: #536f77;
+    background-color: #002936;
     border-radius: 50%;
     line-height: 48px;
     text-align: center;
@@ -207,7 +207,7 @@ html {
     width: 100%;
     height: 210px;
     font-size: 1.6rem;
-    background-color: #536f77;
+    background-color: #002936;
 }
 .categorynav ul {
     overflow: hidden;
@@ -217,7 +217,7 @@ html {
     height: 40px;
     width: 45.3125%;
     border-radius: 5px;
-    border:solid 1px #3ec0f1;
+    border:solid 1px #00aced;
     margin-left: 3.125%;
     margin-top: 10px;
     list-style: none;
@@ -230,10 +230,10 @@ html {
     float: right;
     margin-right: 10px;
     line-height: 40px;
-    color: #3ec0f1;
+    color: #00aced;
 }
 .categorynav ul a:hover {
-    background-color: #3ec0f1;
+    background-color: #00aced;
     color: #fff;
 }
 /*products*/
@@ -244,7 +244,7 @@ html {
     float: left;
     margin-top: 27px;
     margin-left: 3.125%;
-    background-color: #ff9e61;
+    background-color: #ff690c;
     height: 46px;
     width: 100%;
     border-radius: 23px 0 0 23px;
@@ -275,35 +275,119 @@ html {
     text-align: center;
     width: 100%;
     font-size: 1.5rem;
-    color: #2f859f;
+    color: #059dd7;
     height: 100px;
     display:table-cell;
     vertical-align: bottom;
 }
 .items figcaption .original {
     font-size: 2.2rem;
-    color: #ff9e61;
+    color: #ff690c;
 }
 .items figcaption .price {
     font-size: 2.2rem;
-    color: #7d7d7d;
+    color: #646464;
 }
 .items figcaption span {
     font-size: 1.2rem;
     text-transform: uppercase;
-    color: #7d7d7d;
+    color: #646464;
 }
 .items figcaption b {
     font-weight: normal;
     font-size: 1.5rem;
     text-decoration: line-through;
-    color: #7d7d7d;
+    color: #646464;
 }
 .items figcaption p {
     margin-top: 6%;
 }
 .items .wrap {
     display: block;
+}
+.contactus {
+    float: left;
+    width: 100%;
+}
+.contactus h2 {
+    float: left;
+    margin-top: 20px;
+    margin-left: 3.125%;
+    background-color: #ff690c;
+    height: 46px;
+    width: 100%;
+    border-radius: 23px 0 0 23px;
+    line-height: 46px;
+    padding-left: 30px;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.contactus p {
+    font-weight: 300;
+    float: left;
+    margin-top: 20px;
+    margin-left: 3.125%;
+    font-size: 1.6rem;
+    color: #646464;
+}
+.contactus form {
+    float: left;
+    width: 93.75%;
+    margin-top: 20px;
+    margin-left: 3.125%;
+}
+.contactus fieldset {
+    border-radius: 10px;
+    background-color: #7fd5f6;
+    border: solid 1px #059dd7; 
+}
+.contactus fieldset p {
+    margin-top: 20px;
+    width: 100%;
+}
+.contactus fieldset p:first-child {
+    margin-top: 10px;
+}
+.contactus fieldset label {
+    font-size: 1.4rem;
+    float: left;
+    width: 120px;
+    text-align: right;
+}
+.contactus fieldset input {
+    float: left;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: 170px;
+    border: solid 1px #059dd7; 
+    outline: none;
+    text-align: 5%;
+}
+.contactus fieldset textarea {
+    border-radius: 10px;
+    margin: 0 20px 10px 20px;
+    width: 170px;
+    border: solid 1px #059dd7; 
+    outline: none;
+}
+.contactus .formbutton p{
+    margin-left: 0;
+    margin-top: 10px;
+}
+.contactus .formbutton input{
+    background-color: #7fd5f6;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.4rem;
+    border-radius: 17px;
+    font-weight: 300;
+    color: #646464;
+    border: solid 1px #059dd7; 
+    outline: none;
 }
 /*brands logo*/
 .brandslogo {
@@ -313,7 +397,7 @@ html {
     float: left;
     margin-top: 18px;
     margin-left: 3.125%;
-    background-color: #ff9e61;
+    background-color: #ff690c;
     height: 46px;
     width: 100%;
     border-radius: 23px 0 0 23px;
@@ -328,20 +412,20 @@ html {
     margin-top: 20px;
     margin-left: 3.125%;
     font-size: 1.6rem;
-    color: #7d7d7d;
+    color: #646464;
 }
 .brandslogo a {
     text-decoration: none;
-    color: #3ec0f1;
+    color: #00aced;
 }
 .brandslogo a:hover {
-    color: #536f77;
+    color: #002936;
 }
 .partnerships {
     margin-top: 15px;
     float: left;
     width: 100%;
-    background-color: #536f77;
+    background-color: #002936;
     padding: 0 3.125% 3.125% 3.125%;
     display: table-cell;
 }
@@ -355,7 +439,7 @@ html {
 /*footer*/
 footer {
     width: 100%;
-    background-color: #3ec0f1;
+    background-color: #00aced;
     color: #fff;
     margin-top: 20px;
     float: left;
@@ -426,30 +510,25 @@ footer {
 /*other menu*/
 .footer-contact .othermenu {
     display: block;
-    float: right;
     width: 100%;
-    line-height: 40px;
-    color: #fff;
+    color: #002936;
     list-style: none;
-    margin-top: -40px;
     display: none;
 }
 .footer-contact .othermenu a {
     width: 100%;
-    height: 40px;
+    height: 20px;
     border-radius: 0;
     border: transparent;
     text-align: center;
     margin: 0 auto;
     padding-top: 0;
     text-decoration: none;
-    color: #fff;
+    color: #002936;
     font-size: 1.4rem;
 }
 .footer-contact .othermenu li {
     width: 100%;
-    height: 40px;
-    border-bottom: solid 1px #fff;
     font-size: 1.4rem;
 }
 .footer-contact .othermenu li:last-child {
@@ -460,7 +539,7 @@ footer {
     float: left;
     width: 100%;
     font-size: 1.2rem;
-    color: #7d7d7d;
+    color: #646464;
     text-align: center;
 }
 .copyright p {
@@ -586,8 +665,9 @@ footer {
         display: none;
     }
     /*slideshow*/
-    .slideshow {
+    #slideshow {
         float: left;
+        position: relative;
         display: block;
         margin-top: 20px;
         margin-left: 100px;
@@ -595,26 +675,18 @@ footer {
         height: 300px;
         position: relative;
     }
-    .slideshow figure {
-        position: relative;
-    }
-    #slide1 {
+    #slideshow figure {
         position: absolute;
-        display: none;
+        z-index: 1;
     }
-    #slide2 {
-        position: absolute;
-        /*display: none;*/
-    }
-    #slide3 {
-        position: absolute;
-        display: none;
+    #slideshow figure.active {
+        z-index: 3;
     }
     .indication {
         font-weight: 300;
         width: 300px;
         height: 303px;
-        background-color: #3ec0f1;
+        background-color: #00aced;
         border-radius: 150px 0 0 150px;
         border: solid 3px #fff;
         position: absolute;
@@ -641,7 +713,7 @@ footer {
         text-align: center;
     }
     .indication a p:first-child {
-        background-color: #2f859f;
+        background-color: #059dd7;
         margin-top: 20px;
         width: 130px;
         height: 36px;
@@ -664,7 +736,7 @@ footer {
         border: solid 1px #fffaf7;
     }
     .products a:hover {
-        box-shadow: 1px 1px 4px #ff9e61;
+        box-shadow: 1px 1px 4px #ff690c;
     }
     .products #firsta {
         margin-left: 110px;
@@ -727,7 +799,7 @@ footer {
     .footer-nav {
         width: 420px;
         height: 300px;
-        background-color: #3ec0f1;
+        background-color: #00aced;
         float: left;
 
     }
@@ -744,7 +816,7 @@ footer {
         height: 300px;
         display: block;
         float: left;
-        background-color: #ff9e61;
+        background-color: #ff690c;
     }
     .footer-cat h2 {
         margin-top: 20px;
@@ -774,7 +846,7 @@ footer {
     .footer-contact {
         width: 420px;
         height: 300px;
-        background-color: #3ec0f1;
+        background-color: #00aced;
         float: right;
     }
     .footer-contact h2 {
@@ -792,12 +864,42 @@ footer {
         float: left;
     }
     /*other menu*/
-
+    #firstother {
+        margin-top: 20px;
+        float: right;
+    }
     /*copyright*/
     .copyright p {
         margin: 0;
     }
     .copyright span {
         display: inline;
+    }
+    /*contact us*/
+    .contactus {
+        width: 1000px;
+        margin-left: 100px;
+    }
+    .contactus h2, .contactus p {
+        margin-left: 0;
+    }
+    .contactus form {
+        margin-left: 0;
+    }
+    .contactus fieldset {
+        width: 1000px;
+    }
+    .contactus fieldset label {
+        width: 230px;
+        margin-top: 7px;
+    }
+    .contactus fieldset input {
+        height: 35px;
+        width: 180px;
+        border-radius: 17px;
+    }
+    .contactus fieldset textarea {
+        width: 400px;
+        border-radius: 17px;
     }
 }
