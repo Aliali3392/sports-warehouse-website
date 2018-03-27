@@ -20,27 +20,14 @@ $("#other").click(function () {
 });
 
 //slideshow
-function slideSwitch(){
-    var $active = $('#slideshow figcaption.active');
-    var $next = $active.next().length ? $active.next() : $('#slideshow figcaption:first');
-    $active.addClass('last-active');
-    $next.css({zIndex: 0.0})
-        .addClass('active')
-        .animate({zIndex: 3.0}, 1000, function(){
-            $active.removeClass('active last-active');
-        });
-}
+var slides = document.querySelectorAll('#slideshow .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,3000);
 
-$(function(){
-    var clear = setInterval(slideSwitch, 3000);
-    $('#slideshow img').hover(
-    function(){
-        clearInterval(clear);
-    },
-    function(){
-        clear = setInterval(slideSwitch, 3000);
-    });
-});
-
+function nextSlide() {
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+} 
 
 

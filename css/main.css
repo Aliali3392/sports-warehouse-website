@@ -363,6 +363,7 @@ html {
     border: solid 1px #059dd7; 
     outline: none;
     text-align: 5%;
+    padding-left: 15px;
 }
 .contactus fieldset textarea {
     border-radius: 10px;
@@ -370,6 +371,8 @@ html {
     width: 170px;
     border: solid 1px #059dd7; 
     outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .contactus .formbutton p{
     margin-left: 0;
@@ -675,13 +678,15 @@ footer {
         height: 300px;
         position: relative;
     }
-    #slideshow figure {
+    #slideshow .slide {
         position: absolute;
         z-index: 1;
+        opacity: 0;
     }
-    #slideshow figure.active {
+    #slideshow .showing {
+        opacity: 1;
         z-index: 3;
-    }
+    } 
     .indication {
         font-weight: 300;
         width: 300px;
