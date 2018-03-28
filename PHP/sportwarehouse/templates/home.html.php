@@ -1,7 +1,7 @@
 <!-- This is the slideshow -->
             <div class="slideshow" id="slideshow">
                 <figure class="slide showing">
-                    <img src="images/sports-balls.png" alt="Sports balls">
+                    <img src="images/sports-balls.png" width="851" height="300" alt="Sports balls">
                     <figcaption  class="indication">
                         <p>View our brand <br>new range of</p>
                         <p>Sports <br>balls</p>
@@ -9,7 +9,7 @@
                     </figcaption>
                 </figure>
                 <figure class="slide">
-                    <img src="images/protective-helmets.png" alt="Protective helmets">
+                    <img src="images/protective-helmets.png" width="851" height="300" alt="Protective helmets">
                     <figcaption class="indication">
                         <p>Get protected with <br>the new range of</p>
                         <p>Protective <br>helmets</p>
@@ -17,7 +17,7 @@
                     </figcaption>
                 </figure>
                 <figure class="slide">
-                    <img src="images/training-gear.png" alt="Train gear">
+                    <img src="images/training-gear.png" width="851" height="300" alt="Train gear">
                     <figcaption class="indication">
                         <p>Get ready to race <br>with our professional</p>
                         <p>Training <br>gear</p>

@@ -23,23 +23,22 @@
                 <div class="menubar" id="menubar">
                     <div class="nav-left">
                         <ul>
-                            <li><i class="far fa-circle"></i><a href="home.php">Home</a></li>
-                            <li><i class="far fa-circle"></i><a href="#">About SW</a></li>
-                            <li><i class="far fa-circle"></i><a href="contactus.php">Contact Us</a></li>
-                            <li><i class="far fa-circle"></i><a href="#">View Products</a></li>
+                            <li><i class="fas fa-lock white"></i><a href="#">Login</a></li>
+                            <li><i class="far fa-circle white"></i><a href="home.php">Home</a></li>
+                            <li><i class="far fa-circle white"></i><a href="#">About SW</a></li>
+                            <li><i class="far fa-circle white"></i><a href="contactus.php">Contact Us</a></li>
+                            <li><i class="far fa-circle white"></i><a href="#">View Products</a></li>
                         </ul>
                     </div>
-                    <div class="login">
-                        <i class="fas fa-lock white"></i>
-                        <a href="#">Login</a>
-                    </div>
                 </div>
-                <div class="nav-right">
-                    <ul>
-                        <i class="fas fa-shopping-cart white"></i>
-                        <li><a href="#">View Cart</a></li>
-                        <li><p>0 items</p></li>
-                    </ul>
+                <div class="login">
+                    <i class="fas fa-lock white"></i>
+                    <a href="#">Login</a>
+                </div>         
+                <div class="cart">
+                    <i class="fas fa-shopping-cart white"></i>
+                    <a href="#">View Cart</a>
+                    <p>0 items</p>
                 </div>
             </nav>
     <!-- This is the header -->             
@@ -56,13 +55,13 @@
                 </div>
                 <div class="categorynav">
                     <ul class="clearfix">
-                        <a href="#"><li>Shoes<i class="fas fa-angle-right"></i></li></a>
-                        <a href="#"><li>Helmets<i class="fas fa-angle-right"></i></li></a>
-                        <a href="#"><li>Pants<i class="fas fa-angle-right"></i></li></a>
-                        <a href="#"><li>Tops<i class="fas fa-angle-right"></i></li></a>
-                        <a href="#"><li>Balls<i class="fas fa-angle-right"></i></li></a>
-                        <a href="#"><li>Equipment<i class="fas fa-angle-right"></i></li></a>
-                        <a href="#"><li>Traning gear<i class="fas fa-angle-right"></i></li></a>
+                        <a href="#"><li>Shoes<i class="fas fa-angle-right white"></i></li></a>
+                        <a href="#"><li>Helmets<i class="fas fa-angle-right white"></i></li></a>
+                        <a href="#"><li>Pants<i class="fas fa-angle-right white"></i></li></a>
+                        <a href="#"><li>Tops<i class="fas fa-angle-right white"></i></li></a>
+                        <a href="#"><li>Balls<i class="fas fa-angle-right white"></i></li></a>
+                        <a href="#"><li>Equipment<i class="fas fa-angle-right white"></i></li></a>
+                        <a href="#"><li>Traning gear<i class="fas fa-angle-right white"></i></li></a>
                     </ul>
                 </div>
             </header>
@@ -95,10 +94,10 @@
             </div>
             <div class="footer-contact">
                 <h2>Contact Sports Warehouse</h2>
-                <a class="facebook" href=""><i class="fab fa-facebook-f fa-4x"></i><p>Facebook</p></a>
-                <a class="twitter" href=""><i class="fab fa-twitter fa-4x"></i><p>Twitter</p></a>
+                <a class="facebook" href=""><i class="fab fa-facebook-f fa-4x white"></i><p>Facebook</p></a>
+                <a class="twitter" href=""><i class="fab fa-twitter fa-4x white"></i><p>Twitter</p></a>
                 <div class="other" id="other">
-                    <a href=""><i class="fab fa-telegram-plane fa-4x"></i><p>Other</p></a>
+                    <a href=""><i class="fab fa-telegram-plane fa-4x white"></i><p>Other</p></a>
                     <ul class="othermenu clearfix" id="othermenu">
                         <li class="clearfix" id="firstother"><a href="#">Online form</a></li>
                         <li class="clearfix"><a href="#">Email</a></li>

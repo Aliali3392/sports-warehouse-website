@@ -53,7 +53,7 @@ html {
     background-color: #00aced;
 }
 .topnav a:first-child {
-    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
     font-size: 1.4rem;
     text-decoration: none;
     color: #fff;
@@ -75,17 +75,20 @@ html {
     font-size: 1.9rem;
     margin-right: 10px;
 }
-.nav-right {
+.cart {
     position: absolute;
     top: 5px;
     right: 3.125%; 
+    font-size: 1.4rem;
 }
-.nav-right ul li {
+.cart a, .cart p {
+    text-decoration: none;
+    color: #fff;
     font-size: 1.4rem;
     display: inline-block;
     margin-left: 10px;
 }
-.nav-right ul li:last-child {
+.cart p {
     width: 80px;
     height: 30px;
     background-color: #059dd7;
@@ -95,21 +98,19 @@ html {
 }
 .fa-shopping-cart {
     font-size: 1.4rem;
+    color: #fff;
 }
 /*top nav expanded*/
 .menubar {
     top: 10px;
     position: relative;
-    padding: 20px 10px 0 10px;
+    padding: 0 10px 0 10px;
     width: 100%;
     height: 290px;
     background-color: #00aced;
     overflow: hidden;
     z-index: 5;
     display: none;
-}
-.fa-lock {
-    font-size: 1.4rem;
 }
 .nav-left {
     display: block;
@@ -120,7 +121,6 @@ html {
 .nav-left ul {
     color: #fff;
     list-style: none;
-    margin-top: 50px;
 }
 .nav-left ul li {
     width: 100%;
@@ -129,31 +129,16 @@ html {
     font-size: 1.4rem;
     padding-left: 20px; 
 }
+.fa-lock {
+    margin-right: 10px;
+    font-size: 1.4rem;    
+}
 .fa-circle {
     margin-right: 10px;
     font-size: 1.2rem;
 }
 .login {
-    position: absolute;
-    padding-top: 10px;
-    left: 10px;
-    color: #fff;
-    height: 50px;
-    width: 100%;
-    line-height: 40px;
-    font-size: 1.4rem;
-    border-bottom: solid 1px #fff;
-}
-.login i {
-    float: left;
-    margin-top: 13px;
-    margin-left: 20px;
-}
-.login a {
-    float: left;
-    padding-left: 10px;
-    text-decoration: none;
-    color: #fff;
+    display: none;
 }
 /*logo*/
 .logo {
@@ -199,6 +184,7 @@ html {
     font-size: 1.6rem;
     top:12px;
     left: 12px;
+    color: #fff;
 }
 /*category nav*/
 .categorynav {
@@ -363,7 +349,6 @@ html {
     width: 170px;
     border: solid 1px #059dd7; 
     outline: none;
-    text-align: 5%;
     padding-left: 15px;
 }
 .contactus fieldset textarea {
@@ -623,21 +608,28 @@ footer {
         margin-left: 15px; 
     }
     .nav-left ul li:first-child {
-        margin-left: 50px;
+        display: none;
     }
-    .nav-left ul li::before {
-        content: "";
+    .nav-left ul li:nth-child(2) {
+        margin-left: 50px;        
     }
     .login {
         position: static;
         float: left;
         padding-top: 5px;
         margin-left: 820px;
-        margin-top: -55px;
-        border: none;
-        width: auto;
+        margin-top: -53px;
+        display: block;
+        color: #fff;
+        height: 50px;
+        line-height: 40px;
+        font-size: 1.4rem;
     }
-    .nav-right {
+    .login a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .cart {
         margin-top: -42px;
         position: static;
         float: right;
