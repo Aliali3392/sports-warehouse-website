@@ -1,66 +1,37 @@
 <?php
 	$title = "Contact Us";
+	
 	ob_start();
-	if (isset($_POST["submitButton"])) {
-		$redirect = processForm([]);
 
-		//sent mail
-		// require 'PHPMailer-master/PHPMailerAutoload.php';    
-		// $mail = new PHPMailer();
-		// $mail = new PHPMailer();
-		// $mail->isSMTP();
-		// $mail->Host = 'smtp.sendgrid.net';
-		// $mail->SMTPAuth = true;
-		// $mail->Username = 'apikey';
-		// $mail->Password = '';
-		// $mail->Port = 25;
-		// $mail->From = $_POST["email"];
-		// $mail->addReplyTo($_POST["email"], $_POST["firstname"]);
-		// $mail->addAddress("***REMOVED***", "Sports Warehouse");
-		// $mail->FromName = $_POST["firstname"];
-		// $mail->Subject = "Sports Warehouse Questions";
-		// $mail->Body = $_POST["question"]; 
-		// if (!$mail->send()) {       
-		// 	$message = $mail->ErrorInfo;   
-		// }    
-		
-	}
-	else {
-		$redirect = false;
-		$missingFields = [];
 		include "templates/contactus.html.php";
-	}
 
-	// check the form for missing fields
-	function processForm() {
-		$requiredFields = ["firstName", "lastName", "phone", "email", "question"];
-		$missingFields = [];
-		foreach ($requiredFields as $requiredField) {
-			if (!isset($_POST[$requiredField]) || !$_POST[$requiredField])
-			{
-				$missingFields[] = $requiredField;
-			}
-		}
+		if (isset($_POST["submitButton"])) {
 
-		if ($missingFields) {
-			include "templates/contactus.html.php";
-			$redirect = false;
-		}
-		else {
-			$redirect = true;
-		}
-		return $redirect;
-	}
+			//sent mail
+			require 'PHPMailer-master/PHPMailerAutoload.php';    
+			$mail = new PHPMailer();
+			$mail->isSMTP();
+			$mail->Host = 'smtp.sendgrid.net';
+			$mail->SMTPAuth = true;
+			$mail->Username = 'apikey';
+			$mail->Password = '';
+			$mail->Port = 25;
+			$mail->From = $_POST["email"];
+			$mail->FromName = $_POST["firstName"]." ".$_POST["lastName"];
+			$mail->addReplyTo($_POST["email"], $_POST["firstName"]);
+			$mail->addAddress("Please input Your email", "Sports Warehouse");
+			$mail->Subject = "Sports Warehouse Questions";
+			$mail->Body = "Email: ".$_POST["email"]."\n"."Tel: ".$_POST["phone"]."\n"."Question: ".$_POST["question"]."\n"."From: ".$_POST["firstName"]." ".$_POST["lastName"]; 
 
-		function validateField($fieldName, $missingFields) {
-			if (in_array($fieldName, $missingFields)) {
-				return ' class="error"';
-			}
-		}
-
-		function setValue($fieldName) {
-			if (isset($_POST[$fieldName])) {
-				return $_POST[$fieldName];
+			if (!$mail->send()) {  
+				$output = ob_get_clean();
+     			ob_start();
+				include "templates/error.html.php";   
+			}    
+			else {
+				$output = ob_get_clean();
+     			ob_start();
+				include "templates/confirmation.html.php";
 			}
 		}
 		

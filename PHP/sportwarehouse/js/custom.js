@@ -1,3 +1,13 @@
+//slideshow
+var slides = $("#slideshow figure");
+var currentSlide = 0;
+var slideInterval = setInterval(slideshow,5000);
+function slideshow() {
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+
 //menubar
 jQuery(document).ready(function($){
     $("#menu").on("click", function(){
@@ -18,16 +28,3 @@ $("#other").click(function () {
         return false;
     }
 });
-
-//slideshow
-var slides = document.querySelectorAll('#slideshow .slide');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,3000);
-
-function nextSlide() {
-    slides[currentSlide].className = 'slide';
-    currentSlide = (currentSlide+1)%slides.length;
-    slides[currentSlide].className = 'slide showing';
-} 
-
-
