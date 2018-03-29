@@ -43,20 +43,26 @@
                     </figure>
                 </a>    
                 <a href="#">            
-                    <figure class="items">                  
-                        <img src="images/products/skate-helmet.png" alt="skate helmet">
+                    <figure class="items">  
+                        <div class="item-image">                
+                            <img src="images/products/skate-helmet.png" alt="skate helmet">
+                        </div>
                         <figcaption><span class="price">&#36;70.00</span><p>Pro-tec Classic Skate Helmet</p></figcaption>                   
                     </figure>
                 </a>
                 <a href="#">
-                    <figure class="items">                  
-                        <img src="images/products/water-bottle.png" alt="water bottle">
+                    <figure class="items"> 
+                        <div class="item-image">                 
+                            <img src="images/products/water-bottle.png" alt="water bottle">
+                        </div>
                         <figcaption><span class="original">&#36;15.00 </span><span class="wrap">was <b class="current">&#36;17.50</b></span><p>Nike Sport 600ml Water Bottle</p></figcaption>                   
                     </figure>
                 </a>
                 <a href="#">
                     <figure class="items">
-                        <img src="images/products/boxing-gloves.png" alt="boxing gloves">
+                        <div class="item-image">
+                            <img src="images/products/boxing-gloves.png" alt="boxing gloves">
+                        </div>
                         <figcaption><span class="price">&#36;79.95</span><p>Sting ArmaPlus Boxing Gloves</p></figcaption>
                     </figure>
                 </a>

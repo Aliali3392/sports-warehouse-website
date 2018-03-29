@@ -1,6 +1,6 @@
 //slideshow
 //if javascripts is not available, just hidden
-$("#slideshow").css("display", "block");
+// $("#slideshow").css("display", "block");
 
 var pauseTime = 4000;
 
@@ -13,14 +13,12 @@ var slideInterval = setTimeout(slideshow,pauseTime);
 var navDots = $("#nav-dots li");
 
 function slideshow() {
-    //slides.eq(currentSlide).toggleClass("showing");
     slides.removeClass("showing");
     currentSlide = (currentSlide+1)%slides.length;    
     slides.eq(currentSlide).addClass("showing");
 
     navDots.removeClass("active");
     $(navDots[currentSlide]).addClass("active");
-    //navDots[currentSlide].classList.add("active");
 
     slideInterval = setTimeout(slideshow,pauseTime)
 }

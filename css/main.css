@@ -35,6 +35,7 @@ html {
     color: #fff;
 }
 #slideshow {
+    /*display: none !important;*/
     display: none;
 }
 .one-second.column {
@@ -683,6 +684,7 @@ footer {
     }
     /*slideshow*/
     #slideshow {
+        display: block;
         float: left;
         position: relative;
         margin-top: 20px;
@@ -763,7 +765,7 @@ footer {
         display: inline-block;
         background-color: rgba(0, 172, 237, 0.6);
     }
-    .nav-dots .nav-dot:hover {
+    .nav-dots .nav-dot:hover, .active {
         cursor: pointer;
         background-color: rgba(0, 172, 237, 0.8);
     }
@@ -796,16 +798,20 @@ footer {
         width: auto;
         height: auto;
     }
-    /*#boots {
-        margin-top: 40px;
-    }*/
     .items figcaption {
         top: 190px;
         height: auto;
         position: absolute;
     }
     .items .wrap {
-    display: inline;
+        display: inline;
+    }
+    .item-image {
+        height: 190px;
+        line-height: 190px;
+    }
+    .item-image img{
+        vertical-align: middle;
     }
     /*brand logo*/
     .brandslogo h2 {
