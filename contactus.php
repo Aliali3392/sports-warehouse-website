@@ -8,7 +8,7 @@
 		if (isset($_POST["submitButton"])) {
 
 			//sent mail
-			require 'PHPMailer-master/PHPMailerAutoload.php';    
+			require 'php/PHPMailer-master/PHPMailerAutoload.php';    
 			$mail = new PHPMailer();
 			$mail->isSMTP();
 			$mail->Host = 'smtp.sendgrid.net';
@@ -19,9 +19,9 @@
 			$mail->From = $_POST["email"];
 			$mail->FromName = $_POST["firstName"]." ".$_POST["lastName"];
 			$mail->addReplyTo($_POST["email"], $_POST["firstName"]);
-			$mail->addAddress("Please input Your email", "Sports Warehouse");
+			$mail->addAddress("input the service email", "Sports Warehouse");
 			$mail->Subject = "Sports Warehouse Questions";
-			$mail->Body = "Email: ".$_POST["email"]."\n"."Tel: ".$_POST["phone"]."\n"."Question: ".$_POST["question"]."\n"."From: ".$_POST["firstName"]." ".$_POST["lastName"]; 
+			$mail->Body = "Email: ".$_POST["email"]."\n"."Tel: ".$_POST["phone"]."\n"."Question: ".$_POST["question"]."\n"."From: ".$_POST["firstName"]." ".$_POST["lastName"];
 
 			if (!$mail->send()) {  
 				$output = ob_get_clean();

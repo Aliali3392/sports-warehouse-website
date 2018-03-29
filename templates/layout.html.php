@@ -49,7 +49,7 @@
                         <a href="#"><img src="images/sports-warehouse-logo-600.png" alt="sports warehouse logo"></a>
                     </div>
                     <div class="search">
-                        <input type="search" name="" placeholder="Search products">
+                        <input type="search" placeholder="Search products">
                         <a class="button" href="#"><i class="fas fa-search white"></i></a>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
         </div>
         </div>
     </div>
-    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
-    <script src="js/custom.js" type="text/javascript"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>

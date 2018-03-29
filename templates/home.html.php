@@ -24,13 +24,21 @@
                         <a href="#"><p>Shop now</p></a>
                     </figcaption>
                 </figure>
+                <!-- slide nav dots -->
+                <ul class="nav-dots" id="nav-dots">
+                    <li class="nav-dot" id="slide1"></li>
+                    <li class="nav-dot" id="slide2"></li>
+                    <li class="nav-dot" id="slide3"></li>
+                </ul>
             </div>
         <!-- This is the content -->
             <section class="products">
                 <h2>Feature products</h2>               
                 <a href="#" id="firsta">
-                    <figure class="items">                  
-                        <img src="images/products/soccer-ball.png" alt="soccer ball">
+                    <figure class="items">
+                        <div class="item-image">
+                            <img src="images/products/soccer-ball.png" alt="soccer ball">
+                        </div>
                         <figcaption><span class="original">&#36;34.95 </span><span class="wrap">was <b class="current">&#36;46.00</b></span><p>adidas Euro16 Top Soccer Ball</p></figcaption>                   
                     </figure>
                 </a>    
@@ -54,7 +62,9 @@
                 </a>
                 <a href="#">
                     <figure class="items">
-                        <img id="boots" src="images/products/football-boots.png" alt="football boots">
+                        <div class="item-image">
+                            <img id="boots" src="images/products/football-boots.png" alt="football boots">
+                        </div>
                         <figcaption><span class="price">&#36;160.00</span><p>Asics Gel Lethal Tigreor 8 IT Men's FG Boots</p></figcaption>
                     </figure>
                 </a>

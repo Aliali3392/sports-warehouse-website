@@ -53,7 +53,6 @@ html {
     background-color: #00aced;
 }
 .topnav a:first-child {
-    font-family: 'Open Sans', sans-serif;
     font-size: 1.4rem;
     text-decoration: none;
     color: #fff;
@@ -75,17 +74,20 @@ html {
     font-size: 1.9rem;
     margin-right: 10px;
 }
-.nav-right {
+.cart {
     position: absolute;
     top: 5px;
     right: 3.125%; 
+    font-size: 1.4rem;
 }
-.nav-right ul li {
+.cart a, .cart p {
+    text-decoration: none;
+    color: #fff;
     font-size: 1.4rem;
     display: inline-block;
     margin-left: 10px;
 }
-.nav-right ul li:last-child {
+.cart p {
     width: 80px;
     height: 30px;
     background-color: #059dd7;
@@ -95,21 +97,19 @@ html {
 }
 .fa-shopping-cart {
     font-size: 1.4rem;
+    color: #fff;
 }
 /*top nav expanded*/
 .menubar {
     top: 10px;
     position: relative;
-    padding: 20px 10px 0 10px;
+    padding: 0 10px 0 10px;
     width: 100%;
     height: 290px;
     background-color: #00aced;
     overflow: hidden;
     z-index: 5;
     display: none;
-}
-.fa-lock {
-    font-size: 1.4rem;
 }
 .nav-left {
     display: block;
@@ -120,7 +120,6 @@ html {
 .nav-left ul {
     color: #fff;
     list-style: none;
-    margin-top: 50px;
 }
 .nav-left ul li {
     width: 100%;
@@ -129,31 +128,16 @@ html {
     font-size: 1.4rem;
     padding-left: 20px; 
 }
+.fa-lock {
+    margin-right: 10px;
+    font-size: 1.4rem;    
+}
 .fa-circle {
     margin-right: 10px;
     font-size: 1.2rem;
 }
 .login {
-    position: absolute;
-    padding-top: 10px;
-    left: 10px;
-    color: #fff;
-    height: 50px;
-    width: 100%;
-    line-height: 40px;
-    font-size: 1.4rem;
-    border-bottom: solid 1px #fff;
-}
-.login i {
-    float: left;
-    margin-top: 13px;
-    margin-left: 20px;
-}
-.login a {
-    float: left;
-    padding-left: 10px;
-    text-decoration: none;
-    color: #fff;
+    display: none;
 }
 /*logo*/
 .logo {
@@ -199,6 +183,7 @@ html {
     font-size: 1.6rem;
     top:12px;
     left: 12px;
+    color: #fff;
 }
 /*category nav*/
 .categorynav {
@@ -305,6 +290,7 @@ html {
 .items .wrap {
     display: block;
 }
+/*contuct us form*/
 .contactus {
     float: left;
     width: 100%;
@@ -362,7 +348,6 @@ html {
     width: 170px;
     border: solid 1px #059dd7; 
     outline: none;
-    text-align: 5%;
     padding-left: 15px;
 }
 .contactus fieldset textarea {
@@ -391,6 +376,28 @@ html {
     color: #646464;
     border: solid 1px #059dd7; 
     outline: none;
+}
+/*confirmation & error*/
+.confirmation h2, .error h2 {
+    float: left;
+    margin-top: 20px;
+    margin-left: 3.125%;
+    background-color: #ff690c;
+    height: 46px;
+    width: 100%;
+    border-radius: 23px 0 0 23px;
+    line-height: 46px;
+    padding-left: 30px;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.confirmation p, .error p {
+    font-weight: 300;
+    float: left;
+    margin-top: 20px;
+    margin-left: 3.125%;
+    font-size: 1.6rem;
+    color: #646464;
 }
 /*brands logo*/
 .brandslogo {
@@ -600,21 +607,28 @@ footer {
         margin-left: 15px; 
     }
     .nav-left ul li:first-child {
-        margin-left: 50px;
+        display: none;
     }
-    .nav-left ul li::before {
-        content: "";
+    .nav-left ul li:nth-child(2) {
+        margin-left: 50px;        
     }
     .login {
         position: static;
         float: left;
         padding-top: 5px;
         margin-left: 820px;
-        margin-top: -55px;
-        border: none;
-        width: auto;
+        margin-top: -53px;
+        display: block;
+        color: #fff;
+        height: 50px;
+        line-height: 40px;
+        font-size: 1.4rem;
     }
-    .nav-right {
+    .login a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .cart {
         margin-top: -42px;
         position: static;
         float: right;
@@ -671,7 +685,6 @@ footer {
     #slideshow {
         float: left;
         position: relative;
-        display: block;
         margin-top: 20px;
         margin-left: 100px;
         width: 1000px;
@@ -682,10 +695,15 @@ footer {
         position: absolute;
         z-index: 1;
         opacity: 0;
+        -webkit-transition: opacity 2s linear;
+        -moz-transition: opacity 2s linear;
+        -o-transition: opacity 2s linear;
+        transition: opacity 2s linear;
     }
     #slideshow .showing {
-        opacity: 1;
-        z-index: 3;
+
+        opacity: 100;
+        filter: alpha(opacity=100);
     } 
     .indication {
         font-weight: 300;
@@ -726,6 +744,29 @@ footer {
         margin-left: 120px;
         border-radius: 5px;
     }
+    /*slide nav dots*/
+    .nav-dots {
+        width: 100%;
+        bottom: 5px;
+        height: 15px;
+        display: block;
+        position: absolute;
+        text-align: center;
+        z-index: 999;
+    }
+    .nav-dots .nav-dot {
+        width: 15px;
+        height: 15px;
+        margin: 0 4px;
+        border-radius: 100%;
+        border: solid 1px #fff; 
+        display: inline-block;
+        background-color: rgba(0, 172, 237, 0.6);
+    }
+    .nav-dots .nav-dot:hover {
+        cursor: pointer;
+        background-color: rgba(0, 172, 237, 0.8);
+    }
     /*products*/
     .products h2 {
         margin-top: 24px;
@@ -755,9 +796,9 @@ footer {
         width: auto;
         height: auto;
     }
-    #boots {
+    /*#boots {
         margin-top: 40px;
-    }
+    }*/
     .items figcaption {
         top: 190px;
         height: auto;
@@ -906,5 +947,14 @@ footer {
     .contactus fieldset textarea {
         width: 400px;
         border-radius: 17px;
+    }
+    /*confirmation & error*/
+    .confirmation, .error {
+    float: left;
+    width: 1000px;
+    margin-left: 100px;
+    }
+    .confirmation p, .confirmation h2, .error p, .error h2{
+        margin-left: 0;
     }
 }
