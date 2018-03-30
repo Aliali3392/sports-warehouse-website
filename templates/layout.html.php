@@ -54,14 +54,14 @@
                     </div>
                 </div>
                 <div class="categorynav">
-                    <ul class="clearfix">
-                        <a href="#"><li>Shoes<i class="fas fa-angle-right white"></i></li></a>
-                        <a href="#"><li>Helmets<i class="fas fa-angle-right white"></i></li></a>
-                        <a href="#"><li>Pants<i class="fas fa-angle-right white"></i></li></a>
-                        <a href="#"><li>Tops<i class="fas fa-angle-right white"></i></li></a>
-                        <a href="#"><li>Balls<i class="fas fa-angle-right white"></i></li></a>
-                        <a href="#"><li>Equipment<i class="fas fa-angle-right white"></i></li></a>
-                        <a href="#"><li>Traning gear<i class="fas fa-angle-right white"></i></li></a>
+                    <ul>
+                        <li><a href="#">Shoes</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="#">Helmets</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="#">Pants</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="#">Tops</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="#">Balls</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="#">Equipment</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="#">Traning gear</a><i class="fas fa-angle-right white"></i></li>
                     </ul>
                 </div>
             </header>
