@@ -253,14 +253,15 @@ html {
 .products a {
     float: left;
     width: 45.3125%;
-    height: 250px;
+    height: 290px;
     margin-top: 22px;
     margin-left: 3.125%;
     text-align: center;
     text-decoration: none;
 }
 .items {
-    height: 150px;
+    height: 290px;
+    position: relative;
 }
 .items img {
     width: auto;  
@@ -268,14 +269,23 @@ html {
     max-width: 100%;  
     max-height: 100%;
 }
+.item-image {
+    height: 180px;
+    line-height: 180px;
+}
+.item-image img {
+    vertical-align: middle;
+}
 .items figcaption {
+    position: absolute;
+    top: 190px;
     text-align: center;
     width: 100%;
     font-size: 1.5rem;
     color: #059dd7;
     height: 100px;
-    display:table-cell;
-    vertical-align: bottom;
+    /*display:table-cell;*/
+    /*vertical-align: bottom;*/
 }
 .items figcaption .original {
     font-size: 2.2rem;
@@ -724,7 +734,6 @@ footer {
         transition: opacity 2s linear;
     }
     #slideshow .showing {
-
         opacity: 100;
         filter: alpha(opacity=100);
         z-index: 999;
@@ -799,7 +808,6 @@ footer {
     }
     .products a {
         width: 180px;
-        height: 290px;
         padding: 0;
         margin: 22px 0 0 20px;
         border-radius: 5px;
@@ -821,19 +829,11 @@ footer {
         height: auto;
     }
     .items figcaption {
-        top: 190px;
         height: auto;
         position: absolute;
     }
     .items .wrap {
         display: inline;
-    }
-    .item-image {
-        height: 180px;
-        line-height: 180px;
-    }
-    .item-image img{
-        vertical-align: middle;
     }
     /*brand logo*/
     .brandslogo h2 {
