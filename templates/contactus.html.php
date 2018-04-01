@@ -2,7 +2,7 @@
             <section class="contactus">
                 <h2>Contact Us</h2>
                 <p>Please fill out your contact details and your question below and we shall get back to you promptly!</p>
-                    <form action="" method="post">
+                    <form method="post">
                         <fieldset>
                             <p>
                                 <label for="firstName">First name:</label>

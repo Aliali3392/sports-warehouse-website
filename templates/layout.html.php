@@ -68,7 +68,7 @@
             </header>
 
         <?= $output ?>
-
+    </div>
         <!-- This is the footer -->
         <footer>
             <div class="footer-nav">

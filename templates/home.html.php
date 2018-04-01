@@ -87,4 +87,3 @@
                     <img src="images/logos/logo_wilson.png" alt="wilson logo">
                 </div>
             </section>
-        </div>
