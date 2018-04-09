@@ -1,9 +1,3 @@
-<?php
-    if (isset($redirect) && $redirect == true) {
-        header("Location:thanks.php");
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,7 +70,7 @@
                     <li><a href="aboutus.php">About SW</a></li>
                     <li><a href="contactus.php">Contact Us</a></li>
                     <li><a href="#">View Products</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="privacy.php">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer-cat">

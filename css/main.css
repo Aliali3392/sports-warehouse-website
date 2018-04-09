@@ -588,8 +588,8 @@ footer {
 .copyright span {
     display: block;
 }
-/*about us*/
-.aboutus h2 {
+/*about us & privacy policy*/
+.aboutus h2, .privacy h2 {
     float: left;
     margin-top: 20px;
     margin-left: 3.125%;
@@ -602,14 +602,14 @@ footer {
     color: #fff;
     font-size: 1.8rem;
 }
-.aboutus h3 {
+.aboutus h3, .privacy h3 {
     float: left;
     margin-top: 20px;
     margin-left: 3.125%;
     font-size: 1.6rem;
     color: #646464;
 }
-.aboutus p {
+.aboutus p, .privacy p {
     font-weight: 300;
     float: left;
     margin-top: 20px;
@@ -1031,13 +1031,14 @@ footer {
         margin-left: 0;
     }
     /*about us*/
-    .aboutus {
+    .aboutus, .privacy {
     float: left;
     width: 1000px;
     margin-left: 100px;
     }
-    .aboutus p, .aboutus h2 , .aboutus h3{
+    .aboutus p, .aboutus h2 , .aboutus h3, .privacy p, .privacy h2, .privacy h3{
         margin-left: 0;
         margin-right: 0;
+        clear: both;
     }
 }
