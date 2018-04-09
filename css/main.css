@@ -588,6 +588,36 @@ footer {
 .copyright span {
     display: block;
 }
+/*about us*/
+.aboutus h2 {
+    float: left;
+    margin-top: 20px;
+    margin-left: 3.125%;
+    background-color: #ff690c;
+    height: 46px;
+    width: 100%;
+    border-radius: 23px 0 0 23px;
+    line-height: 46px;
+    padding-left: 30px;
+    color: #fff;
+    font-size: 1.8rem;
+}
+.aboutus h3 {
+    float: left;
+    margin-top: 20px;
+    margin-left: 3.125%;
+    font-size: 1.6rem;
+    color: #646464;
+}
+.aboutus p {
+    font-weight: 300;
+    float: left;
+    margin-top: 20px;
+    margin-left: 3.125%;
+    margin-right: 3.125%;
+    font-size: 1.6rem;
+    color: #646464;
+}
 /*========================================*/
 /*----------------Desktop----------------*/
 /*======================================*/
@@ -999,5 +1029,15 @@ footer {
     }
     .confirmation p, .confirmation h2, .error p, .error h2{
         margin-left: 0;
+    }
+    /*about us*/
+    .aboutus {
+    float: left;
+    width: 1000px;
+    margin-left: 100px;
+    }
+    .aboutus p, .aboutus h2 , .aboutus h3{
+        margin-left: 0;
+        margin-right: 0;
     }
 }

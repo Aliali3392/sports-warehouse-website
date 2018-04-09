@@ -26,7 +26,7 @@
                         <ul>
                             <li><i class="fas fa-lock white"></i><a href="#">Login</a></li>
                             <li><i class="far fa-circle white"></i><a href="home.php">Home</a></li>
-                            <li><i class="far fa-circle white"></i><a href="#">About SW</a></li>
+                            <li><i class="far fa-circle white"></i><a href="aboutus.php">About SW</a></li>
                             <li><i class="far fa-circle white"></i><a href="contactus.php">Contact Us</a></li>
                             <li><i class="far fa-circle white"></i><a href="#">View Products</a></li>
                         </ul>
@@ -73,7 +73,7 @@
                 <h2>Site navigation</h2>
                 <ul>
                     <li><a href="home.php">Home</a></li>
-                    <li><a href="#">About SW</a></li>
+                    <li><a href="aboutus.php">About SW</a></li>
                     <li><a href="contactus.php">Contact Us</a></li>
                     <li><a href="#">View Products</a></li>
                     <li><a href="#">Privacy Policy</a></li>
