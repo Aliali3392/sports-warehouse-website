@@ -46,9 +46,7 @@
         <div class="content-wrapper clearfix">
             <header>
                 <div class="clearfix">
-                    <div class="logo">
-                        <a href="#"><img src="images/sports-warehouse-logo-600.png" alt="sports warehouse logo"></a>
-                    </div>
+                    <div class="logo"></div>
                     <div class="search">
                         <input type="search" placeholder="Search products">
                         <a class="button" href="#"><i class="fas fa-search white"></i></a>

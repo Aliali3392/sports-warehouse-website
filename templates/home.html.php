@@ -37,17 +37,17 @@
                 <a href="#" id="firsta">
                     <figure class="items">
                         <div class="item-image">
-                            <img src="images/products/soccer-ball.png" alt="soccer ball">
+                            <img src="images/products/soccer-ball.jpg" alt="soccer ball">
                         </div>
-                        <figcaption><div class="finalprice"><span class="original">&#36;34.95 </span><span class="wrap">was <b class="current">&#36;46.00</b></span></div><p>adidas Euro16 Top Soccer Ball</p></figcaption>                   
+                        <figcaption><div class="finalprice"><span class="original">&#36;34.95 </span><span class="wrap">was <b class="current">&#36;46.00</b></span></div><p>Adidas Finale 17 Cap Soccer Ball</p></figcaption>                   
                     </figure>
                 </a>    
                 <a href="#">            
                     <figure class="items">  
                         <div class="item-image">                
-                            <img src="images/products/skate-helmet.png" alt="skate helmet">
+                            <img src="images/products/skate-helmet.jpg" alt="skate helmet">
                         </div>
-                        <figcaption><div class="finalprice"><span class="price">&#36;70.00</span></div><p>Pro-tec Classic Skate Helmet</p></figcaption>                   
+                        <figcaption><div class="finalprice"><span class="price">&#36;70.00</span></div><p>Harsh Pro EPS Skate Helmet</p></figcaption>                   
                     </figure>
                 </a>
                 <a href="#">
@@ -61,17 +61,17 @@
                 <a href="#">
                     <figure class="items">
                         <div class="item-image">
-                            <img src="images/products/boxing-gloves.png" alt="boxing gloves">
+                            <img src="images/products/boxing-gloves.jpg" alt="boxing gloves">
                         </div>
-                        <figcaption><div class="finalprice"><span class="price">&#36;79.95</span></div><p>Sting ArmaPlus Boxing Gloves</p></figcaption>
+                        <figcaption><div class="finalprice"><span class="price">&#36;79.95</span></div><p>Red Corner Womens Bout Boxing Glove</p></figcaption>
                     </figure>
                 </a>
                 <a href="#">
                     <figure class="items">
                         <div class="item-image">
-                            <img id="boots" src="images/products/football-boots.png" alt="football boots">
+                            <img id="boots" src="images/products/football-boots.jpg" alt="football boots">
                         </div>
-                        <figcaption><div class="finalprice"><span class="price">&#36;160.00</span></div><p>Asics Gel Lethal Tigreor 8 IT Men's FG Boots</p></figcaption>
+                        <figcaption><div class="finalprice"><span class="price">&#36;160.00</span></div><p>Asics Gel Lethal Tigreor 10 IT Football Boots</p></figcaption>
                     </figure>
                 </a>
             </section>

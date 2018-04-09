@@ -147,6 +147,8 @@ html {
     float: left;
     margin-left: 4.6875%;
     margin-top: 15px;
+    background-image: url(../images/sports-warehouse-logo-mobile.png);
+    background-repeat: no-repeat;
 }
 /*search bar*/
 .search {
@@ -669,10 +671,6 @@ footer {
         background-image: url(../images/sports-warehouse-logo-desktop.png);
         background-repeat: no-repeat;
         width: 610px;
-    }
-    .logo img {
-        display: none;
-        visibility: hidden;
     }
     /*search bar*/
     .search {
