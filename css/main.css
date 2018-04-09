@@ -284,8 +284,9 @@ html {
     font-size: 1.5rem;
     color: #059dd7;
     height: 100px;
-    /*display:table-cell;*/
-    /*vertical-align: bottom;*/
+}
+.items figcaption .finalprice {
+    height: 50px;
 }
 .items figcaption .original {
     font-size: 2.2rem;
@@ -294,6 +295,8 @@ html {
 .items figcaption .price {
     font-size: 2.2rem;
     color: #646464;
+    height: 50px;
+    line-height: 50px;
 }
 .items figcaption span {
     font-size: 1.2rem;
@@ -308,6 +311,8 @@ html {
 }
 .items figcaption p {
     margin-top: 6%;
+    position: absolute;
+    top: 50px;
 }
 .items .wrap {
     display: block;
@@ -796,9 +801,9 @@ footer {
         display: inline-block;
         background-color: rgba(0, 172, 237, 0.6);
     }
-    .nav-dots .nav-dot:hover, .active {
+    .nav-dots .nav-dot:hover, .nav-dots .active {
         cursor: pointer;
-        background-color: rgba(0, 172, 237, 0.8);
+        background-color: rgba(0, 172, 237, 1);
     }
     /*products*/
     .products h2 {
@@ -832,8 +837,20 @@ footer {
         height: auto;
         position: absolute;
     }
+    .items figcaption .finalprice {
+        height: auto;
+    }
+    .items figcaption .price {
+        height: auto;
+        line-height: normal;
+    }
     .items .wrap {
         display: inline;
+    }
+    .items figcaption p {
+    position: static;
+    margin-left: 5px;
+    margin-right: 5px;
     }
     /*brand logo*/
     .brandslogo h2 {

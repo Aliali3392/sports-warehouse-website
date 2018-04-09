@@ -39,7 +39,7 @@
                         <div class="item-image">
                             <img src="images/products/soccer-ball.png" alt="soccer ball">
                         </div>
-                        <figcaption><span class="original">&#36;34.95 </span><span class="wrap">was <b class="current">&#36;46.00</b></span><p>adidas Euro16 Top Soccer Ball</p></figcaption>                   
+                        <figcaption><div class="finalprice"><span class="original">&#36;34.95 </span><span class="wrap">was <b class="current">&#36;46.00</b></span></div><p>adidas Euro16 Top Soccer Ball</p></figcaption>                   
                     </figure>
                 </a>    
                 <a href="#">            
@@ -47,7 +47,7 @@
                         <div class="item-image">                
                             <img src="images/products/skate-helmet.png" alt="skate helmet">
                         </div>
-                        <figcaption><span class="price">&#36;70.00</span><p>Pro-tec Classic Skate Helmet</p></figcaption>                   
+                        <figcaption><div class="finalprice"><span class="price">&#36;70.00</span></div><p>Pro-tec Classic Skate Helmet</p></figcaption>                   
                     </figure>
                 </a>
                 <a href="#">
@@ -55,7 +55,7 @@
                         <div class="item-image">                 
                             <img src="images/products/water-bottle.png" alt="water bottle">
                         </div>
-                        <figcaption><span class="original">&#36;15.00 </span><span class="wrap">was <b class="current">&#36;17.50</b></span><p>Nike Sport 600ml Water Bottle</p></figcaption>                   
+                        <figcaption><div class="finalprice"><span class="original">&#36;15.00 </span><span class="wrap">was <b class="current">&#36;17.50</b></span></div><p>Nike Sport 600ml Water Bottle</p></figcaption>                   
                     </figure>
                 </a>
                 <a href="#">
@@ -63,7 +63,7 @@
                         <div class="item-image">
                             <img src="images/products/boxing-gloves.png" alt="boxing gloves">
                         </div>
-                        <figcaption><span class="price">&#36;79.95</span><p>Sting ArmaPlus Boxing Gloves</p></figcaption>
+                        <figcaption><div class="finalprice"><span class="price">&#36;79.95</span></div><p>Sting ArmaPlus Boxing Gloves</p></figcaption>
                     </figure>
                 </a>
                 <a href="#">
@@ -71,7 +71,7 @@
                         <div class="item-image">
                             <img id="boots" src="images/products/football-boots.png" alt="football boots">
                         </div>
-                        <figcaption><span class="price">&#36;160.00</span><p>Asics Gel Lethal Tigreor 8 IT Men's FG Boots</p></figcaption>
+                        <figcaption><div class="finalprice"><span class="price">&#36;160.00</span></div><p>Asics Gel Lethal Tigreor 8 IT Men's FG Boots</p></figcaption>
                     </figure>
                 </a>
             </section>
