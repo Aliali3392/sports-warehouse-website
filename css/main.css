@@ -147,7 +147,7 @@ html {
     float: left;
     margin-left: 4.6875%;
     margin-top: 15px;
-    background-image: url(../images/sports-warehouse-logo-mobile.png);
+    background-image: url(../images/logos/sports-warehouse-logo-mobile.png);
     background-repeat: no-repeat;
 }
 /*search bar*/
@@ -324,19 +324,6 @@ html {
     float: left;
     width: 100%;
 }
-.contactus h2 {
-    float: left;
-    margin-top: 20px;
-    margin-left: 3.125%;
-    background-color: #ff690c;
-    height: 46px;
-    width: 100%;
-    border-radius: 23px 0 0 23px;
-    line-height: 46px;
-    padding-left: 30px;
-    color: #fff;
-    font-size: 1.8rem;
-}
 .contactus p {
     font-weight: 300;
     float: left;
@@ -406,27 +393,8 @@ html {
     border: solid 1px #059dd7; 
     outline: none;
 }
-/*confirmation & error*/
-.confirmation h2, .error h2 {
-    float: left;
-    margin-top: 20px;
-    margin-left: 3.125%;
-    background-color: #ff690c;
-    height: 46px;
-    width: 100%;
-    border-radius: 23px 0 0 23px;
-    line-height: 46px;
-    padding-left: 30px;
-    color: #fff;
-    font-size: 1.8rem;
-}
-.confirmation p, .error p {
-    font-weight: 300;
-    float: left;
-    margin-top: 20px;
-    margin-left: 3.125%;
-    font-size: 1.6rem;
-    color: #646464;
+.missing {
+    color: #ff690c;
 }
 /*brands logo*/
 .brandslogo {
@@ -548,7 +516,6 @@ footer {
 }
 /*other menu*/
 .footer-contact .othermenu {
-    display: block;
     width: 100%;
     color: #002936;
     list-style: none;
@@ -588,8 +555,8 @@ footer {
 .copyright span {
     display: block;
 }
-/*about us & privacy policy*/
-.aboutus h2, .privacy h2 {
+/*contact us, about us, confirmation, error, privacy policy & brands*/
+.contactus h2, .aboutus h2, .confirmation h2, .error h2, .privacy h2, .brands h2 {
     float: left;
     margin-top: 20px;
     margin-left: 3.125%;
@@ -609,7 +576,7 @@ footer {
     font-size: 1.6rem;
     color: #646464;
 }
-.aboutus p, .privacy p {
+.aboutus p, .privacy p,.confirmation p, .error p {
     font-weight: 300;
     float: left;
     margin-top: 20px;
@@ -617,6 +584,28 @@ footer {
     margin-right: 3.125%;
     font-size: 1.6rem;
     color: #646464;
+}
+.brands .brand-tiles{
+    list-style: none;
+}
+/*brands*/
+.brand-tiles {
+    float: left;
+    width: 93.75%;
+    margin-left: 3.125%;
+    margin-right: 3.125%; 
+}
+.brand-tiles .two-column {
+    width: 50%;
+    padding: 15px 15px 0 15px;
+    max-height: 144px;
+    float: left;
+    text-align: center;
+}
+.brand-tiles .two-column a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #00aced;
 }
 /*========================================*/
 /*----------------Desktop----------------*/
@@ -698,7 +687,7 @@ footer {
         margin-top: 24px;
         margin-left: 100px;
         height: 82px;
-        background-image: url(../images/sports-warehouse-logo-desktop.png);
+        background-image: url(../images/logos/sports-warehouse-logo-desktop.png);
         background-repeat: no-repeat;
         width: 610px;
     }
@@ -1021,24 +1010,28 @@ footer {
         width: 400px;
         border-radius: 17px;
     }
-    /*confirmation & error*/
-    .confirmation, .error {
+    /*confirmation, error & about us*/
+    .confirmation, .error, .aboutus, .privacy, .brands {
     float: left;
     width: 1000px;
     margin-left: 100px;
     }
-    .confirmation p, .confirmation h2, .error p, .error h2{
-        margin-left: 0;
-    }
-    /*about us*/
-    .aboutus, .privacy {
-    float: left;
-    width: 1000px;
-    margin-left: 100px;
-    }
-    .aboutus p, .aboutus h2 , .aboutus h3, .privacy p, .privacy h2, .privacy h3{
+    .confirmation p, .confirmation h2, .error p, .error h2, .aboutus p, .aboutus h2 , .aboutus h3, .privacy p, .privacy h2, .privacy h3, .brands h2{
         margin-left: 0;
         margin-right: 0;
         clear: both;
+    }
+    /*brands*/
+    .brand-tiles {
+        float: left;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0; 
+    }
+    .brand-tiles .two-column {
+        width: 20%;
+    }
+    .brand-tiles .two-column .brandname:hover {
+        text-decoration: underline;
     }
 }

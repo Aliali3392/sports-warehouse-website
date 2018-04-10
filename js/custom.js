@@ -6,7 +6,6 @@ var pauseTime = 4000;
 
 var slides = $("#slideshow .slide");
 var currentSlide = 0;
-//var slideInterval = setInterval(slideshow,2000);
 var slideInterval = setTimeout(slideshow,pauseTime);
 
 //nav dots
