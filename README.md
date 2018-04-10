@@ -6,7 +6,7 @@ Flat and responsive website, designed and coded by [Charles Chen](https://github
 Sports Warehouse project is an attempt to provide the advantages of online shopping to customers of a real shop. It helps buying the products in the shop anywhere through internet by using a webser. 
 Sports Warehouse has achieved most of online shopping website features, such as featured items display, items searching, shopping cart and checkout.  
 
-This project was developed with HTML5, CSS3, jQuery, PHP and MySQL.
+This project was developed with HTML5, CSS, jQuery, PHP and MySQL.
 
 Desktop version:<br>
 ![Mockup demo - Desktop](https://github.com/char1eschen/sports-warehouse-website/blob/master/screenshots/sports-warehouse-desktop.jpg)
@@ -55,7 +55,7 @@ Mobile version:<br>
 
 ## Languages and Technology
 - HTML5
-- CSS3
+- CSS
 - PHP
 - JavaScript/jQuery
 - MySQL
