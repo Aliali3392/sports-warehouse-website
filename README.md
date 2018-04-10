@@ -3,7 +3,8 @@
 
 Flat and responsive website, designed and coded by [Charles Chen](https://github.com/char1eschen). 
 
-Sports Warehouse is a mini online shopping website, which achieves most of online shopping website features, such as featured items display, items searching, shopping cart, checkout, website database... 
+Sports Warehouse project is an attempt to provide the advantages of online shopping to customers of a real shop. It helps buying the products in the shop anywhere through internet by using a webser. 
+Sports Warehouse has achieved most of online shopping website features, such as featured items display, items searching, shopping cart and checkout.  
 
 This project was developed with HTML5, CSS3, jQuery, PHP and MySQL.
 
