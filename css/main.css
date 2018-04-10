@@ -277,6 +277,7 @@ html {
 }
 .item-image img {
     vertical-align: middle;
+    padding: 10px;
 }
 .items figcaption {
     position: absolute;
