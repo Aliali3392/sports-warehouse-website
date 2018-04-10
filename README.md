@@ -8,7 +8,7 @@ Sports Warehouse is a mini online shopping website, which achieves most of onlin
 This project was developed with HTML5, CSS3, jQuery, PHP and MySQL.
 
 Desktop version:
-![Mockup demo - Desktop](https://github.com/char1eschen/sports-warehouse-website/blob/master/screenshots/sports-warehouse-desktop.jpg)
+![Mockup demo - Desktop](https://github.com/char1eschen/sports-warehouse-website/blob/master/screenshots/sports-warehouse-desktop.jpg style="zoom:50%")
 Mobile version:
 ![Mockup demo - Mobile](https://github.com/char1eschen/sports-warehouse-website/blob/master/screenshots/sports-warehouse-mobile.jpg) 
 
