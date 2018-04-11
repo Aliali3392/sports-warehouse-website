@@ -37,7 +37,7 @@
                 <a href="#" id="firsta">
                     <figure class="items">
                         <div class="item-image">
-                            <img src="images/products/soccer-ball.jpg" alt="soccer ball">
+                            <img src="images/products/1001.jpg" alt="soccer ball">
                         </div>
                         <figcaption><div class="finalprice"><span class="original">&#36;34.95 </span><span class="wrap">was <b class="current">&#36;46.00</b></span></div><p>Adidas Finale 17 Cap Soccer Ball</p></figcaption>                   
                     </figure>
@@ -45,7 +45,7 @@
                 <a href="#">            
                     <figure class="items">  
                         <div class="item-image">                
-                            <img src="images/products/skate-helmet.jpg" alt="skate helmet">
+                            <img src="images/products/1002.jpg" alt="skate helmet">
                         </div>
                         <figcaption><div class="finalprice"><span class="price">&#36;70.00</span></div><p>Harsh Pro EPS Skate Helmet</p></figcaption>                   
                     </figure>
@@ -53,7 +53,7 @@
                 <a href="#">
                     <figure class="items"> 
                         <div class="item-image">                 
-                            <img src="images/products/water-bottle.png" alt="water bottle">
+                            <img src="images/products/1003.png" alt="water bottle">
                         </div>
                         <figcaption><div class="finalprice"><span class="original">&#36;15.00 </span><span class="wrap">was <b class="current">&#36;17.50</b></span></div><p>Nike Sport 600ml Water Bottle</p></figcaption>                   
                     </figure>
@@ -61,7 +61,7 @@
                 <a href="#">
                     <figure class="items">
                         <div class="item-image">
-                            <img src="images/products/boxing-gloves.jpg" alt="boxing gloves">
+                            <img src="images/products/1004.jpg" alt="boxing gloves">
                         </div>
                         <figcaption><div class="finalprice"><span class="price">&#36;79.95</span></div><p>Red Corner Womens Bout Boxing Glove</p></figcaption>
                     </figure>
@@ -69,7 +69,7 @@
                 <a href="#">
                     <figure class="items">
                         <div class="item-image">
-                            <img id="boots" src="images/products/football-boots.jpg" alt="football boots">
+                            <img id="boots" src="images/products/1005.jpg" alt="football boots">
                         </div>
                         <figcaption><div class="finalprice"><span class="price">&#36;160.00</span></div><p>Asics Gel Lethal Tigreor 10 IT Football Boots</p></figcaption>
                     </figure>
