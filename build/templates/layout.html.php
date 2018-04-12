@@ -12,31 +12,31 @@
 </head>
 <body>
     <div class="wrapper clearfix">
-    <!-- This is the top navigation -->     
-            <nav class="topnav">
-                <a href="#" id="menu"><i class="fas fa-bars white"></i><p>Menu</p></a>
-                <div class="menubar" id="menubar">
-                    <div class="nav-left">
-                        <ul>
-                            <li><i class="fas fa-lock white"></i><a href="#">Login</a></li>
-                            <li><i class="far fa-circle white"></i><a href="home.php">Home</a></li>
-                            <li><i class="far fa-circle white"></i><a href="aboutus.php">About SW</a></li>
-                            <li><i class="far fa-circle white"></i><a href="contactus.php">Contact Us</a></li>
-                            <li><i class="far fa-circle white"></i><a href="#">View Products</a></li>
-                        </ul>
-                    </div>
+        <!-- This is the top navigation -->     
+        <nav class="topnav">
+            <a href="#" id="menu"><i class="fas fa-bars white"></i><p>Menu</p></a>
+            <div class="menubar" id="menubar">
+                <div class="nav-left">
+                    <ul>
+                        <li><i class="fas fa-lock white"></i><a href="#">Login</a></li>
+                        <li><i class="far fa-circle white"></i><a href="home.php">Home</a></li>
+                        <li><i class="far fa-circle white"></i><a href="aboutus.php">About SW</a></li>
+                        <li><i class="far fa-circle white"></i><a href="contactus.php">Contact Us</a></li>
+                        <li><i class="far fa-circle white"></i><a href="viewproducts.php">View Products</a></li>
+                    </ul>
                 </div>
-                <div class="login">
-                    <i class="fas fa-lock white"></i>
-                    <a href="#">Login</a>
-                </div>         
-                <div class="cart">
-                    <i class="fas fa-shopping-cart white"></i>
-                    <a href="#">View Cart</a>
-                    <p>0 items</p>
-                </div>
-            </nav>
-    <!-- This is the header -->             
+            </div>
+            <div class="login">
+                <i class="fas fa-lock white"></i>
+                <a href="#">Login</a>
+            </div>         
+            <div class="cart">
+                <i class="fas fa-shopping-cart white"></i>
+                <a href="#">View Cart</a>
+                <p>0 items</p>
+            </div>
+        </nav>
+        <!-- This is the header -->             
         <div class="content-wrapper clearfix">
             <header>
                 <div class="clearfix">
@@ -48,17 +48,17 @@
                 </div>
                 <div class="categorynav">
                     <ul>
-                        <li><a href="#">Shoes</a><i class="fas fa-angle-right white"></i></li>
-                        <li><a href="#">Helmets</a><i class="fas fa-angle-right white"></i></li>
-                        <li><a href="#">Pants</a><i class="fas fa-angle-right white"></i></li>
-                        <li><a href="#">Tops</a><i class="fas fa-angle-right white"></i></li>
-                        <li><a href="#">Balls</a><i class="fas fa-angle-right white"></i></li>
-                        <li><a href="#">Equipment</a><i class="fas fa-angle-right white"></i></li>
-                        <li><a href="#">Traning gear</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="viewproducts.php?id=1">Shoes</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="viewproducts.php?id=2">Helmets</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="viewproducts.php?id=3">Pants</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="viewproducts.php?id=4">Tops</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="viewproducts.php?id=5">Balls</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="viewproducts.php?id=6">Equipment</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="viewproducts.php?id=7">Traning gear</a><i class="fas fa-angle-right white"></i></li>
                     </ul>
                 </div>
             </header>
-
+        <!-- This is the content -->             
         <?= $output ?>
     </div>
         <!-- This is the footer -->
@@ -69,20 +69,20 @@
                     <li><a href="home.php">Home</a></li>
                     <li><a href="aboutus.php">About SW</a></li>
                     <li><a href="contactus.php">Contact Us</a></li>
-                    <li><a href="#">View Products</a></li>
+                    <li><a href="viewproducts.php">View Products</a></li>
                     <li><a href="privacy.php">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer-cat">
                 <h2>Product categories</h2>
                 <ul>
-                    <li><a href="#">Shoes</a></li>
-                    <li><a href="#">Helmets</a></li>
-                    <li><a href="#">Pants</a></li>
-                    <li><a href="#">Tops</a></li>
-                    <li><a href="#">Balls</a></li>
-                    <li><a href="#">Equipment</a></li>
-                    <li><a href="#">Training Gear</a></li>
+                    <li><a href="viewproducts.php?id=1">Shoes</a></li>
+                    <li><a href="viewproducts.php?id=2">Helmets</a></li>
+                    <li><a href="viewproducts.php?id=3">Pants</a></li>
+                    <li><a href="viewproducts.php?id=4">Tops</a></li>
+                    <li><a href="viewproducts.php?id=5">Balls</a></li>
+                    <li><a href="viewproducts.php?id=6">Equipment</a></li>
+                    <li><a href="viewproducts.php?id=7">Training Gear</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
