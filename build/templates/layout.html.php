@@ -22,7 +22,7 @@
                         <li><i class="far fa-circle white"></i><a href="home.php">Home</a></li>
                         <li><i class="far fa-circle white"></i><a href="aboutus.php">About SW</a></li>
                         <li><i class="far fa-circle white"></i><a href="contactus.php">Contact Us</a></li>
-                        <li><i class="far fa-circle white"></i><a href="viewproducts.php">View Products</a></li>
+                        <li><i class="far fa-circle white"></i><a href="groupByCategories.php">View Products</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,20 +41,22 @@
             <header>
                 <div class="clearfix">
                     <div class="logo"></div>
+                    <h1 class="hide">Sports Warehouse</h1>
                     <div class="search">
-                        <input type="search" placeholder="Search products">
-                        <a class="button" href="#"><i class="fas fa-search white"></i></a>
+                        <label class="hide" for="search">Search</label>
+                        <input class="search-input" type="search" name="search" id="search" placeholder="Search products">
+                        <button class="search-btn notext" type="submit" name="submitButton"><i class="fas fa-search white"></i>Search</button>
                     </div>
                 </div>
                 <div class="categorynav">
                     <ul>
-                        <li><a href="viewproducts.php?id=1">Shoes</a><i class="fas fa-angle-right white"></i></li>
-                        <li><a href="viewproducts.php?id=2">Helmets</a><i class="fas fa-angle-right white"></i></li>
-                        <li><a href="viewproducts.php?id=3">Pants</a><i class="fas fa-angle-right white"></i></li>
-                        <li><a href="viewproducts.php?id=4">Tops</a><i class="fas fa-angle-right white"></i></li>
-                        <li><a href="viewproducts.php?id=5">Balls</a><i class="fas fa-angle-right white"></i></li>
-                        <li><a href="viewproducts.php?id=6">Equipment</a><i class="fas fa-angle-right white"></i></li>
-                        <li><a href="viewproducts.php?id=7">Traning gear</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="groupByCategories.php?id=1">Shoes</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="groupByCategories.php?id=2">Helmets</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="groupByCategories.php?id=3">Pants</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="groupByCategories.php?id=4">Tops</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="groupByCategories.php?id=5">Balls</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="groupByCategories.php?id=6">Equipment</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="groupByCategories.php?id=7">Traning gear</a><i class="fas fa-angle-right white"></i></li>
                     </ul>
                 </div>
             </header>
@@ -69,20 +71,20 @@
                     <li><a href="home.php">Home</a></li>
                     <li><a href="aboutus.php">About SW</a></li>
                     <li><a href="contactus.php">Contact Us</a></li>
-                    <li><a href="viewproducts.php">View Products</a></li>
+                    <li><a href="groupByCategories.php">View Products</a></li>
                     <li><a href="privacy.php">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer-cat">
                 <h2>Product categories</h2>
                 <ul>
-                    <li><a href="viewproducts.php?id=1">Shoes</a></li>
-                    <li><a href="viewproducts.php?id=2">Helmets</a></li>
-                    <li><a href="viewproducts.php?id=3">Pants</a></li>
-                    <li><a href="viewproducts.php?id=4">Tops</a></li>
-                    <li><a href="viewproducts.php?id=5">Balls</a></li>
-                    <li><a href="viewproducts.php?id=6">Equipment</a></li>
-                    <li><a href="viewproducts.php?id=7">Training Gear</a></li>
+                    <li><a href="groupByCategories.php?id=1">Shoes</a></li>
+                    <li><a href="groupByCategories.php?id=2">Helmets</a></li>
+                    <li><a href="groupByCategories.php?id=3">Pants</a></li>
+                    <li><a href="groupByCategories.php?id=4">Tops</a></li>
+                    <li><a href="groupByCategories.php?id=5">Balls</a></li>
+                    <li><a href="groupByCategories.php?id=6">Equipment</a></li>
+                    <li><a href="groupByCategories.php?id=7">Training Gear</a></li>
                 </ul>
             </div>
             <div class="footer-contact">

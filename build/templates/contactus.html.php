@@ -7,6 +7,7 @@
     <?php endif; ?>
         <form method="post">
             <fieldset>
+                <legend>Contact Us Form</legend>
                 <p>
                     <label for="firstName" <?= validateField("firstName", $missingFields) ?>>First name *:</label>
                     <input type="text" name="firstName" id="firstName" value="<?= setValue("firstName") ?>">

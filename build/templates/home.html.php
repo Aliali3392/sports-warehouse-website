@@ -5,7 +5,7 @@
         <figcaption  class="indication">
             <p>View our brand <br>new range of</p>
             <p>Sports <br>balls</p>
-            <a href="viewproducts.php?id=5"><p>Shop now</p></a>
+            <a href="groupByCategories.php?id=5"><p>Shop now</p></a>
         </figcaption>
     </figure>
     <figure class="slide">
@@ -13,7 +13,7 @@
         <figcaption class="indication">
             <p>Get protected with <br>the new range of</p>
             <p>Protective <br>helmets</p>
-            <a href="viewproducts.php?id=2"><p>Shop now</p></a>
+            <a href="groupByCategories.php?id=2"><p>Shop now</p></a>
         </figcaption>
     </figure>
     <figure class="slide">
@@ -21,7 +21,7 @@
         <figcaption class="indication">
             <p>Get ready to race <br>with our professional</p>
             <p>Training <br>gear</p>
-            <a href="viewproducts.php?id=7"><p>Shop now</p></a>
+            <a href="groupByCategories.php?id=7"><p>Shop now</p></a>
         </figcaption>
     </figure>
     <!-- slide nav dots -->
@@ -46,7 +46,7 @@
         <a href="viewitem.php?id=<?= $productId ?>">
             <figure class="items">
                 <div class="item-image">
-                    <img src="<?= $photoPath ?>" alt="soccer ball">
+                    <img src="<?= $photoPath ?>" alt="<?= $productName ?>">
                 </div>
                 <figcaption>
                     <div class="finalprice">
@@ -69,11 +69,23 @@
     <h2>Our brands and partnerships</h2>
     <p>These are some of our top brands and partnerships.<br><a href="brands.php">The best of the best is here.</a></p>
     <div class="partnerships">
-        <img src="images/logos/logo_nike.png" alt="nike logo">
-        <img src="images/logos/logo_adidas.png" alt="adidas logo">
-        <img src="images/logos/logo_skins.png" alt="skins logo">
-        <img src="images/logos/logo_asics.png" alt="asics logo">
-        <img src="images/logos/logo_newbalance.png" alt="newbalance logo">
-        <img src="images/logos/logo_wilson.png" alt="wilson logo">
+        <div class="brand-img">
+            <img src="images/logos/logo_nike.png" alt="nike logo">
+        </div>
+        <div class="brand-img">
+            <img src="images/logos/logo_adidas.png" alt="adidas logo">
+        </div>
+        <div class="brand-img">
+            <img src="images/logos/logo_skins.png" alt="skins logo">
+        </div>
+        <div class="brand-img">
+            <img src="images/logos/logo_asics.png" alt="asics logo">
+        </div>
+        <div class="brand-img">
+            <img src="images/logos/logo_newbalance.png" alt="newbalance logo">
+        </div>
+        <div class="brand-img">
+            <img src="images/logos/logo_wilson.png" alt="wilson logo">
+        </div>
     </div>
 </section>

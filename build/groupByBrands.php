@@ -1,7 +1,7 @@
 <?php  
 	require_once "classes/DBAccess.php"; 
 	 
-	$title = "Products by category"; 
+	$title = "Products by Brands"; 
 	 
 	$dsn = "mysql:host=localhost;dbname=sportswarehouse;charset=utf8";  
 	$username = "root";  
@@ -18,18 +18,12 @@
 	
 	//check if there is a query string field named id, if not, dislplay all products  
 	if(isset($_GET["id"])) {    
-		$sql = "select item_id, item_name, item_price, item_saleprice, item_photo from item where item_categoryid = " . $_GET["id"]; 
+		$sql = "select item_id, item_name, item_price, item_saleprice, item_photo from item where item_brandid = " . $_GET["id"]; 
 		$rows = $db->executeSQL($sql);        
 		//display products   
 		include "templates/products.html.php";  
 	} 
-	else {
-		$sql = "select item_id, item_name, item_price, item_saleprice, item_photo from item"; 
-		$rows = $db->executeSQL($sql);        
-		//display products   
-		include "templates/products.html.php";	
-	}
-	 
+		 
 	$output = ob_get_clean(); 
 	 
 	include "templates/layout.html.php"; 

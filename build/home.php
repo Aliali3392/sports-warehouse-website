@@ -1,7 +1,7 @@
 <?php  
 	require_once "classes/DBAccess.php"; 
 	 
-	$title = "Products by category"; 
+	$title = "Sprots Warehouse"; 
 	 
 	$dsn = "mysql:host=localhost;dbname=sportswarehouse;charset=utf8";  
 	$username = "root";  

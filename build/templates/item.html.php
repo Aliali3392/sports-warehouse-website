@@ -15,7 +15,7 @@
 		<?php 
 		if ($unitPrice != $salePrice) {
 		 	echo "<h2>Original Price:</h2>";
-		 	echo "<p class='price'>&#36;$unitPrice</p>";
+		 	echo "<p class='price line-through'>&#36;$unitPrice</p>";
 		 } 
 		?>			
 		<h2>Sale Price:</h2>
