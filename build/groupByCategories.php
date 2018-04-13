@@ -18,13 +18,16 @@
 	
 	//check if there is a query string field named id, if not, dislplay all products  
 	if(isset($_GET["id"])) {    
-		$sql = "select item_id, item_name, item_price, item_saleprice, item_photo from item where item_categoryid = " . $_GET["id"]; 
+		$sql = "select 	item_id, item_name, item_price, item_saleprice, item_photo 
+				from 	item 
+				where 	item_categoryid = " . $_GET["id"]; 
 		$rows = $db->executeSQL($sql);        
 		//display products   
 		include "templates/products.html.php";  
 	} 
 	else {
-		$sql = "select item_id, item_name, item_price, item_saleprice, item_photo from item"; 
+		$sql = "select 	item_id, item_name, item_price, item_saleprice, item_photo 
+				from 	item"; 
 		$rows = $db->executeSQL($sql);        
 		//display products   
 		include "templates/products.html.php";	

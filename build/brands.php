@@ -17,7 +17,8 @@
     ob_start();      
     
     //list all brands,
-    $sql = "select brand_id, brand_name, brand_photo from brand"; 
+    $sql = "select  brand_id, brand_name, brand_photo 
+            from    brand"; 
     $rows = $db->executeSQL($sql);        
     //display products   
     include "templates/brands.html.php";  

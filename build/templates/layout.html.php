@@ -42,11 +42,14 @@
                 <div class="clearfix">
                     <div class="logo"></div>
                     <h1 class="hide">Sports Warehouse</h1>
-                    <div class="search">
-                        <label class="hide" for="search">Search</label>
-                        <input class="search-input" type="search" name="search" id="search" placeholder="Search products">
-                        <button class="search-btn notext" type="submit" name="submitButton"><i class="fas fa-search white"></i>Search</button>
-                    </div>
+                    <form class="search" action="search.php" method="get">
+                        <fieldset>
+                            <legend class="hide">Search</legend>
+                            <label class="hide" for="search">Search</label>
+                            <input class="search-input" type="search" name="search" id="search" placeholder="Search products">
+                            <button class="search-btn notext" type="submit" name="submitButton" value="search"><i class="fas fa-search white"></i>Search</button>
+                        </fieldset>
+                    </form>
                 </div>
                 <div class="categorynav">
                     <ul>

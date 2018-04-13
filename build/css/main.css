@@ -165,6 +165,9 @@ html {
     width: 100%;
     float: left;
 }
+.search fieldset {
+    border: 0;
+}
 .search .search-input {
     float: left;
     margin-left: 7.8125%;

@@ -1,4 +1,4 @@
-<!-- This is the form -->
+<!-- This is the contact us form -->
 <section class="contactus">
     <h2>Contact Us</h2>
     <p>Please fill out your contact details and your question below and we shall get back to you promptly!</p>
