@@ -58,6 +58,7 @@ $("#other").click(function () {
 var itemNum = $("#show-feature-products").children().length;
 var turnLeft =  $("#turn-left");
 var turnRight = $("#turn-right");
+var scrollBarWidth = itemNum * 200;
 //display arrows if feature products over 5
 if (itemNum > 5) {
     turnLeft.addClass("show-arrow");
@@ -66,8 +67,8 @@ if (itemNum > 5) {
 //click right arrow
 $("#turn-right").click(function(){
     var list = $("#feature-products");
-    if(list.scrollWidth - list.scrollLeft() < 1000){
-        list.animate({scrollLeft: list.scrollWidth},1000);
+    if(scrollBarWidth - list.scrollLeft() < 1000){
+        list.animate({scrollLeft:0},1000);
     }else{
         list.animate({scrollLeft:list.scrollLeft()+1000},1000);
     }
