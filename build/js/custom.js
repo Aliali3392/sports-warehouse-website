@@ -44,12 +44,40 @@ jQuery(document).ready(function($) {
 
 //othermenu
 $("#other").click(function () {
-    if($('#othermenu').css('display') == 'none') {
+    if($("#othermenu").css("display") == "none") {
         $("#othermenu").css("display", "block");
         return false;
     } 
     else {
         $("#othermenu").css("display", "none");
         return false;
+    }
+});
+
+//left-arrow and right-arrow
+var itemNum = $("#show-feature-products").children().length;
+var turnLeft =  $("#turn-left");
+var turnRight = $("#turn-right");
+//display arrows if feature products over 5
+if (itemNum > 5) {
+    turnLeft.addClass("show-arrow");
+    turnRight.addClass("show-arrow");
+}
+//click right arrow
+$("#turn-right").click(function(){
+    var list = $("#feature-products");
+    if(list.scrollWidth - list.scrollLeft() < 1000){
+        list.animate({scrollLeft: list.scrollWidth},1000);
+    }else{
+        list.animate({scrollLeft:list.scrollLeft()+1000},1000);
+    }
+});
+//click left arrow
+$("#turn-left").click(function(){
+    var list = $("#feature-products");
+    if(list.scrollLeft() < 1000){
+        list.animate({scrollLeft:0},1000);
+    }else{
+        list.animate({scrollLeft:list.scrollLeft()-1000},1000);
     }
 });

@@ -34,8 +34,12 @@
 <!-- This is the content -->
 <section class="products">
     <h2>Feature products</h2> 
-    <div class="feature-products">  
-    <!-- feature products PHP code-->            
+    <div class="turn-left" id="turn-left">
+        <span class="arrow-left"></span>
+    </div>
+    <div class="feature-products clearfix" id="feature-products">  
+        <div class="show-feature-products" id="show-feature-products">
+        <!-- feature products PHP code-->            
         <?php foreach ($rows as $row): 
             $photoPath = "images/products/" . $row["item_photo"];     
             $productName = $row["item_name"]; 
@@ -63,7 +67,11 @@
             </figure>
         </a>    
         <?php endforeach;?>
+        </div>   
     </div>
+    <div class="turn-right" id="turn-right">
+        <span class="arrow-right"></span>
+    </div> 
 </section>
 <section class="brandslogo">
     <h2>Our brands and partnerships</h2>
