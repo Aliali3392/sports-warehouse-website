@@ -40,8 +40,7 @@
         <div class="content-wrapper clearfix">
             <header>
                 <div class="clearfix">
-                    <div class="logo"></div>
-                    <h1 class="hide">Sports Warehouse</h1>
+                    <div class="logo"><h1>Sports Warehouse</h1></div>
                     <form class="search" action="search.php" method="get">
                         <fieldset>
                             <legend class="hide">Search</legend>
@@ -97,7 +96,7 @@
                 <div class="other" id="other">
                     <a href=""><i class="fab fa-telegram-plane fa-4x white"></i><p>Other</p></a>
                     <ul class="othermenu clearfix" id="othermenu">
-                        <li class="clearfix" id="firstother"><a href="#">Online form</a></li>
+                        <li class="clearfix" id="firstother"><a href="contactus.php">Online form</a></li>
                         <li class="clearfix"><a href="#">Email</a></li>
                         <li class="clearfix"><a href="#">Phone</a></li>
                         <li class="clearfix"><a href="#">Address</a></li>

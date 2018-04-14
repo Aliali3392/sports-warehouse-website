@@ -24,8 +24,8 @@
 		<p><?= $productDescription ?></p>
 	</div>
 	<div class='add-to-cart-form'>
-        <h2>Quantity:</h2>
-        <input type='number' class='form-control m-b-10px cart-quantity' value='1' min='1' />
+        <label for="number">Quantity:</label>
+        <input type='number' class='form-control m-b-10px cart-quantity' id="number" value='1' min='1' />
         <div class="add-btn">
             <a href="cart.php" class="">
                 <i class="fas fa-shopping-cart white"></i>
