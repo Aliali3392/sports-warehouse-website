@@ -180,7 +180,8 @@ html {
     font-size: 1.6rem;
     padding: 0 15px;
     letter-spacing: -.075rem;
-    outline:none;
+    outline: none;
+    -webkit-appearance: none;
 }
 .fa-search {
     position: absolute;
@@ -414,6 +415,7 @@ html {
     outline: none;
     padding-left: 15px;
     padding-right: 15px;
+    overflow: auto;
 }
 .contactus .formbutton p{
     margin-left: 0;
