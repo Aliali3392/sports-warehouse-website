@@ -4,7 +4,7 @@
 	$title = "Search result";  
 	 	 
 	//check if the search button has been pressed  
-	$search = $_GET["search"];   
+	$search = "%".$_GET["search"]."%";   
 	$dsn = "mysql:host=localhost;dbname=sportswarehouse;charset=utf8";   
 	$username = "root";   
 	$password = ""; 
@@ -21,10 +21,10 @@
 	//set up query to execute   
 	$sql = "select 	item_id, item_name, item_price, item_saleprice, item_photo 
 			from 	item 
-			where 	item_name like '%$search%'";      
-	
-	//execute SQL query   
-	$rows = $db->executeSQL($sql);     
+			where 	item_name like :search";      
+	$stmt = $pdo->prepare($sql);
+	$stmt->bindValue(":search", $search);
+	$rows = $db->executeSQL($stmt);        	    
 	//display products   
 	include "templates/products.html.php";  
 	 

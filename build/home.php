@@ -11,7 +11,7 @@
 	$db = new DBAccess($dsn, $username, $password); 
 	 
 	//connect to database  
-	$db->connect(); 
+	$pdo = $db->connect(); 
 	 
 	//start buffer  
 	ob_start();      
@@ -20,7 +20,8 @@
 	$sql = "select 	item_id, item_name, item_price, item_saleprice, item_photo 
 			from 	item 
 			where 	item_featured = true"; 
-	$rows = $db->executeSQL($sql);   
+    $stmt = $pdo->prepare($sql);
+    $rows = $db->executeSQL($stmt);   
 	  
 	include "templates/home.html.php";   
 	

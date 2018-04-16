@@ -11,8 +11,8 @@
 	$db = new DBAccess($dsn, $username, $password); 
 	 
 	//connect to database  
-	$db->connect(); 
-   
+	$pdo = $db->connect(); 
+
 	//start buffer  
 	ob_start();      
 	
@@ -20,8 +20,10 @@
 	if(isset($_GET["id"])) {    
 		$sql = "select 	item_id, item_name, item_price, item_saleprice, item_photo 
 				from 	item 
-				where 	item_brandid = " . $_GET["id"]; 
-		$rows = $db->executeSQL($sql);        
+				where 	item_brandid = :id"; 
+		$stmt = $pdo->prepare($sql);
+		$stmt->bindValue(":id", $_GET["id"]);
+		$rows = $db->executeSQL($stmt);        
 		//display products   
 		include "templates/products.html.php";  
 	} 

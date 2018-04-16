@@ -19,33 +19,22 @@ class DBAccess {
         catch(PDOException $e){
             die("Connection failed: " . $e->getMessage());
         }
+        return $this->_pdo;
     }
     //disconnect from database
     public function disconnect() {
         $this->_pdo = "";
     }
     //execute SQL query returning back rows
-    public function executeSQL($sql) {
+    public function executeSQL($stmt) {
         try {
-            $rows = $this->_pdo->query($sql);
+            $stmt->execute();
+            $rows = $stmt->fetchAll();
         }
         catch(PDOException $e) {
             die("Query failed: " . $e->getMessage());
         }
         return $rows;
-    }
-    //return a single value
-    public function executeSQLReturnOneValue($sql) {
-        try {
-            //execute the query
-            $row = $this->_pdo->query($sql);
-            //get the column value
-            $value = $row->fetchColumn();
-        }
-        catch(PDOException $e) {
-            die("Query failed: " . $e->getMessage());
-        }
-        return $value;
     }
 }
 ?>
