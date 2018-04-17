@@ -34,21 +34,13 @@ navDots.on("click", function(){
 
 
 //menubar
-$(function () {  
-    $('#menu').click(function (event) {  
-        event.stopPropagation();  
+jQuery(document).ready(function($) {
+    $("#menu").on("click", function() {
         $("#menubar").slideToggle();
         $(this).toggleClass("active");
-        return false;
-    });  
-    $(document).click(function(event) {
-        var _con = $('#menubar');
-        if(!_con.is(event.target) && _con.has(event.target).length === 0) {
-            $("#menubar").slideToggle();
-            $(this).toggleClass("active");
-        }
     });
- })
+
+});
 
 //othermenu
 $("#other").click(function () {
