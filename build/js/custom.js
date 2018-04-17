@@ -34,13 +34,30 @@ navDots.on("click", function(){
 
 
 //menubar
-jQuery(document).ready(function($) {
-    $("#menu").on("click", function() {
+$(function(){
+    $("#menu").click(function(event){
+        var e=window.event || event;
+        if(e.stopPropagation){
+            e.stopPropagation();
+        }else{
+            e.cancelBubble = true;
+        }   
         $("#menubar").slideToggle();
         $(this).toggleClass("active");
     });
-
-});
+    $("#menubar").click(function(event){
+        var e=window.event || event;
+        if(e.stopPropagation){
+            e.stopPropagation();
+        }else{
+            e.cancelBubble = true;
+        }
+    });
+    document.onclick = function(){
+        $("#menubar").slideToggle();
+        $(this).toggleClass("active");
+    };
+})
 
 //othermenu
 $("#other").click(function () {
