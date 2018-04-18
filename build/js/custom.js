@@ -34,11 +34,12 @@ navDots.on("click", function(){
 
 
 //menubar
-Query(document).ready(function($) {
+jQuery(document).ready(function($) {
     $("#menu").on("click", function() {
         $("#menubar").slideToggle();
         $(this).toggleClass("active");
     });
+
 });
 
 //othermenu
