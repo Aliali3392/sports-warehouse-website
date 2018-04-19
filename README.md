@@ -1,4 +1,4 @@
-# Sports Warehouse website - BUILDING
+# Sports Warehouse website
 [![GitHub license](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/char1eschen/sports-warehouse-website/blob/master/LICENSE.md)
 
 Flat and responsive website, designed and coded by [Charles Chen](https://github.com/char1eschen). 
