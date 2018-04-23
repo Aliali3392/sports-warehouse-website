@@ -1,4 +1,4 @@
-# Sports Warehouse website - BUILDING
+# Sports Warehouse website
 [![GitHub license](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://github.com/char1eschen/sports-warehouse-website/blob/master/LICENSE.md)
 
 Flat and responsive website, designed and coded by [Charles Chen](https://github.com/char1eschen). 
@@ -26,30 +26,35 @@ Mobile version:<br>
 ├── LICENSE.md
 |
 ├── screenshots/                               * responsive test screenshots
-|
 │
 └── build/                                     * built source
     ├── aboutus.php
     ├── brands.php
     ├── contactus.php
     ├── error.php
+    ├── groupByBrands.php
+    ├── groupByCategories.php
     ├── home.php
     ├── privacy.php
+    ├── search.php
     ├── thanks.php
+    ├── viewitem
     |
-    ├── classes/                           * PHP classes
+    ├── classes/                              * PHP classes
     |    
-    ├── css/                               * minified styles
+    ├── css/                                  * minified styles
     |
-    ├── images/                            * minified images
+    ├── images/                               * minified images
     │
-    ├── js/                                * minified assembled js
+    ├── js/                                   * minified assembled js
     │
-    ├── php/                               * PHP plugin
+    ├── php/                                  * PHP plugin(PHPmailer)
     │
-    ├── templates/                         * HTML templates
+    ├── SQL/                                  * Database file
+    │
+    ├── templates/                            * HTML templates
     |
-    └── webfonts/                          * fontawesome webfonts
+    └── webfonts/                             * fontawesome webfonts
 
 ```
 
