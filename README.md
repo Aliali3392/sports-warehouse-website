@@ -8,6 +8,8 @@ Sports Warehouse has achieved most of online shopping website features, such as 
 
 This project was developed with HTML5, CSS, jQuery, PHP and MySQL.
 
+[Live preview](https://charliechen.me/projects/sportswarehouse/home.php)
+
 Desktop version:<br>
 ![Mockup demo - Desktop](https://github.com/char1eschen/sports-warehouse-website/blob/master/screenshots/sports-warehouse-desktop.jpg)
 Mobile version:<br>
