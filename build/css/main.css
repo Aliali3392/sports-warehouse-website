@@ -247,14 +247,29 @@ html {
     background-color: #00aced;
     color: #fff;
 }
-/*products, show-products*/
+/*products, search-products*/
 .products {
     float: left;
 }
 .feature-products, .show-products {
-    margin-right: 3.125%;
-    margin-left: 3.125%; 
+    padding-right: 3.125%;
+    padding-left: 3.125%; 
     float: left;
+}
+.search-products .no-results {
+    font-weight: 300;
+    float: left;
+    margin-left: 3.125%;
+    margin-right: 3.125%;
+    font-size: 1.6rem;
+    color: #646464;
+}
+.search-products .no-results:first-child {
+    margin-top:20px;
+}
+.search-products .no-results b {
+    font-weight: normal;
+    color: #00aced;
 }
 .products h2 {
     float: left;
@@ -917,6 +932,14 @@ footer {
         margin-right: 0;
         margin-left: 0; 
         width: 1000px;
+    }
+    .search-products {
+        padding: 0;
+    }
+    .search-products .no-results {
+        margin-left: 0;
+        margin-right: 0;
+        clear: both;
     }
     .feature-products {
         display: inline-block;
