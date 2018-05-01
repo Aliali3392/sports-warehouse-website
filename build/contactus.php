@@ -21,7 +21,6 @@
 			//set up array of missing fields
 			$missingFields = [];
 
-
 			//loop through each required field and check the fields exists
 			foreach($requiredFields as $requiredField) {
 				if(!isset($_POST[$requiredField]) || !$_POST[$requiredField])

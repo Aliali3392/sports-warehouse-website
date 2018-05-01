@@ -1,9 +1,10 @@
 <div class="show-products clearfix">
   <h2>Results for <?= $_GET["search"] ?></h2>
-  <div class="search-products">
+  <div class="search-products clearfix">
     <?php 
       if (empty($rows)) {
-        echo "<p class='no-results'>We couldn't find a match for ".'<b>&quot;'.$_GET["search"].'&quot;</b>.'."</p><br><p class='no-results'>Please try less specific search terms or check the spelling.</p>";
+        echo "<p class='no-results'>We couldn't find a match for ".'<b>&quot;'.$_GET["search"].'&quot;</b>.'."</p>";
+        echo "<p class='no-results'>Please try less specific search terms or check the spelling.</p>";
       }
     ?>
     <?php foreach ($rows as $row): 

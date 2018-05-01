@@ -20,13 +20,13 @@
 	 
 	//set up query to execute   
 	$sql = "select 	item_id, item_name, item_price, item_saleprice, item_photo 
-			from 	item 
-			where 	item_name like :search";      
+				 from 		item 
+				 where 		item_name like :search";      
 	$stmt = $pdo->prepare($sql);
 	$stmt->bindValue(":search", $search);
 	$rows = $db->executeSQL($stmt);        	    
 	//display products   
-	include "templates/products.html.php";  
+	include "templates/searchresults.html.php";  
 	 
 	$output = ob_get_clean(); 
 	 

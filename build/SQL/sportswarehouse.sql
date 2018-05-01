@@ -62,13 +62,13 @@ USE sportswarehouse;
 # Add info into "Category"                                               #
 # ---------------------------------------------------------------------- #
 
-INSERT INTO category VALUES (01,'shoes');
-INSERT INTO category VALUES (02,'helmets');
-INSERT INTO category VALUES (03,'pans');
-INSERT INTO category VALUES (04,'tops');
-INSERT INTO category VALUES (05,'balls');
-INSERT INTO category VALUES (06,'equipment');
-INSERT INTO category VALUES (07,'gear');
+INSERT INTO category VALUES (01,'Shoes');
+INSERT INTO category VALUES (02,'Helmets');
+INSERT INTO category VALUES (03,'Pans');
+INSERT INTO category VALUES (04,'Tops');
+INSERT INTO category VALUES (05,'Balls');
+INSERT INTO category VALUES (06,'Equipment');
+INSERT INTO category VALUES (07,'Training gear');
 
 # ---------------------------------------------------------------------- #
 # Add info into "Brand"                                               #

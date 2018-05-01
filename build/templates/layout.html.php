@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title><?= $title ?></title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="shortcut icon" href="favicon.ico">
 </head>
@@ -22,7 +22,7 @@
                         <li><i class="far fa-circle white"></i><a href="home.php">Home</a></li>
                         <li><i class="far fa-circle white"></i><a href="aboutus.php">About SW</a></li>
                         <li><i class="far fa-circle white"></i><a href="contactus.php">Contact Us</a></li>
-                        <li><i class="far fa-circle white"></i><a href="groupByCategories.php">View Products</a></li>
+                        <li><i class="far fa-circle white"></i><a href="viewproducts.php">View Products</a></li>
                     </ul>
                 </div>
             </div>
@@ -58,7 +58,7 @@
                         <li><a href="groupByCategories.php?id=4">Tops</a><i class="fas fa-angle-right white"></i></li>
                         <li><a href="groupByCategories.php?id=5">Balls</a><i class="fas fa-angle-right white"></i></li>
                         <li><a href="groupByCategories.php?id=6">Equipment</a><i class="fas fa-angle-right white"></i></li>
-                        <li><a href="groupByCategories.php?id=7">Traning gear</a><i class="fas fa-angle-right white"></i></li>
+                        <li><a href="groupByCategories.php?id=7">Training gear</a><i class="fas fa-angle-right white"></i></li>
                     </ul>
                 </div>
             </header>
@@ -73,7 +73,7 @@
                     <li><a href="home.php">Home</a></li>
                     <li><a href="aboutus.php">About SW</a></li>
                     <li><a href="contactus.php">Contact Us</a></li>
-                    <li><a href="groupByCategories.php">View Products</a></li>
+                    <li><a href="viewproducts.php">View Products</a></li>
                     <li><a href="privacy.php">Privacy Policy</a></li>
                 </ul>
             </div>

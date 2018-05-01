@@ -1,5 +1,9 @@
 <div class="show-products clearfix">
-	<h2>All Products</h2>
+	<?php foreach ($rows as $row):
+	?>
+		<h2><?= $row["category_name"] ?></h2>
+		<?php break; ?> 
+	<?php endforeach;?>	
 	<div class="search-products clearfix">
 		<?php foreach ($rows as $row): 
 			$photoPath = "images/products/" . $row["item_photo"];     
