@@ -3,10 +3,10 @@
 		$photoPath = "images/products/" . $row["item_photo"];     
 		$productName = $row["item_name"];   
 		$salePrice = sprintf("%1.2f", $row["item_saleprice"]); 
-        $unitPrice = sprintf("%1.2f", $row["item_price"]);
-        $productDescription =   $row["item_description"];
-        $productId = $row["item_id"];
-		?> 
+    $unitPrice = sprintf("%1.2f", $row["item_price"]);
+    $productDescription =   $row["item_description"];
+    $productId = $row["item_id"];
+	?> 
 	<h1><?= $productName ?></h1>
     <div class="item-pic">
 	   <img src="<?= $photoPath ?>" alt="<?= $productName ?>">
@@ -24,14 +24,14 @@
 		<p><?= $productDescription ?></p>
 	</div>
 	<div class='add-to-cart-form'>
-        <label for="number">Quantity:</label>
-        <input type='number' class='form-control m-b-10px cart-quantity' id="number" value='1' min='1' />
-        <div class="add-btn">
-            <a href="cart.php" class="">
-                <i class="fas fa-shopping-cart white"></i>
-                Add to Cart
-            </a>
-        </div>
+    <label for="number">Quantity:</label>
+    <input type='number' class='form-control m-b-10px cart-quantity' id="number" value='1' min='1' />
+    <div class="add-btn">
+      <a href="cart.php" class="">
+        <i class="fas fa-shopping-cart white"></i>
+        Add to Cart
+      </a>
     </div>
+  </div>
 	<?php endforeach;?> 
 </div>

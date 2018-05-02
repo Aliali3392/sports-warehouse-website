@@ -7,15 +7,15 @@
 			$salePrice = sprintf("%1.2f", $row["item_saleprice"]); 
 			$productId = $row["item_id"]; 
 	    $unitPrice = sprintf("%1.2f", $row["item_price"]);   
-			?> 
+		?> 
 		<div class="item">
 			<a href="viewitem.php?id=<?= $productId ?>" class="product-link clearfix">
-			    <figure class="items">
-			        <div class="item-image">
-			            <img src="<?= $photoPath ?>" alt="<?= $productName ?>">
-			        </div>
-			        <figcaption>
-			        	<div class="finalprice">
+			  <figure class="items">
+			    <div class="item-image">
+			      <img src="<?= $photoPath ?>" alt="<?= $productName ?>">
+			    </div>
+			    <figcaption>
+			      <div class="finalprice">
 							<span class="price">&#36;<?= $salePrice ?></span>
 							<?php 
 								if ($unitPrice != $salePrice) {
@@ -24,10 +24,10 @@
 							?>	
 						</div>
 						<p>
-				            <?= $productName ?>
-				        </p>
-				    </figcaption>
-			    	</figure>
+				      <?= $productName ?>
+				    </p>
+					</figcaption>
+			  </figure>
 			</a>
 			<div class="addtocart">
 				<a href="cart.php" class="">

@@ -1,8 +1,8 @@
 <div class="show-products clearfix">
 	<?php foreach ($rows as $row):
 	?>
-		<h2><?= $row["category_name"] ?></h2>
-		<?php break; ?> 
+	<h2><?= $row["category_name"] ?></h2>
+	<?php break; ?> 
 	<?php endforeach;?>	
 	<div class="search-products clearfix">
 		<?php foreach ($rows as $row): 
@@ -11,15 +11,15 @@
 			$salePrice = sprintf("%1.2f", $row["item_saleprice"]); 
 			$productId = $row["item_id"]; 
 	    $unitPrice = sprintf("%1.2f", $row["item_price"]);   
-			?> 
+		?> 
 		<div class="item">
 			<a href="viewitem.php?id=<?= $productId ?>" class="product-link clearfix">
-			    <figure class="items">
-			        <div class="item-image">
-			            <img src="<?= $photoPath ?>" alt="<?= $productName ?>">
-			        </div>
-			        <figcaption>
-			        	<div class="finalprice">
+			  <figure class="items">
+			    <div class="item-image">
+			      <img src="<?= $photoPath ?>" alt="<?= $productName ?>">
+			    </div>
+			    <figcaption>
+			      <div class="finalprice">
 							<span class="price">&#36;<?= $salePrice ?></span>
 							<?php 
 								if ($unitPrice != $salePrice) {
@@ -28,10 +28,10 @@
 							?>	
 						</div>
 						<p>
-				            <?= $productName ?>
-				        </p>
-				    </figcaption>
-			    	</figure>
+				      <?= $productName ?>
+				    </p>
+				  </figcaption>
+			  </figure>
 			</a>
 			<div class="addtocart">
 				<a href="cart.php" class="">

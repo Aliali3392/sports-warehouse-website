@@ -1,8 +1,8 @@
 <div class="show-products clearfix">
 	<?php foreach ($rows as $row):
 	?>
-		<h2><?= $row["brand_name"] ?></h2>
-		<?php break; ?> 
+	<h2><?= $row["brand_name"] ?></h2>
+	<?php break; ?> 
 	<?php endforeach;?>
 	<?php 
 		if (empty($row["brand_name"])) {
@@ -19,24 +19,24 @@
 			?> 
 		<div class="item">
 			<a href="viewitem.php?id=<?= $productId ?>" class="product-link clearfix">
-			    <figure class="items">
-			        <div class="item-image">
-			            <img src="<?= $photoPath ?>" alt="<?= $productName ?>">
-			        </div>
-			        <figcaption>
-			        	<div class="finalprice">
-							<span class="price">&#36;<?= $salePrice ?></span>
-							<?php 
-								if ($unitPrice != $salePrice) {
-			 						echo "<b class='orignial'>&#36;$unitPrice</b>";
-			 					} 
-							?>	
-						</div>
-						<p>
-				            <?= $productName ?>
-				        </p>
-				    </figcaption>
-			    	</figure>
+			  <figure class="items">
+			    <div class="item-image">
+			      <img src="<?= $photoPath ?>" alt="<?= $productName ?>">
+			    </div>
+				  <figcaption>
+				  <div class="finalprice">
+						<span class="price">&#36;<?= $salePrice ?></span>
+						<?php 
+							if ($unitPrice != $salePrice) {
+				 				echo "<b class='orignial'>&#36;$unitPrice</b>";
+				 			} 
+						?>	
+					</div>
+					<p>
+					  <?= $productName ?>
+					</p>
+					</figcaption>
+			  </figure>
 			</a>
 			<div class="addtocart">
 				<a href="cart.php" class="">
