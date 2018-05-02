@@ -62,7 +62,7 @@ Mobile version:<br>
 
 ## Languages and Technology
 - HTML5
-- CSS
+- CSS/Sass
 - PHP
 - JavaScript/jQuery
 - MySQL
