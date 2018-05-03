@@ -31,8 +31,8 @@
     </fieldset>
     <div class="formbutton">
       <p>
-        <input type="reset" name="resetButton" id="resetButton" value="Start over">
         <input type="submit" name="submitButton" id="submitButton" value="Ask us!">
+        <input type="reset" name="resetButton" id="resetButton" value="Start over">
       </p>
     </div>
   </form>

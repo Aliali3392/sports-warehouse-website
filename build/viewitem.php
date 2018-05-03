@@ -1,9 +1,8 @@
 <?php  
 	require_once "classes/DBAccess.php"; 
 	 
-	$dsn = "mysql:host=localhost;dbname=sportswarehouse;charset=utf8";  
-	$username = "root";  
-	$password = ""; 
+	//get database settings
+	include "settings/db.php"; 
 	 
 	//create database object  
 	$db = new DBAccess($dsn, $username, $password); 

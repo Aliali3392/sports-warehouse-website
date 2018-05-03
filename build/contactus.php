@@ -60,14 +60,15 @@
 			$mail->Host = 'smtp.sendgrid.net';
 			$mail->SMTPAuth = true;
 			$mail->Username = 'apikey';
-			$mail->Password = 'input your password';
+			$mail->Password = 'Your password';
 			$mail->Port = 25;
 			$mail->From = $_POST["email"];
 			$mail->FromName = $_POST["firstName"]." ".$_POST["lastName"];
 			$mail->addReplyTo($_POST["email"], $_POST["firstName"]);
-			$mail->addAddress("input your email", "Sports Warehouse");
+			$mail->addAddress("Your email", "Sports Warehouse");
+			$mail->isHTML(true);
 			$mail->Subject = "Sports Warehouse Questions";
-			$mail->Body = "Email: ".$_POST["email"]."\n"."Tel: ".$_POST["phone"]."\n"."Question: ".$_POST["question"]."\n"."From: ".$_POST["firstName"]." ".$_POST["lastName"];
+			$mail->Body = "<p>Email: ".$_POST["email"]."</p><br>"."<p>Tel: ".$_POST["phone"]."</p><br>"."<p>Question: ".$_POST["question"]."</p><br>"."<p>From: ".$_POST["firstName"]." ".$_POST["lastName"]."</p>";
 
 			if (!$mail->send()) {  
 				include "templates/error.html.php";   
