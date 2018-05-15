@@ -42,7 +42,7 @@
     <div class="content-wrapper clearfix">
       <header>
         <div class="clearfix">
-          <div class="logo"><h1>Sports Warehouse</h1></div>
+          <div class="logo"><a href="home.php" class="clearfix"><h1>Sports Warehouse</h1></a></div>
             <form class="search" action="search.php" method="get">
               <fieldset>
                 <legend class="hide">Search</legend>

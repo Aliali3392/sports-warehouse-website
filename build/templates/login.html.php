@@ -12,33 +12,33 @@
 </head>
 <body>
   <div class="wrapper clearfix">
-    <div class="login-logo"><h1>Sports Warehouse</h1></div>
   	<div class="login-wrapper">
-    <div class="login-box">
-      <form action="post">
-        <h1>Sign in</h1>
-        <div class="login-row">
-          <label for="email">Email (phone for mobile accounts)</label>
-          <input type="text" name="email" id="email" required>
+      <div class="login-logo"><a href="home.php" class="clearfix"><h1>Sports Warehouse</h1></a></div>
+      <div class="login-box">
+        <form action="post">
+          <h1>Sign in</h1>
+          <div class="login-row">
+            <label for="email">Email (phone for mobile accounts)</label>
+            <input type="text" name="email" id="email" required>
+          </div>
+          <div class="login-row">
+            <label for="password">Password</label>
+            <a href="#">Forgot your password?</a>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <input type="submit" id="signInSubmit" value="Sign in">
+          <div class="keep-signin">
+  	        <input type="checkbox" name="rememberMe" id="rememberMe">
+  	        <label for="rememberMe">Keep me signed in.</label>
+          </div>
+        </form>
+        <div class="divider-break">
+          <h5>New to Sports Warehouse?</h5>
         </div>
-        <div class="login-row">
-          <label for="password">Password</label>
-          <a href="#">Forgot your password?</a>
-          <input type="password" name="password" id="password" required>
+        <div class="create-account">
+  	      <a href="#">Create new account</a>
         </div>
-        <input type="submit" id="signInSubmit" value="Sign in">
-        <div class="keep-signin">
-	        <input type="checkbox" name="rememberMe" id="rememberMe">
-	        <label for="rememberMe">Keep me signed in.</label>
-        </div>
-      </form>
-      <div class="divider-break">
-        <h5>New to Sports Warehouse?</h5>
       </div>
-      <div class="create-account">
-	      <a href="#">Create new account</a>
-      </div>
-    </div>
     </div>
   </div>
   <!-- This is the footer -->

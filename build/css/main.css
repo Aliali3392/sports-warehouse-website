@@ -126,7 +126,7 @@ html {
 
 /*logo*/
 .logo, .login-logo {
-  width: 100%;
+  width: 290px;
   height: 40px;
   float: left;
   margin-left: 4.6875%;
@@ -134,7 +134,8 @@ html {
   background-image: url(../images/logos/sports-warehouse-logo-mobile.png);
   background-repeat: no-repeat; }
   .logo h1, .login-logo h1 {
-    visibility: hidden; }
+    visibility: hidden;
+    line-height: 40px; }
 
 .hide {
   display: none; }
@@ -838,6 +839,8 @@ footer {
     background-image: url(../images/logos/sports-warehouse-logo-desktop.png);
     background-repeat: no-repeat;
     width: 610px; }
+    .logo h1 {
+      line-height: 82px; }
 
   /*search bar*/
   .search {
