@@ -7,7 +7,7 @@
   <title><?= $title ?></title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css?v=20180515">
   <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
@@ -18,7 +18,7 @@
       <div class="menubar" id="menubar">
         <div class="nav-left">
           <ul>
-            <li><i class="fas fa-lock"></i><a href="#">Login</a></li>
+            <li><i class="fas fa-lock"></i><a href="login.php">Login</a></li>
             <li><i class="far fa-circle"></i><a href="home.php">Home</a></li>
             <li><i class="far fa-circle"></i><a href="aboutus.php">About SW</a></li>
             <li><i class="far fa-circle"></i><a href="contactus.php">Contact Us</a></li>
@@ -28,7 +28,7 @@
       </div>
       <div class="login">
         <i class="fas fa-lock"></i>
-        <a href="#">Login</a>
+        <a href="login.php">Login</a>
       </div>         
       <div class="cart">
         <i class="fas fa-shopping-cart"></i>
