@@ -15,10 +15,10 @@
   	<div class="login-wrapper">
       <div class="login-logo"><a href="home.php" class="clearfix"><h1>Sports Warehouse</h1></a></div>
       <div class="login-box">
-        <form action="post">
+        <form action="" method="post" id="#loginForm">
           <h1>Sign in</h1>
           <div class="login-row">
-            <label for="email">Email (phone for mobile accounts)</label>
+            <label for="email">Email (username for administrator)</label>
             <input type="text" name="email" id="email" required>
           </div>
           <div class="login-row">
@@ -46,6 +46,7 @@
     <p>&#169;Copyright 2018 Sports Warehouse. <span>All rights reserved. </span><span>Website made by Charles Chen.</span></p>
   </div>
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/custom.js"></script>
+  <script src="js/custom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
 </body>
 </html>

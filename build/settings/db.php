@@ -7,8 +7,8 @@ if($_SERVER["SERVER_NAME"] == "localhost" || $_SERVER["SERVER_ADDR"] == "127.0.0
 	}
 	else {
 	//website is running on the remote server
-	$dsn = "mysql:host=localhost;dbname=XXX;charset=utf8";
-	$username = "XXX";
-	$password = "XXX";
+	$dsn = "mysql:host=localhost;dbname=***REMOVED***;charset=utf8";
+	$username = "***REMOVED***";
+	$password = "***REMOVED***";
 }
 ?>

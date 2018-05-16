@@ -29,11 +29,9 @@
         <textarea name="question" id="question" rows="6" cols="50" required><?= setValue("question") ?></textarea>
       </p>
     </fieldset>
-    <div class="formbutton">
-      <p>
+    <div class="formbutton clearfix">
         <input type="submit" name="submitButton" id="submitButton" value="Ask us!">
         <input type="reset" name="resetButton" id="resetButton" value="Start over">
-      </p>
     </div>
   </form>
 </section>

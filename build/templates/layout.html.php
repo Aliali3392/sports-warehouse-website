@@ -113,6 +113,6 @@
     <p>&#169;Copyright 2018 Sports Warehouse. <span>All rights reserved. </span><span>Website made by Charles Chen.</span></p>
   </div>
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/custom.js"></script>
+  <script src="js/custom.min.js"></script>
 </body>
 </html>

@@ -8,8 +8,12 @@
     $productId = $row["item_id"];
 	?> 
 	<h1><?= $productName ?></h1>
-    <div class="item-pic">
-	   <img src="<?= $photoPath ?>" alt="<?= $productName ?>">
+    <div class="item-pic" id="normal">
+	    <img src="<?= $photoPath ?>" alt="<?= $productName ?>">
+      <span id="lay"></span>
+    </div>
+    <div class="item-zoom" id="bigImg">
+      <img src="<?= $photoPath ?>" alt="<?= $productName ?>">
     </div>
 	<div class="item-info">
 		<?php 

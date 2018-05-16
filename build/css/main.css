@@ -362,8 +362,10 @@ html {
     margin-left: 3.125%; }
   .contactus fieldset {
     border-radius: 10px;
-    background-color: #7fd5f6;
+    background-color: #00aced;
     border: solid 1px #059dd7; }
+    .contactus fieldset .missing {
+      background-color: #ff690c; }
     .contactus fieldset legend {
       display: none; }
     .contactus fieldset p {
@@ -375,7 +377,8 @@ html {
       font-size: 1.4rem;
       float: left;
       width: 120px;
-      text-align: right; }
+      text-align: right;
+      color: #fff; }
     .contactus fieldset input {
       float: left;
       height: 20px;
@@ -394,25 +397,31 @@ html {
       padding-left: 15px;
       padding-right: 15px;
       overflow: auto; }
-  .contactus .formbutton p {
-    margin-left: 0;
-    margin-top: 10px; }
-  .contactus .formbutton input {
-    background-color: #7fd5f6;
-    border: none;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
+  .contactus .formbutton {
     display: inline-block;
-    font-size: 1.4rem;
-    border-radius: 17px;
-    font-weight: 300;
-    color: #646464;
-    border: solid 1px #059dd7;
-    outline: none; }
-
-.missing {
-  color: #ff690c; }
+    width: 100%;
+    text-align: center;
+    margin: 15px auto 0 auto; }
+    .contactus .formbutton input {
+      background-color: #00aced;
+      border: none;
+      padding: 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1.4rem;
+      border-radius: 17px;
+      font-weight: 300;
+      color: #fff;
+      border: solid 1px #059dd7;
+      outline: none;
+      width: 85px;
+      cursor: pointer;
+      -webkit-appearance: none; }
+    .contactus .formbutton input:last-child {
+      margin-left: 20px; }
+    .contactus .formbutton input:hover {
+      background-color: #0296ce; }
 
 /*brands logo*/
 .brandslogo {
@@ -1137,18 +1146,32 @@ footer {
     margin-left: 100px; }
     .contactus h2, .contactus p, .contactus form {
       margin-left: 0; }
+    .contactus form {
+      width: 100%; }
+      .contactus form .formbutton {
+        margin-top: 30px; }
+        .contactus form .formbutton input {
+          padding: 10px;
+          width: 120px;
+          font-size: 1.6rem; }
+        .contactus form .formbutton input:last-child {
+          margin-left: 50px; }
     .contactus fieldset {
       width: 1000px; }
       .contactus fieldset label {
-        width: 230px;
-        margin-top: 7px; }
+        width: 130px;
+        margin-top: 5px;
+        font-size: 1.6rem;
+        margin-left: 100px; }
       .contactus fieldset input {
         height: 35px;
         width: 180px;
-        border-radius: 17px; }
+        border-radius: 17px;
+        font-size: 1.6rem; }
       .contactus fieldset textarea {
         width: 400px;
-        border-radius: 17px; }
+        border-radius: 17px;
+        font-size: 2rem; }
 
   /*confirmation, error & about us, show-products*/
   .confirmation, .error, .aboutus, .privacy, .brands, .show-products {
