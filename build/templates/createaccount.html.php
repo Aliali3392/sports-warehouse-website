@@ -14,33 +14,27 @@
   <div class="wrapper clearfix">
   	<div class="login-wrapper">
       <div class="login-logo"><a href="home.php" class="clearfix"><h1>Sports Warehouse</h1></a></div>
-      <div class="login-box">
-        <form action="login.php" method="post" id="login-form">
-          <h1>Sign in</h1>
+      <div class="new-account-box">
+        <form action="createaccount.php" method="post" id="create-account">
+          <h1>Create account</h1>
           <div class="login-row">
             <label for="username">Username</label>
             <input type="text" name="username" id="username" required>
           </div>
           <div class="login-row">
             <label for="password">Password</label>
-            <a href="#">Forgot your password?</a>
             <input type="password" name="password" id="password" required>
           </div>
-          <input type="submit" id="signInSubmit" value="Sign in">
-          <div class="keep-signin">
-  	        <input type="checkbox" name="rememberMe" id="rememberMe">
-  	        <label for="rememberMe">Keep me signed in.</label>
+          <div class="login-row">
+            <label for="confirm_password">Re-enter password</label>
+            <input type="password" name="confirm_password" id="confirm-password" required>
           </div>
+          <input type="submit" id="createSubmit" value="Create your SW account">
+          <b>By creating an account, you agree to SW's <a href="privacy.php">Privacy Notice</a>.</b>
         </form>
-        <?php if(isset($error)):?>
-          <p><?= $message ?></p>
-        <?php endif; ?>
-        <div class="divider-break">
-          <h5>New to Sports Warehouse?</h5>
-        </div>
-        <div class="create-account">
-  	      <a href="createaccount.php">Create new account</a>
-        </div>
+        <p><?= $message ?></p>
+        <div class="divider-break"></div>
+        <b>Already have an account? <a href="login.php">Sign in</a></b>
       </div>
     </div>
   </div>

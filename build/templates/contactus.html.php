@@ -5,15 +5,15 @@
   <?php if($missingFields): ?>
   <p class="error">Please supply the missing information.</p>
   <?php endif; ?>
-  <form method="post">
+  <form method="post" id="contact-form">
     <fieldset>
       <legend>Contact Us Form</legend>
       <p>
-        <label for="firstName" <?= validateField("firstName", $missingFields) ?>>First name *:</label>
+        <label for="firstName" <?= validateField("firstName", $missingFields) ?>>First name &#42;:</label>
         <input type="text" name="firstName" id="firstName" value="<?= setValue("firstName") ?>" required>
       </p>
       <p>
-        <label for="lastName" <?= validateField("lastName", $missingFields) ?>>Last name *:</label>
+        <label for="lastName" <?= validateField("lastName", $missingFields) ?>>Last name &#42;:</label>
         <input type="text" name="lastName" id="lastName" value="<?= setValue("lastName") ?>" required>
       </p>
       <p>
@@ -21,11 +21,11 @@
         <input type="text" name="phone" id="phone" value="<?= setValue("phone") ?>">
       </p>
       <p>
-        <label for="email" <?= validateField("email", $missingFields) ?>>Contact Email *:</label>
+        <label for="email" <?= validateField("email", $missingFields) ?>>Contact Email &#42;:</label>
         <input type="email" name="email" id="email" value="<?= setValue("email") ?>" required>
       </p>
       <p>
-        <label for="question" <?= validateField("question", $missingFields) ?>>Your Question *:</label>
+        <label for="question" <?= validateField("question", $missingFields) ?>>Your Question &#42;:</label>
         <textarea name="question" id="question" rows="6" cols="50" required><?= setValue("question") ?></textarea>
       </p>
     </fieldset>

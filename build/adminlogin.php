@@ -1,7 +1,6 @@
 <?php
   require_once "classes/Authentication.php";
-  $title = "Login";
-
+  $title = "Admin Login";
   //the authentication class is static so there is no need to create an instance of the class
   $message = "";
   if(isset($_POST["signInSubmit"])) {
@@ -14,7 +13,6 @@
       }
     }
   }
-
   //display confirmation
-  include "templates/login.html.php";
+  include "templates/adminlogin.html.php";
 ?>

@@ -27,15 +27,15 @@
 		<h2>Product description:</h2>
 		<p><?= $productDescription ?></p>
 	</div>
-	<div class='add-to-cart-form'>
-    <label for="number">Quantity:</label>
-    <input type='number' class='form-control m-b-10px cart-quantity' id="number" value='1' min='1' />
-    <div class="add-btn">
-      <a href="cart.php" class="">
-        <i class="fas fa-shopping-cart white"></i>
-        Add to Cart
-      </a>
-    </div>
-  </div>
+	<form action="viewcart.php" method="post" class='add-to-cart-form'>
+    <label for="qty<?=$productId?>">Quantity:</label>
+    <input type="number" class="form-control m-b-10px cart-quantity" id="qty<?=$productId?>" name="qty" value="1" min="1" />
+    <button class="add-btn" type="submit" name="buy" value="Buy">
+      <i class="fas fa-shopping-cart white"></i>
+      Add to Cart
+	  </button>
+    <input type="hidden" value="<?=$photoPath?>" name="photoPath">
+    <input type="hidden" value="<?=$productId?>" name="productId">
+  </form>
 	<?php endforeach;?> 
 </div>

@@ -7,7 +7,7 @@
   <title><?= $title ?></title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css?v=20180515">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
@@ -18,7 +18,12 @@
       <div class="menubar" id="menubar">
         <div class="nav-left">
           <ul>
-            <li><i class="fas fa-lock"></i><a href="login.php">Login</a></li>
+            <?php if(!isset($loginName)):?>
+              <li><i class="fas fa-lock"></i><a href="login.php">Login</a></li>
+            <?php endif; ?>
+            <?php if(isset($loginName)):?>
+              <li><p>Hello </p><a href="#"><?= $loginName ?></a></li>              
+            <?php endif; ?>
             <li><i class="far fa-circle"></i><a href="home.php">Home</a></li>
             <li><i class="far fa-circle"></i><a href="aboutus.php">About SW</a></li>
             <li><i class="far fa-circle"></i><a href="contactus.php">Contact Us</a></li>
@@ -32,8 +37,16 @@
       </div>         
       <div class="cart">
         <i class="fas fa-shopping-cart"></i>
-        <a href="#">View Cart</a>
-        <p>0 items</p>
+        <a href="viewcart.php">View Cart</a>
+        <p>
+          <?php 
+            require_once "classes/ShoppingCart.php";
+            session_start();
+            $cart = $_SESSION["cart"];
+            echo(sprintf($cart->calculateQty()));
+          ?> 
+          items
+        </p>
       </div>
     </nav>
   </div>
@@ -54,13 +67,26 @@
           </div>
           <div class="categorynav">
             <ul>
-              <li><a href="groupByCategories.php?id=1">Shoes</a><i class="fas fa-angle-right"></i></li>
-              <li><a href="groupByCategories.php?id=2">Helmets</a><i class="fas fa-angle-right"></i></li>
-              <li><a href="groupByCategories.php?id=3">Pants</a><i class="fas fa-angle-right"></i></li>
-              <li><a href="groupByCategories.php?id=4">Tops</a><i class="fas fa-angle-right"></i></li>
-              <li><a href="groupByCategories.php?id=5">Balls</a><i class="fas fa-angle-right"></i></li>
-              <li><a href="groupByCategories.php?id=6">Equipment</a><i class="fas fa-angle-right"></i></li>
-              <li><a href="groupByCategories.php?id=7">Training gear</a><i class="fas fa-angle-right"></i></li>
+              <?php
+                require_once "classes/DBAccess.php"; 
+                include "settings/db.php";  
+                $db = new DBAccess($dsn, $username, $password); 
+                $pdo = $db->connect(); 
+                //select categories  
+                $sql = "select  category_id, category_name 
+                from   category"; 
+                $stmt = $pdo->prepare($sql);
+                $rows = $db->executeSQL($stmt); 
+                //loop to show all categories
+                foreach ($rows as $row):
+                $catId = $row["category_id"];
+                $catName = $row["category_name"];  
+              ?>
+              <li><a href="groupByCategories.php?id=<?= $catId ?>"><?= $catName ?></a><i class="fas fa-angle-right"></i></li>
+              <?php 
+                endforeach; 
+                $pdo = null;
+              ?>
             </ul>
           </div>
       </header>
@@ -113,6 +139,7 @@
     <p>&#169;Copyright 2018 Sports Warehouse. <span>All rights reserved. </span><span>Website made by Charles Chen.</span></p>
   </div>
   <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/plugins/jquery.validation/jquery.validate.min.js"></script>
   <script src="js/custom.min.js"></script>
 </body>
 </html>

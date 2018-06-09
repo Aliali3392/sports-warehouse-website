@@ -331,16 +331,17 @@ html {
   font-size: 1.5rem;
   height: 34px;
   border-radius: 5px;
-  margin: 5px 10px 0 10px;
+  margin: 5px auto 0 auto;
   line-height: 34px;
-  text-align: center; }
-
-.addtocart a, .add-btn a {
+  text-align: center;
   color: #fff;
-  text-decoration: none;
+  outline: none;
+  width: 90%;
+  border: none;
+  cursor: pointer;
   display: block; }
 
-.addtocart a:hover, .add-btn a:hover {
+.addtocart:hover, .add-btn:hover {
   background-color: #0296ce;
   border-radius: 5px; }
 
@@ -360,6 +361,8 @@ html {
     width: 93.75%;
     margin-top: 20px;
     margin-left: 3.125%; }
+    .contactus form label.error {
+      color: #ff690c; }
   .contactus fieldset {
     border-radius: 10px;
     background-color: #00aced;
@@ -670,7 +673,7 @@ footer {
   margin-left: auto;
   margin-bottom: 30px; }
 
-.login-box {
+.login-box, .new-account-box {
   display: block;
   border-radius: 4px;
   border: 1px #ddd solid;
@@ -678,18 +681,20 @@ footer {
   padding: 20px 26px;
   color: #646464;
   font-size: 1.3rem; }
-  .login-box .login-row {
+  .login-box p, .new-account-box p {
+    color: #ff690c; }
+  .login-box .login-row, .new-account-box .login-row {
     margin-bottom: 14px; }
-  .login-box h1 {
+  .login-box h1, .new-account-box h1 {
     font-weight: 400;
     font-size: 2.8rem;
     paddng-bottom: 4px;
     margin-bottom: 10px; }
-  .login-box label {
+  .login-box label, .new-account-box label {
     font-weight: 700;
     padding-left: 2px;
     padding-bootm: 2px; }
-  .login-box input[type="text"], .login-box input[type="password"], .login-box input[type="submit"], .login-box .create-account {
+  .login-box input[type="text"], .login-box input[type="password"], .login-box input[type="submit"], .login-box .create-account, .new-account-box input[type="text"], .new-account-box input[type="password"], .new-account-box input[type="submit"], .new-account-box .create-account {
     width: 100%;
     height: 31px;
     padding: 3px 7px;
@@ -700,42 +705,47 @@ footer {
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(0, 0, 0, 0.07) inset;
     outline: 0;
     margin-top: 2px; }
-  .login-box input[type="submit"], .login-box .create-account {
+  .login-box input[type="submit"], .login-box .create-account, .new-account-box input[type="submit"], .new-account-box .create-account {
     background-color: #00aced;
     text-align: center;
     border: none;
     color: #fff;
     -webkit-appearance: none; }
-  .login-box input[type="submit"]:hover, .login-box .create-account:hover {
+  .login-box input[type="submit"]:hover, .login-box .create-account:hover, .new-account-box input[type="submit"]:hover, .new-account-box .create-account:hover {
     background-color: #0296ce; }
-  .login-box a {
+  .login-box a, .new-account-box a {
     text-decoration: none;
     float: right;
     color: #00aced; }
-  .login-box input[type="checkbox"] {
+  .login-box b, .new-account-box b {
+    font-weight: normal;
+    margin-top: 2px; }
+  .login-box input[type="checkbox"], .new-account-box input[type="checkbox"] {
     height: 1.3rem;
     width: 1.3rem;
     vertical-align: top;
     position: relative;
     top: 3px; }
-  .login-box .keep-signin {
+  .login-box .keep-signin, .new-account-box .keep-signin {
     margin-top: 18px; }
-    .login-box .keep-signin label {
+    .login-box .keep-signin label, .new-account-box .keep-signin label {
       font-weight: 400;
       position: relative;
       padding-left: 5px;
       text-indent: 0;
       display: inline-block; }
-  .login-box form {
+  .login-box form, .new-account-box form {
     margin-bottom: 26px; }
-  .login-box .divider-break {
+    .login-box form label.error, .new-account-box form label.error {
+      color: #ff690c; }
+  .login-box .divider-break, .new-account-box .divider-break {
     text-align: center;
     position: relative;
     top: 2px;
     padding-top: 1px;
     margin-bottom: 14px;
     line-height: 0; }
-    .login-box .divider-break h5 {
+    .login-box .divider-break h5, .new-account-box .divider-break h5 {
       line-height: 1;
       font-size: 1.2rem;
       color: #767676;
@@ -745,7 +755,7 @@ footer {
       display: inline-block;
       background-color: #fff;
       padding: 0 8px 0 7px; }
-  .login-box .divider-break:after {
+  .login-box .divider-break:after, .new-account-box .divider-break:after {
     content: "";
     width: 100%;
     background-color: transparent;
@@ -756,13 +766,16 @@ footer {
     top: 50%;
     margin-top: -1px;
     z-index: 1; }
-  .login-box .create-account {
+  .login-box .create-account, .new-account-box .create-account {
     text-align: center; }
-    .login-box .create-account a {
+    .login-box .create-account a, .new-account-box .create-account a {
       color: #fff;
       height: 31px;
       width: 100%;
       line-height: 25px; }
+
+.new-account-box a {
+  float: none; }
 
 /*========================================*/
 /*----------------Desktop----------------*/
@@ -1156,6 +1169,10 @@ footer {
           font-size: 1.6rem; }
         .contactus form .formbutton input:last-child {
           margin-left: 50px; }
+      .contactus form label.error {
+        margin-left: 20px;
+        width: 260px;
+        text-align: left; }
     .contactus fieldset {
       width: 1000px; }
       .contactus fieldset label {
@@ -1171,7 +1188,8 @@ footer {
       .contactus fieldset textarea {
         width: 400px;
         border-radius: 17px;
-        font-size: 2rem; }
+        font-size: 2rem;
+        margin-right: 0; }
 
   /*confirmation, error & about us, show-products*/
   .confirmation, .error, .aboutus, .privacy, .brands, .show-products {
@@ -1226,6 +1244,7 @@ footer {
 
   .addtocart {
     position: absolute;
+    margin: 5px 10px 0 10px;
     width: 230px;
     height: 34px;
     top: 290px; }
@@ -1295,7 +1314,8 @@ footer {
       outline: none; }
 
   .add-btn {
-    margin: 10px 0 0 0; }
+    margin: 10px 0 0 0;
+    width: 200px; }
 
   /*left arrow, right arrow*/
   .turn-left .arrow-left:before {
@@ -1373,6 +1393,10 @@ footer {
 
   /*login*/
   .login-wrapper {
-    margin-bottom: 60px; } }
+    margin-bottom: 60px; }
+    .login-wrapper input.error {
+      margin-left: 0; }
+    .login-wrapper label.error {
+      margin-left: 0; } }
 
 /*# sourceMappingURL=main.css.map */

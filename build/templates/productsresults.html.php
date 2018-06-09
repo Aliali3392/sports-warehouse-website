@@ -1,9 +1,10 @@
 <div class="show-products clearfix">
-	<?php foreach ($rows as $row):
-	?>
+	<?php foreach ($rows as $row):?>
 	<h2><?= $row["category_name"] ?></h2>
-	<?php break; ?> 
-	<?php endforeach;?>	
+	<?php 
+		break;
+		endforeach;
+	?>	
 	<div class="search-products clearfix">
 		<?php foreach ($rows as $row): 
 			$photoPath = "images/products/" . $row["item_photo"];     
@@ -33,11 +34,14 @@
 				  </figcaption>
 			  </figure>
 			</a>
-			<div class="addtocart">
-				<a href="cart.php" class="">
+			<form action="viewcart.php" method="post">
+				<button class="addtocart" type="submit" name="buy">
 					Add to Cart
-				</a>
-			</div>
+				</button>
+		    <input type="hidden" value="1" name="qty">
+        <input type="hidden" value="<?=$photoPath?>" name="photoPath">
+				<input type="hidden" value="<?=$productId?>" name="productId">
+			</form>
 		</div>
 		<?php endforeach;?>
 	</div> 

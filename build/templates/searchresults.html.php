@@ -35,11 +35,14 @@
           </figcaption>
         </figure>
       </a>
-      <div class="addtocart">
-        <a href="cart.php" class="">
+      <form action="viewcart.php" method="post">
+        <button class="addtocart" type="submit" name="buy">
           Add to Cart
-        </a>
-      </div>
+        </button>
+        <input type="hidden" value="1" name="qty">
+        <input type="hidden" value="<?=$photoPath?>" name="photoPath">
+        <input type="hidden" value="<?=$productId?>" name="productId">
+      </form>
     </div>
     <?php endforeach;?> 
   </div> 

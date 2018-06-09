@@ -15,15 +15,14 @@
   	<div class="login-wrapper">
       <div class="login-logo"><a href="home.php" class="clearfix"><h1>Sports Warehouse</h1></a></div>
       <div class="login-box">
-        <form action="login.php" method="post" id="login-form">
-          <h1>Sign in</h1>
+        <form action="adminlogin.php" method="post" id="admin-login-form">
+          <h1>Welcome to SW admin</h1>
           <div class="login-row">
             <label for="username">Username</label>
             <input type="text" name="username" id="username" required>
           </div>
           <div class="login-row">
             <label for="password">Password</label>
-            <a href="#">Forgot your password?</a>
             <input type="password" name="password" id="password" required>
           </div>
           <input type="submit" id="signInSubmit" value="Sign in">
@@ -35,12 +34,6 @@
         <?php if(isset($error)):?>
           <p><?= $message ?></p>
         <?php endif; ?>
-        <div class="divider-break">
-          <h5>New to Sports Warehouse?</h5>
-        </div>
-        <div class="create-account">
-  	      <a href="createaccount.php">Create new account</a>
-        </div>
       </div>
     </div>
   </div>
