@@ -65,7 +65,11 @@
 			//read shopping cart from session
 			$cart = $_SESSION["cart"];
 			//update item
-			$cart->updateCart($item);
+			if($productQty>0) {
+				$cart->updateCart($item);
+			} else {
+				$cart->removeItem($item);
+			}
 			//save shopping cart back into session
 			$_SESSION["cart"] = $cart;
 		}

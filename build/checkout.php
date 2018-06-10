@@ -3,6 +3,9 @@
   require_once "classes/ShoppingCart.php";
   session_start();
   $title = "Checkout";
+  if(isset($_SESSION["cart"])){
+    $cart = $_SESSION["cart"];
+  }
   
   //start buffer
   ob_start();

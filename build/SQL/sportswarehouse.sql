@@ -75,7 +75,7 @@ PRIMARY KEY (shoppingOrderId, item_id));
 # Add table "Shopping Order"                                             #
 # ---------------------------------------------------------------------- #
 CREATE TABLE IF NOT EXISTS shoppingorder(
-shoppingOrderId     INT(11) NOT NULL,
+shoppingOrderId     INT(11) NOT NULL AUTO_INCREMENT,
 orderDate           DATETIME NOT NULL,
 firstName           varchar(50) NOT NULL,
 lastName            varchar(50) NOT NULL,

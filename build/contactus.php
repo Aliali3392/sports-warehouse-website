@@ -60,12 +60,12 @@
 			$mail->Host = 'smtp.sendgrid.net';
 			$mail->SMTPAuth = true;
 			$mail->Username = 'apikey';
-			$mail->Password = '***REMOVED***';
+			$mail->Password = '';
 			$mail->Port = 25;
 			$mail->From = $_POST["email"];
 			$mail->FromName = $_POST["firstName"]." ".$_POST["lastName"];
 			$mail->addReplyTo($_POST["email"], $_POST["firstName"]);
-			$mail->addAddress("***REMOVED***", "Sports Warehouse");
+			$mail->addAddress("XX@XX.XX", "Sports Warehouse");
 			$mail->isHTML(true);
 			$mail->Subject = "Sports Warehouse Questions";
 			$mail->Body = "<p>Email: ".$_POST["email"]."</p><br>"."<p>Tel: ".$_POST["phone"]."</p><br>"."<p>Question: ".$_POST["question"]."</p><br>"."<p>From: ".$_POST["firstName"]." ".$_POST["lastName"]."</p>";

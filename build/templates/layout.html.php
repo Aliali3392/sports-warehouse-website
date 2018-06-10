@@ -42,8 +42,12 @@
           <?php 
             require_once "classes/ShoppingCart.php";
             session_start();
-            $cart = $_SESSION["cart"];
-            echo(sprintf($cart->calculateQty()));
+            if(isset($_SESSION["cart"])){
+              $cart = $_SESSION["cart"];
+              echo(sprintf($cart->calculateQty()));
+            } else {
+              echo("0");
+            }
           ?> 
           items
         </p>

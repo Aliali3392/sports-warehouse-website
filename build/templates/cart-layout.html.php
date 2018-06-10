@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css'>
     <link rel="stylesheet" href="./css/cart.css">
+    <link rel="shortcut icon" href="favicon.ico">
   </head>
   <body>
     <div class="container">
@@ -26,7 +27,13 @@
                   <span class="icon">
                     <i class="fa fa-shopping-cart"></i>
                   </span>
-                  <span>Checkout</span>
+                  <span>Checkout (<?php if(isset($_SESSION["cart"])){
+                    $cart = $_SESSION["cart"];
+                    echo(sprintf($cart->calculateQty()));
+                  } else {
+                    echo("0");
+                  }
+                ?>)</span>
                 </a>
               </p>
             </div>
