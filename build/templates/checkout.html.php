@@ -4,11 +4,10 @@
   $cartItems = $cart->getItems();
     if($cart->calculateTotal()>0):
 ?>
-<div class="cart">
-  <h1 class="title">Checkout</h1>
-  <form id="contact-form" action="order-thanks.php" method="post" id="checkout">
-      <h2>Delivery details</h2>
- 
+<h1 class="title">Checkout</h1>
+<form id="contact-form" class="contact-form clearfix" action="order-thanks.php" method="post" id="checkout">
+<div class="delivery clearfix">
+  <h2>Delivery details</h2>
     <fieldset>
         <legend>Delivery details</legend>
         <p>
@@ -32,8 +31,9 @@
             <input type="email" name="email" id="email" required>
         </p>
     </fieldset>
-              <h2>Payment methord</h2>
-
+</div>  
+<div class="payment clearfix">
+  <h2>Payment methord</h2>
     <fieldset>
         <legend>Credit or Debit Card</legend>
         <p>
@@ -52,13 +52,13 @@
             <label for="csv">CSV: &#42;</label>
             <input type="text" name="csv" id="csv" required>
         </p>
-        <p>
+        <p class="checkbox">
           <input type="checkbox" name="agree" id="agree" required><label for="agree">I&#39;v read and accept the terms &#38; conditions &#42;</label>
         </p>       
-    </fieldset>    
-    <p><button class='button is-primary' type="submit" name="pay">Place order</button></p>
-  </form>
-</div>
+    </fieldset> 
+</div>   
+<p class="pay"><button class='button' type="submit" name="pay">PLACE ORDER</button></p>
+</form>
 <?php else: ?>
 <div class="empty">
 <i class="fa fa-shopping-cart fa-4x"></i>
