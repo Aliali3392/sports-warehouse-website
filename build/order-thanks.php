@@ -3,8 +3,9 @@
   require_once "classes/ShoppingCart.php";
   session_start();
   $title = "Thanks";
-  $cart = $_SESSION["cart"];
-  $pageHeading = "Order Confirmation";
+  if(isset($_SESSION["cart"])){
+    $cart = $_SESSION["cart"];
+  }  $pageHeading = "Order Confirmation";
   $orderId = 0;
   //check pay button was pressed and there is a cart in the session
   if(isset($_POST["pay"]) && isset($_SESSION["cart"]))

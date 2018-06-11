@@ -707,7 +707,7 @@ footer {
 
 /*contact us, about us, confirmation, error, privacy policy & brands, show-products*/
 
-.contactus h2, .aboutus h2, .confirmation h2, .error h2, .privacy h2, .brands h2, .show-products h2 {
+.contactus h2, .aboutus h2, .confirmation h2, .error h2, .privacy h2, .brands h2, .show-products h2, .welcome h2 {
   float: left;
   margin-top: 27px;
   margin-left: 3.125%;
@@ -729,7 +729,7 @@ footer {
   color: $grey;
 }
 
-.aboutus p, .privacy p, .confirmation p, .error p {
+.aboutus p, .privacy p, .confirmation p, .error p, .welcome p {
   font-weight: 300;
   float: left;
   margin-top: 20px;
@@ -737,6 +737,16 @@ footer {
   margin-right: 3.125%;
   font-size: 1.6rem;
   color: $grey;
+}
+
+.welcome {
+  p {
+    width: 100%;
+  }
+  a {
+    text-decoration: none;
+    color: #00aced;
+  }
 }
 
 .brands .brand-tiles {
@@ -1437,7 +1447,7 @@ footer {
     }
   }
   /*confirmation, error & about us, show-products*/
-  .confirmation, .error, .aboutus, .privacy, .brands, .show-products {
+  .confirmation, .error, .aboutus, .privacy, .brands, .show-products, .welcome {
     float: left;
     width: 1000px;
     margin-left: 100px;
@@ -1449,7 +1459,7 @@ footer {
       clear: both;
     }
   }
-  .error {
+  .error, .welcome {
     p, h2 {
       margin-left: 0;
       margin-right: 0;

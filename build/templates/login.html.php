@@ -26,7 +26,7 @@
             <a href="#">Forgot your password?</a>
             <input type="password" name="password" id="password" required>
           </div>
-          <input type="submit" id="signInSubmit" value="Sign in">
+          <input type="submit" name="loginSubmit" id="loginSubmit" value="Sign in">
           <div class="keep-signin">
   	        <input type="checkbox" name="rememberMe" id="rememberMe">
   	        <label for="rememberMe">Keep me signed in.</label>

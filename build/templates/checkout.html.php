@@ -60,11 +60,15 @@
   </form>
 </div>
 <?php else: ?>
+<div class="empty">
 <i class="fa fa-shopping-cart fa-4x"></i>
 <p>Your shopping cart is currently empty.</p>
+</div>
 <?php endif; ?>
 <?php else: ?>
+<div class="empty">
 <i class="fa fa-shopping-cart fa-4x"></i>
 <p>Your shopping cart is currently empty.</p>
+</div>
 <?php endif; ?>
 

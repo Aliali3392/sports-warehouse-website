@@ -4,7 +4,7 @@
   class Authentication {
     //constants hold values that do not change
     const LoginPageURL = "login.php";
-    const SuccessPageURL = "home.php";
+    const SuccessPageURL = "login-success.php";
     private static $_db;
 
     //user login
@@ -47,6 +47,7 @@
         return false;
       }
     }
+
     //log user out
     public static function logout() {
       //remove username from the session
@@ -55,6 +56,7 @@
       header("Location: " . self::LoginPageURL);
       exit;
     }
+
     //check if user is logged in
     public static function protect() {
       if(!isset($_SESSION["username"])) {
@@ -63,6 +65,7 @@
         exit;
       }
     }
+
     //create a new user
     public static function createUser($uname, $pword) {
       //hash the password

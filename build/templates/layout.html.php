@@ -7,7 +7,7 @@
   <title><?= $title ?></title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
   <link rel="stylesheet" href="css/fontawesome-all.min.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
@@ -18,11 +18,16 @@
       <div class="menubar" id="menubar">
         <div class="nav-left">
           <ul>
-            <?php if(!isset($loginName)):?>
+            <?php 
+              require_once "classes/Authentication.php";
+              require_once "classes/ShoppingCart.php";
+              session_start();
+              if(isset($_SESSION["username"])):
+                $loginName = $_SESSION["username"];
+            ?>               
+              <li><a href="login-success.php"><?= $loginName ?></a></li>             
+            <?php else:?>
               <li><i class="fas fa-lock"></i><a href="login.php">Login</a></li>
-            <?php endif; ?>
-            <?php if(isset($loginName)):?>
-              <li><p>Hello </p><a href="#"><?= $loginName ?></a></li>              
             <?php endif; ?>
             <li><i class="far fa-circle"></i><a href="home.php">Home</a></li>
             <li><i class="far fa-circle"></i><a href="aboutus.php">About SW</a></li>
@@ -31,17 +36,25 @@
           </ul>
         </div>
       </div>
+      <?php 
+        require_once "classes/Authentication.php";
+        if(isset($_SESSION["username"])):
+          $loginName = $_SESSION["username"];
+      ?> 
+      <div class="login">
+        <a href="login-success.php"><?= $loginName ?></a>
+      </div>  
+      <?php else: ?>
       <div class="login">
         <i class="fas fa-lock"></i>
         <a href="login.php">Login</a>
-      </div>         
+      </div>  
+      <?php endif; ?>    
       <div class="cart">
         <i class="fas fa-shopping-cart"></i>
         <a href="viewcart.php">View Cart</a>
         <p>
           <?php 
-            require_once "classes/ShoppingCart.php";
-            session_start();
             if(isset($_SESSION["cart"])){
               $cart = $_SESSION["cart"];
               echo(sprintf($cart->calculateQty()));
@@ -143,7 +156,7 @@
     <p>&#169;Copyright 2018 Sports Warehouse. <span>All rights reserved. </span><span>Website made by Charles Chen.</span></p>
   </div>
   <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/plugins/jquery.validation/jquery.validate.min.js"></script>
+  <script src="js/plugins/jquery.validate/jquery.validate.min.js"></script>
   <script src="js/custom.min.js"></script>
 </body>
 </html>
