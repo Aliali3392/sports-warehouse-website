@@ -57,9 +57,9 @@
 			require 'php/PHPMailer-master/PHPMailerAutoload.php';    
 			$mail = new PHPMailer();
 			$mail->isSMTP();
-			$mail->Host = 'smtp.sendgrid.net';
+			$mail->Host = '';
 			$mail->SMTPAuth = true;
-			$mail->Username = 'apikey';
+			$mail->Username = '';
 			$mail->Password = '';
 			$mail->Port = 25;
 			$mail->From = $_POST["email"];
