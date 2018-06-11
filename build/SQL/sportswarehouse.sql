@@ -102,7 +102,7 @@ USE sportswarehouse;
 
 INSERT INTO category VALUES (01,'Shoes');
 INSERT INTO category VALUES (02,'Helmets');
-INSERT INTO category VALUES (03,'Pans');
+INSERT INTO category VALUES (03,'Pants');
 INSERT INTO category VALUES (04,'Tops');
 INSERT INTO category VALUES (05,'Balls');
 INSERT INTO category VALUES (06,'Equipment');

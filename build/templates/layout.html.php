@@ -127,13 +127,16 @@
       <div class="footer-cat">
         <h2>Product categories</h2>
         <ul>
-          <li><a href="groupByCategories.php?id=1">Shoes</a></li>
-          <li><a href="groupByCategories.php?id=2">Helmets</a></li>
-          <li><a href="groupByCategories.php?id=3">Pants</a></li>
-          <li><a href="groupByCategories.php?id=4">Tops</a></li>
-          <li><a href="groupByCategories.php?id=5">Balls</a></li>
-          <li><a href="groupByCategories.php?id=6">Equipment</a></li>
-          <li><a href="groupByCategories.php?id=7">Training Gear</a></li>
+          <?php 
+            foreach ($rows as $row):
+            $catId = $row["category_id"];
+            $catName = $row["category_name"];  
+          ?>
+          <li><a href="groupByCategories.php?id=<?= $catId ?>"><?= $catName ?></a></li>
+          <?php 
+            endforeach; 
+            $pdo = null;
+          ?>    
         </ul>
       </div>
       <div class="footer-contact">
