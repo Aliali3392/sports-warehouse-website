@@ -24,7 +24,7 @@ table {
   margin: 0 1rem 1.5rem 1rem; }
   table input {
     width: 4rem;
-    padding-left: .25rem; }
+    padding: 5px; }
   table thead {
     display: table-header-group;
     vertical-align: middle;
@@ -135,7 +135,8 @@ table {
     .contact-form fieldset .checkbox {
       margin-top: 2rem; }
   .contact-form input {
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    padding: 5px; }
   .contact-form #agree {
     vertical-align: middle; }
   .contact-form button.button {

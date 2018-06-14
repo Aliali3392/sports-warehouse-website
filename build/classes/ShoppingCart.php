@@ -89,7 +89,7 @@
 			$db=new DBAccess($dsn, $username, $password);
 			$pdo = $db->connect();
 			//set up SQL statement to insert order
-			$sql = "insert into ShoppingOrder(Address, ContactNumber, CreditCardNumber, CSV,
+			$sql = "insert into shoppingorder(Address, ContactNumber, CreditCardNumber, CSV,
 			Email, ExpiryDate, FirstName, LastName, NameOnCard, OrderDate) values(:Address, 
 			:ContactNumber, :CreditCardNumber, :CSV, :Email, :ExpiryDate, :FirstName, :LastName,
 			:NameOnCard, curdate())";
@@ -107,7 +107,7 @@
 			//loop through shopping cart, insert items
 			foreach ($this->_cartItems as $item) {
 				//set up insert statement
-				$sql = "insert into OrderItem(item_id, Price, Quantity, shoppingOrderId)
+				$sql = "insert into orderitem(item_id, Price, Quantity, shoppingOrderId)
 				values(:item_id, :Price, :Quantity, :shoppingOrderId)";
 				//for each item insert a row in OrderItem
 				$stmt = $pdo->prepare($sql);

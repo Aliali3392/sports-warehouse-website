@@ -381,16 +381,17 @@ html {
       float: left;
       width: 120px;
       text-align: right;
-      color: #fff; }
+      color: #fff;
+      margin-top: 3px; }
     .contactus fieldset input {
+      font-size: 1.4rem;
       float: left;
-      height: 20px;
       border-radius: 10px;
       margin-left: 20px;
       width: 170px;
       border: solid 1px #059dd7;
       outline: none;
-      padding-left: 15px; }
+      padding: 5px 5px 5px 15px; }
     .contactus fieldset textarea {
       border-radius: 10px;
       margin: 0 20px 10px 20px;
@@ -406,6 +407,7 @@ html {
     text-align: center;
     margin: 15px auto 0 auto; }
     .contactus .formbutton input {
+      height: 34px;
       background-color: #00aced;
       border: none;
       padding: 5px;
@@ -569,7 +571,7 @@ footer {
     display: block; }
 
 /*contact us, about us, confirmation, error, privacy policy & brands, show-products*/
-.contactus h2, .aboutus h2, .confirmation h2, .error h2, .privacy h2, .brands h2, .show-products h2, .welcome h2 {
+.contactus h2, .aboutus h2, .confirmation h2, .error h2, .privacy h2, .brands h2, .show-products h2, .welcome h2, .order h2 {
   float: left;
   margin-top: 27px;
   margin-left: 3.125%;
@@ -589,7 +591,7 @@ footer {
   font-size: 1.6rem;
   color: #646464; }
 
-.aboutus p, .privacy p, .confirmation p, .error p, .welcome p {
+.aboutus p, .privacy p, .confirmation p, .error p, .welcome p, .order p {
   font-weight: 300;
   float: left;
   margin-top: 20px;
@@ -598,11 +600,14 @@ footer {
   font-size: 1.6rem;
   color: #646464; }
 
-.welcome p {
+.welcome p, .order p {
   width: 100%; }
-.welcome a {
+.welcome a, .order a {
   text-decoration: none;
   color: #00aced; }
+
+.order p:last-child {
+  margin-bottom: 200px; }
 
 .brands .brand-tiles {
   list-style: none; }
@@ -1170,6 +1175,7 @@ footer {
       .contactus form .formbutton {
         margin-top: 30px; }
         .contactus form .formbutton input {
+          height: 40px;
           padding: 10px;
           width: 120px;
           font-size: 1.6rem; }
@@ -1198,20 +1204,20 @@ footer {
         margin-right: 0; }
 
   /*confirmation, error & about us, show-products*/
-  .confirmation, .error, .aboutus, .privacy, .brands, .show-products, .welcome {
+  .confirmation, .error, .aboutus, .privacy, .brands, .show-products, .welcome, .order {
     float: left;
     width: 1000px;
     margin-left: 100px; }
 
-  .confirmation p, .confirmation h2 {
+  .confirmation p, .confirmation h2, .error p, .error h2, .welcome p, .welcome h2, .order p, .order h2 {
     margin-left: 0;
     margin-right: 0;
     clear: both; }
 
-  .error p, .error h2, .welcome p, .welcome h2 {
-    margin-left: 0;
-    margin-right: 0;
-    clear: both; }
+  .order {
+    margin-left: 0; }
+    .order p:last-child {
+      margin-bottom: 300px; }
 
   .aboutus p, .aboutus h2, .aboutus h3 {
     margin-left: 0;

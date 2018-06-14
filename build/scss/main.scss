@@ -476,16 +476,17 @@ html {
       width: 120px;
       text-align: right;
       color: $white;
+      margin-top: 3px;
     }
     input {
+      font-size: 1.4rem;
       float: left;
-      height: 20px;
       border-radius: 10px;
       margin-left: 20px;
       width: 170px;
       border: solid 1px $midBlue;
       outline: none;
-      padding-left: 15px;
+      padding: 5px 5px 5px 15px;
     }
     textarea {
       border-radius: 10px;
@@ -504,6 +505,7 @@ html {
     text-align: center;
     margin: 15px auto 0 auto;
     input {
+      height: 34px;
       background-color: $lightBlue;
       border: none;
       padding: 5px;
@@ -707,7 +709,7 @@ footer {
 
 /*contact us, about us, confirmation, error, privacy policy & brands, show-products*/
 
-.contactus h2, .aboutus h2, .confirmation h2, .error h2, .privacy h2, .brands h2, .show-products h2, .welcome h2 {
+.contactus h2, .aboutus h2, .confirmation h2, .error h2, .privacy h2, .brands h2, .show-products h2, .welcome h2, .order h2 {
   float: left;
   margin-top: 27px;
   margin-left: 3.125%;
@@ -729,7 +731,7 @@ footer {
   color: $grey;
 }
 
-.aboutus p, .privacy p, .confirmation p, .error p, .welcome p {
+.aboutus p, .privacy p, .confirmation p, .error p, .welcome p, .order p {
   font-weight: 300;
   float: left;
   margin-top: 20px;
@@ -739,13 +741,19 @@ footer {
   color: $grey;
 }
 
-.welcome {
+.welcome, .order {
   p {
     width: 100%;
   }
   a {
     text-decoration: none;
     color: #00aced;
+  }
+}
+
+.order {
+  p:last-child {
+    margin-bottom: 200px;
   }
 }
 
@@ -1410,6 +1418,7 @@ footer {
       .formbutton {
         margin-top: 30px;
         input {
+          height: 40px;
           padding: 10px;
           width: 120px;
           font-size: 1.6rem;
@@ -1447,23 +1456,22 @@ footer {
     }
   }
   /*confirmation, error & about us, show-products*/
-  .confirmation, .error, .aboutus, .privacy, .brands, .show-products, .welcome {
+  .confirmation, .error, .aboutus, .privacy, .brands, .show-products, .welcome, .order {
     float: left;
     width: 1000px;
     margin-left: 100px;
   }
-  .confirmation {
+  .confirmation, .error, .welcome, .order {
     p, h2 {
       margin-left: 0;
       margin-right: 0;
       clear: both;
     }
   }
-  .error, .welcome {
-    p, h2 {
-      margin-left: 0;
-      margin-right: 0;
-      clear: both;
+  .order {
+    margin-left: 0;
+    p:last-child {
+      margin-bottom: 300px;
     }
   }
   .aboutus {
