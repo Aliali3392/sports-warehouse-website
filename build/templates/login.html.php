@@ -30,6 +30,7 @@
           <div class="keep-signin">
   	        <input type="checkbox" name="rememberMe" id="rememberMe">
   	        <label for="rememberMe">Keep me signed in.</label>
+            <a href="adminlogin.php">Staff login.</a>
           </div>
         </form>
         <?php if(isset($error)):?>

@@ -8,7 +8,6 @@
   session_start();
   if(isset($_POST["loginSubmit"])) {
     $_SESSION["username"] = $_POST["username"];
-    print_r($_SESSION["username"]);
     if(!empty($_POST["username"]) && !empty($_POST["password"])) {
       //authenticate user
       $loginSuccess = Authentication::login($_POST["username"], $_POST["password"]);
