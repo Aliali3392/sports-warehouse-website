@@ -20,7 +20,7 @@
     <img class="thumbnail img-responsive" src="<?= $photoPath ?>" alt="Photo of employee">
     <h3><?= $productName ?></h3>
     <p><?= $description ?></p>
-    <p><a class="delete" href="deleteProduct.php?id=<?= $productId ?>&photo=<?= $photoToDelete
+    <p><a class="delete btn btn-default" href="deleteProduct.php?id=<?= $productId ?>&photo=<?= $photoToDelete
     ?>">Delete Product</a></p>
   </div>
   <?php endforeach; ?>

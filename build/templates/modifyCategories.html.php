@@ -24,7 +24,7 @@
       ?>
       <tr>
         <td><?= $categoryName ?></td>
-        <td><a class="delete" href="modifyCategory.php?id=<?= $categoryId ?>">Delete</a></td>
+        <td><a class="delete btn btn-default" href="modifyCategory.php?id=<?= $categoryId ?>">Delete</a></td>
       </tr>
       <?php endforeach; ?>
     </table>

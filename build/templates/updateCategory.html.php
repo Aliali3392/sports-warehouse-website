@@ -12,7 +12,7 @@
       ?>
       <tr>
         <td><?= $categoryName ?></td>
-        <td><a href="updateCategory.php?id=<?= $categoryId ?>">Edit</a></td>
+        <td><a class="btn btn-default" href="updateCategory.php?id=<?= $categoryId ?>">Edit</a></td>
       </tr>
       <?php endforeach; ?>
       
