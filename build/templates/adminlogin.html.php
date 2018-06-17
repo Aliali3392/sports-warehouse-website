@@ -25,10 +25,11 @@
             <label for="password">Password</label>
             <input type="password" name="password" id="password" required>
           </div>
-          <input type="submit" id="signInSubmit" value="Sign in">
+          <input type="submit" name="signInSubmit" id="signInSubmit" value="Sign in">
           <div class="keep-signin">
   	        <input type="checkbox" name="rememberMe" id="rememberMe">
   	        <label for="rememberMe">Keep me signed in.</label>
+            <a href="login.php">I'm a customer.</a>
           </div>
         </form>
         <?php if(isset($error)):?>

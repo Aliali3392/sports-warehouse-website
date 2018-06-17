@@ -88,6 +88,16 @@ nameOnCard          varchar(50) NOT NULL,
 csv                 varchar(3) NOT NULL,
 PRIMARY KEY (shoppingOrderId));
 
+# ---------------------------------------------------------------------- #
+# Add table "Admin user"                                                 #
+# ---------------------------------------------------------------------- #
+
+CREATE TABLE IF NOT EXISTS adminuser(
+user_id             INT(11) NOT NULL AUTO_INCREMENT,
+username            VARCHAR(50) NOT NULL,
+password            VARCHAR(255) NOT NULL,
+PRIMARY KEY (user_id));
+
 ALTER TABLE item ADD CONSTRAINT item_cate_fk FOREIGN KEY (item_categoryid) REFERENCES category(category_id);
 ALTER TABLE item ADD CONSTRAINT item_brand_fk FOREIGN KEY (item_brandid) REFERENCES brand(brand_id);
 ALTER TABLE orderitem ADD CONSTRAINT orderitem_shoppingorder_fk FOREIGN KEY (shoppingOrderId) REFERENCES shoppingorder(shoppingOrderId);
@@ -154,6 +164,6 @@ INSERT INTO item VALUES (1020,'Sydney City Roosters Adults Home Jersey','1020.jp
 INSERT INTO item VALUES (1021,'Red Corner Silver Label Focus Kit-Feathers','1021.jpg',149.95,149.95,'Focus kits combine the punch mitt and focus pads together so you can train with a partner. Good focus pads will fit well and feel like an extension of your arm and hand. A well crafted focus pad will have a small ball in the palm which feels snug and means the user doesn’t have to worry about the pad flying off when struck. Adjustable straps at the back of the pad help keep it also in place.',FALSE,07,NULL);
 
 # ---------------------------------------------------------------------- #
-# Add info into "User"                                                   #
+# Add info into "admin user"                                             #
 # ---------------------------------------------------------------------- #
-
+INSERT INTO adminuser VALUES (1,'admin','$2y$10$J9XLOTFISnMVZZV22/X8u.Lt8ENKaIH4QgOkXwu527OHDhBSooFvq');
