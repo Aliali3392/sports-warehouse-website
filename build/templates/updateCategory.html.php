@@ -1,5 +1,5 @@
 <div class="col-lg-6">
-  <h1>Update category</h1>
+  <h1>Update Category</h1>
   <form action="updateCategory.php" method="post">
     <table>
       <tr>
@@ -20,7 +20,7 @@
         if(count($rows) > 0):
         $row = $rows[0];
       ?>
-      <tr>
+      <tr class="edit-category">
         <td>
           <input class="form-control" type="text" name="CategoryName" id="CategoryName" required value="<?=
           $row["category_name"] ?>">
@@ -29,7 +29,7 @@
         <td><input class="update btn btn-default" type="submit" name="submit" value="Update Category"></td>
       </tr>
     <?php else: ?>
-      <tr>
+      <tr class="edit-category">
         <td>
           No category was supplied
         </td>

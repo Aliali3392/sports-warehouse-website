@@ -7,7 +7,10 @@
 	?>	
 	<div class="search-products clearfix">
 		<?php foreach ($rows as $row): 
-			$photoPath = "images/products/" . $row["item_photo"];     
+			$photoPath = "images/products/image-unavailable.jpg";
+	    if (file_exists("images/products/".$row["item_photo"]) && strlen($row["item_photo"]) > 0) {
+	      $photoPath = "images/products/" .$row["item_photo"];
+	    }    
 			$productName = $row["item_name"];   
 			$salePrice = sprintf("%1.2f", $row["item_saleprice"]); 
 			$productId = $row["item_id"]; 

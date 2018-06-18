@@ -1646,3 +1646,34 @@ table.tablesorter thead tr th:hover {
                 }
         }
 }
+
+/*Modify*/
+li {
+  list-style-type: none;
+}
+ul li a {
+    color: #fff;
+}
+ul li a:hover {
+    text-decoration: none;
+}
+table {
+    width: 100%;
+}
+th, td:last-child {
+    text-align: center;
+}
+td, th {
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-width: 0 0 2px;
+}
+td {
+    border-bottom-width: 0;
+}
+.thumbnail {
+    margin-bottom: 0;
+}
+.edit-category td {
+  border-top-width: 2px;
+}

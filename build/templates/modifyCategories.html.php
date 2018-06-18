@@ -1,8 +1,8 @@
 <div class="col-lg-6">
-  <h1>Modify category</h1>
+  <h1>Modify Category</h1>
   <form action="modifyCategory.php" method="post">
     <fieldset>
-      <legend>Insert category</legend>
+      <legend>Insert Category</legend>
     <div class="form-group">
       <label for="CategoryName">Category Name:</label>
       <input class="form-control" type="text" name="CategoryName" id="CategoryName" required>
@@ -12,7 +12,7 @@
   </form>
   <br/>
   <fieldset>
-    <legend>Delete category</legend>
+    <legend>Delete Category</legend>
     <table>
       <tr>
         <th>Category Name</th>

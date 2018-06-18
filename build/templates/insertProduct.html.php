@@ -1,12 +1,12 @@
 <div class="col-lg-6">
-  <h1>Modify category</h1>
+  <h1>Modify Category</h1>
   <form action="insertProduct.php" method="post" enctype="multipart/form-data" role="form">
     <div class="form-group">
       <label for="productName">Product Name:</label>
       <input class="form-control" type="text" name="productName" id="productName" required>
     </div>
     <div class="form-group">
-      <label for="brand">Brand name:</label>
+      <label for="brand">Brand Name:</label>
       <select class="form-control" name="brand" id="brand">
         <?php foreach ($brandRows as $row):
         $brandId = $row["brand_id"];
@@ -32,7 +32,7 @@
       <input class="form-control" type="text" name="itemPrice" id="itemPrice" required>
     </div>
     <div class="form-group">
-      <label for="salePrice">Sale price: $</label>
+      <label for="salePrice">Sale Price: $</label>
       <input class="form-control" type="text" name="salePrice" id="salePrice" required>
     </div>
     <div class="form-group">
@@ -40,11 +40,11 @@
       <textarea class="form-control" rows="3" name="description" id="description" required></textarea>
     </div>
     <div class="form-group">
-      <label for="featured">Featured product: </label>
+      <label for="featured">Featured Product: </label>
       <input type="checkbox" name="featured" id="featured">
     </div>
     <div class="form-group">
-      <label for="imagePath">Product image:</label>
+      <label for="imagePath">Product Image:</label>
       <input type="file" name="imagePath" id="imagePath">
     </div>
     <div class="form-group">
