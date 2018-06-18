@@ -1,7 +1,6 @@
 <?php
   require_once "classes/DBAccess.php";
-  $title = "Modify category";
-  $pageHeading = "Categories";
+  $title = "Update Category";
   //get database settings
   include "settings/db.php";
   //create database object

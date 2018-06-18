@@ -31,7 +31,7 @@ PRIMARY KEY (category_id)
 CREATE TABLE IF NOT EXISTS brand(
 brand_id         INT(11) NOT NULL AUTO_INCREMENT,
 brand_name       VARCHAR(512),
-brand_photo      VARCHAR(20),
+brand_photo      VARCHAR(512),
 PRIMARY KEY (brand_id)
 );
 
@@ -42,7 +42,7 @@ PRIMARY KEY (brand_id)
 CREATE TABLE IF NOT EXISTS item(
 item_id             INT(11) NOT NULL AUTO_INCREMENT,
 item_name           VARCHAR(512) NOT NULL,
-item_photo          VARCHAR(20),
+item_photo          VARCHAR(512),
 item_price          DECIMAL(9,2),
 item_saleprice      DECIMAL(9,2) NOT NULL,
 item_description    TEXT,
@@ -167,3 +167,4 @@ INSERT INTO item VALUES (1021,'Red Corner Silver Label Focus Kit-Feathers','1021
 # Add info into "admin user"                                             #
 # ---------------------------------------------------------------------- #
 INSERT INTO adminuser VALUES (1,'admin','$2y$10$J9XLOTFISnMVZZV22/X8u.Lt8ENKaIH4QgOkXwu527OHDhBSooFvq');
+INSERT INTO adminuser VALUES (2,'charles','$2y$10$J9XLOTFISnMVZZV22/X8u.Lt8ENKaIH4QgOkXwu527OHDhBSooFvq');

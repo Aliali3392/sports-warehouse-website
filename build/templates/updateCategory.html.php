@@ -41,6 +41,3 @@
   </form>
 </div>
 
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/deleteConfirm.js"></script>
-

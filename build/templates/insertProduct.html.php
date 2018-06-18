@@ -1,6 +1,6 @@
 <div class="col-lg-6">
-  <h1>Modify Category</h1>
-  <form action="insertProduct.php" method="post" enctype="multipart/form-data" role="form">
+  <h1>Insert Category</h1>
+  <form action="insertProduct.php" method="post" enctype="multipart/form-data" role="form" id="insert-product">
     <div class="form-group">
       <label for="productName">Product Name:</label>
       <input class="form-control" type="text" name="productName" id="productName" required>
@@ -53,5 +53,4 @@
     <p><?= $message ?></p>
   </form>
 </div>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/deleteConfirm.js"></script>
+

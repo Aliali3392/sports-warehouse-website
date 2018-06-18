@@ -1,7 +1,6 @@
 <?php
   require_once "classes/DBAccess.php";
-  $title = "Modify product";
-  $pageHeading = "Products";
+  $title = "Insert Product";
   //get database settings
   include "settings/db.php";
   //create database object

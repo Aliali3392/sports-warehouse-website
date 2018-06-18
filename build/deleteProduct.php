@@ -1,7 +1,6 @@
 <?php
   require_once "classes/DBAccess.php";
   $title = "Delete";
-  $pageHeading = "Employees";
   //get database settings
   include "settings/db.php";
   //create database object

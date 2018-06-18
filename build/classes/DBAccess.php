@@ -58,7 +58,12 @@ class DBAccess {
             }
         }
         catch(PDOException $e){
-            die("Query failed: " . $e->getMessage());
+            if ($e->getCode() == 23000) {
+                $value = -1;
+            }
+            else {
+                die("Query failed: " . $e->getMessage());
+            }
         }
         //return the primary key if one was generated otherwise returns true/false
         return $value;

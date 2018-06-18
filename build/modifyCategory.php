@@ -1,7 +1,6 @@
 <?php
   require_once "classes/DBAccess.php";
-  $title = "Delete category";
-  $pageHeading = "Categories";
+  $title = "Modify Category";
   //get database settings
   include "settings/db.php";
   //create database object

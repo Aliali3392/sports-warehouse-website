@@ -1,6 +1,6 @@
 <div class="col-lg-6">
   <h1>Modify Category</h1>
-  <form action="modifyCategory.php" method="post">
+  <form action="modifyCategory.php" method="post" id="insert-category">
     <fieldset>
       <legend>Insert Category</legend>
     <div class="form-group">
@@ -31,5 +31,4 @@
   </fieldset>
   <p><?= $message ?></p>
 </div>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/deleteConfirm.js"></script>
+
