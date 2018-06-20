@@ -107,14 +107,19 @@
 			//loop through shopping cart, insert items
 			foreach ($this->_cartItems as $item) {
 				//set up insert statement
-				$sql = "insert into orderitem(item_id, Price, Quantity, shoppingOrderId)
-				values(:item_id, :Price, :Quantity, :shoppingOrderId)";
+				$sql = "insert into orderitem(item_id, Price, Quantity, shoppingOrderId, user_id)
+				values(:item_id, :Price, :Quantity, :shoppingOrderId, :user_id)";
 				//for each item insert a row in OrderItem
 				$stmt = $pdo->prepare($sql);
 				$stmt->bindValue(":item_id" , $item->getItemId(), PDO::PARAM_INT);
 				$stmt->bindValue(":Price" , $item->getPrice(), PDO::PARAM_STR);
 				$stmt->bindValue(":Quantity" , $item->getQuantity(), PDO::PARAM_INT);
 				$stmt->bindValue(":shoppingOrderId" , $shoppingOrderId, PDO::PARAM_INT);
+				if(isset($_SESSION["user_id"])){
+					$stmt->bindValue(":user_id" , $_SESSION["user_id"], PDO::PARAM_INT);
+				} else {
+					$stmt->bindValue(":user_id" , null, PDO::PARAM_INT);
+				}
 				$db->executeNonQuery($stmt);
 			}
 			return $shoppingOrderId;

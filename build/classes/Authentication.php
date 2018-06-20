@@ -26,12 +26,15 @@
         //the keyword self instead of this
         $pdo = self::$_db->connect();
         //set up SQL and bind parameters
-        $sql = "select password from user where username=:username";
+        $sql = "select user_id, password from user where username=:username";
         $stmt = $pdo->prepare($sql);
         $stmt->bindParam(":username", $uname, PDO::PARAM_STR);
         //execute SQL as the class is static we need to use
         //the keyword self instead of this
-        $hash = self::$_db->executeSQLReturnOneValue($stmt);
+        $rows = self::$_db->executeSQL($stmt);
+        $row = $rows[0];
+        $hash = $row["password"];
+        $_SESSION["user_id"] = $row["user_id"];
       }
       catch (PDOException $e) {
         throw $e;

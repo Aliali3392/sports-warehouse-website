@@ -69,6 +69,7 @@ item_id             INT(11) NOT NULL,
 shoppingOrderId     INT(11) NOT NULL AUTO_INCREMENT,
 quantity            INT(11),
 price               DECIMAL(10, 2) NOT NULL,
+user_id             INT(11),
 PRIMARY KEY (shoppingOrderId, item_id));
 
 # ---------------------------------------------------------------------- #
@@ -101,7 +102,8 @@ PRIMARY KEY (user_id));
 ALTER TABLE item ADD CONSTRAINT item_cate_fk FOREIGN KEY (item_categoryid) REFERENCES category(category_id);
 ALTER TABLE item ADD CONSTRAINT item_brand_fk FOREIGN KEY (item_brandid) REFERENCES brand(brand_id);
 ALTER TABLE orderitem ADD CONSTRAINT orderitem_shoppingorder_fk FOREIGN KEY (shoppingOrderId) REFERENCES shoppingorder(shoppingOrderId);
-ALTER TABLE orderitem ADD CONSTRAINT orderitem_ibfk_1 FOREIGN KEY (`item_id`) REFERENCES `item` (`item_id`);
+ALTER TABLE orderitem ADD CONSTRAINT orderitem_ibfk_1 FOREIGN KEY (item_id) REFERENCES item (item_id);
+ALTER TABLE orderitem ADD CONSTRAINT orderitem_user_fk FOREIGN KEY (user_id) REFERENCES user(user_id);
 
 
 # ---------------------------------------------------------------------- #
