@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/local.css" />
     <link rel="stylesheet" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
-    <link rel="stylesheet" href="<?= $theme ?>">
+    <link rel="stylesheet" href="
+    <?php
+        session_start(); 
+        echo($_SESSION["newtheme"]);
+        session_write_close(); 
+    ?>
+    ">
     <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>

@@ -14,7 +14,7 @@
 
   //read stylesheet theme from session
   if(isset($_SESSION["theme"])) {
-    $theme = "css/". $_SESSION["theme"] . ".css";
+    $_SESSION["newtheme"] = "css/". $_SESSION["theme"] . ".css";
   }
   else {
     $theme = "plain.css";
@@ -22,7 +22,7 @@
   if(isset($_POST["submit"])) {
     //get the selected colour theme
     $_SESSION["theme"] = $_POST["theme"];
-    $theme = $_SESSION["theme"] . ".css";
+    $_SESSION["newtheme"] = $_SESSION["theme"] . ".css";
   }
 
   session_write_close();
