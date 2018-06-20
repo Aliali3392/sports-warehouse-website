@@ -101,6 +101,8 @@ PRIMARY KEY (user_id));
 ALTER TABLE item ADD CONSTRAINT item_cate_fk FOREIGN KEY (item_categoryid) REFERENCES category(category_id);
 ALTER TABLE item ADD CONSTRAINT item_brand_fk FOREIGN KEY (item_brandid) REFERENCES brand(brand_id);
 ALTER TABLE orderitem ADD CONSTRAINT orderitem_shoppingorder_fk FOREIGN KEY (shoppingOrderId) REFERENCES shoppingorder(shoppingOrderId);
+ALTER TABLE orderitem ADD CONSTRAINT orderitem_ibfk_1 FOREIGN KEY (`item_id`) REFERENCES `item` (`item_id`);
+
 
 # ---------------------------------------------------------------------- #
 # Info                                                                   #
