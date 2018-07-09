@@ -172,3 +172,9 @@ INSERT INTO item VALUES (1021,'Red Corner Silver Label Focus Kit-Feathers','1021
 # ---------------------------------------------------------------------- #
 INSERT INTO adminuser VALUES (1,'admin','$2y$10$J9XLOTFISnMVZZV22/X8u.Lt8ENKaIH4QgOkXwu527OHDhBSooFvq');
 INSERT INTO adminuser VALUES (2,'charles','$2y$10$J9XLOTFISnMVZZV22/X8u.Lt8ENKaIH4QgOkXwu527OHDhBSooFvq');
+
+# ---------------------------------------------------------------------- #
+# Add info into "user"                                                   #
+# ---------------------------------------------------------------------- #
+INSERT INTO `user` (`user_id`, `username`, `password`) VALUES
+(1, 'customer', '$2y$10$Bek6JmH4pMD2Diql1RC.mOvQqQrKOv16OYZX44h7Q/1ZSTjdmbtzm');
