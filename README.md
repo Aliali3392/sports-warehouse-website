@@ -10,10 +10,7 @@ This project was developed with HTML5, CSS, jQuery, PHP and MySQL.
 
 [Demo Site](https://charliechen.me/projects/sportswarehouse/home.php)
 
-Desktop version:<br>
-![Mockup demo - Desktop](https://github.com/char1eschen/sports-warehouse-website/blob/master/screenshots/sports-warehouse-desktop.jpg)
-Mobile version:<br>
-![Mockup demo - Mobile](https://github.com/char1eschen/sports-warehouse-website/blob/master/screenshots/sports-warehouse-mobile.jpg) 
+![](https://github.com/char1eschen/sports-warehouse-website/blob/master/screenshots/project-showcase-sw.png)
 
 
 ## Contents
@@ -25,33 +22,59 @@ Mobile version:<br>
 ```
 ./
 ├── README.md
+| 
 ├── LICENSE.md
 |
-├── screenshots/                               * responsive test screenshots
+├── screenshots/                              * responsive test screenshots
 │
-└── build/                                     * built source
+└── src/                                      * built source
     ├── aboutus.php
+    ├── admin.php
+    ├── adminlogin.php
+    ├── adminlogout.php
     ├── brands.php
+    ├── checkout.php
     ├── contactus.php
+    ├── createaccount.php
+    ├── deleteProduct.php
     ├── error.php
     ├── groupByBrands.php
     ├── groupByCategories.php
     ├── home.php
-    ├── privacy.php
+    ├── insertProduct.php
+    ├── login.php
+    ├── login-success.php
+    ├── logout.php
+    ├── modifyCategory.php
+    ├── order-thanks.php
     ├── search.php
+    ├── setting.php
+    ├── settings.php
     ├── thanks.php
-    ├── viewitem
+    ├── updateCategory.php
+    ├── viewcart.php
+    ├── viewitem.php
+    ├── viewproducts.php
+    ├── favicon.ico
     |
+    ├── bootstrap/                            * bootstrap library
+    |    
     ├── classes/                              * PHP classes
     |    
     ├── css/                                  * minified styles
     |
+    ├── fontawesome/                          * icons
+    |    
     ├── images/                               * minified images
     │
     ├── js/                                   * minified assembled js
     │
     ├── php/                                  * PHP plugin(PHPmailer)
     │
+    ├── scss/                                 * sass files
+    |    
+    ├── settings/                             * Database setting
+    |    
     ├── SQL/                                  * Database file
     │
     ├── templates/                            * HTML templates
