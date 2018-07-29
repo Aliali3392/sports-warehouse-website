@@ -13,7 +13,7 @@
 <body>
   <div class="wrapper clearfix">
   	<div class="login-wrapper">
-      <div class="login-logo"><a href="home.php" class="clearfix"><h1>Sports Warehouse</h1></a></div>
+      <div class="login-logo"><a href="index.php" class="clearfix"><h1>Sports Warehouse</h1></a></div>
       <div class="new-account-box">
         <form action="createaccount.php" method="post" id="create-account">
           <h1>Create account</h1>

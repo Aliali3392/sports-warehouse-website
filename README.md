@@ -8,7 +8,7 @@ Sports Warehouse has achieved most of online shopping website features, such as 
 
 This project was developed with HTML5, CSS, jQuery, PHP and MySQL.
 
-[Demo Site](https://charliechen.me/projects/sportswarehouse/home.php)
+[Demo Site](https://charliechen.me/projects/sportswarehouse/index.php)
 
 ![](https://github.com/char1eschen/sports-warehouse-website/blob/master/screenshots/project-showcase-sw.png)
 
@@ -40,7 +40,7 @@ This project was developed with HTML5, CSS, jQuery, PHP and MySQL.
     ├── error.php
     ├── groupByBrands.php
     ├── groupByCategories.php
-    ├── home.php
+    ├── index.php
     ├── insertProduct.php
     ├── login.php
     ├── login-success.php
