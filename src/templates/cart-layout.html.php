@@ -29,7 +29,7 @@
             <?php else:?>
               <li><i class="fas fa-lock"></i><a href="login.php">Login</a></li>
             <?php endif; ?>
-            <li><i class="far fa-circle"></i><a href="home.php">Home</a></li>
+            <li><i class="far fa-circle"></i><a href="index.php">Home</a></li>
             <li><i class="far fa-circle"></i><a href="aboutus.php">About SW</a></li>
             <li><i class="far fa-circle"></i><a href="contactus.php">Contact Us</a></li>
             <li><i class="far fa-circle"></i><a href="viewproducts.php">View Products</a></li>

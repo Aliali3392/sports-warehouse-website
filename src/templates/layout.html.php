@@ -29,7 +29,7 @@
             <?php else:?>
               <li><i class="fas fa-lock"></i><a href="login.php">Login</a></li>
             <?php endif; ?>
-            <li><i class="far fa-circle"></i><a href="home.php">Home</a></li>
+            <li><i class="far fa-circle"></i><a href="index.php">Home</a></li>
             <li><i class="far fa-circle"></i><a href="aboutus.php">About SW</a></li>
             <li><i class="far fa-circle"></i><a href="contactus.php">Contact Us</a></li>
             <li><i class="far fa-circle"></i><a href="viewproducts.php">View Products</a></li>
@@ -72,7 +72,7 @@
     <div class="content-wrapper clearfix">
       <header>
         <div class="clearfix">
-          <div class="logo"><a href="home.php" class="clearfix"><h1>Sports Warehouse</h1></a></div>
+          <div class="logo"><a href="index.php" class="clearfix"><h1>Sports Warehouse</h1></a></div>
             <form class="search" action="search.php" method="get">
               <fieldset>
                 <legend class="hide">Search</legend>
@@ -117,7 +117,7 @@
       <div class="footer-nav">
         <h2>Site navigation</h2>
         <ul>
-          <li><a href="home.php">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li><a href="aboutus.php">About SW</a></li>
           <li><a href="contactus.php">Contact Us</a></li>
           <li><a href="viewproducts.php">View Products</a></li>
